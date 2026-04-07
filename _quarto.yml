@@ -27,7 +27,7 @@ website:
 
 format:
   html:
-    theme: default
+    theme: darkly
     css: styles.css
     toc: false
     anchor-sections: true
