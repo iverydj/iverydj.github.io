@@ -120,11 +120,11 @@ main a:hover {
 .navbar-toggler { border-color: var(--border) !important; }
 .navbar-toggler-icon { filter: invert(0.8); }
 
-/* ── Home: Hero ── */
+/* ── Home: Hero (signature card) ── */
 .hero {
   margin-top: 3rem;
   margin-bottom: 0;
-  padding: 1.5rem;
+  padding: 2rem 2.5rem;
   border: 1px solid var(--border);
   background: var(--bg-surface);
   box-shadow: none;
@@ -133,37 +133,77 @@ main a:hover {
 
 .hero-name {
   font-family: var(--font-mono);
-  font-size: clamp(1.8rem, 4vw, 2.4rem);
-  font-weight: 600;
+  font-size: clamp(2rem, 4.5vw, 2.8rem);
+  font-weight: 700;
   color: var(--yellow);
-  margin: 0 0 0.2rem;
+  margin: 0 0 0.15rem;
   line-height: 1.2;
 }
 
-.hero-tagline {
-  font-size: 14.5px;
-  color: var(--text-2);
-  margin: 0 0 1.2rem;
-  line-height: 1.7;
-  max-width: 60ch;
+.hero-position {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--cyan);
+  margin: 0.1rem 0 0;
 }
 
-.hero-tagline strong {
-  color: var(--text);
+.hero-dept {
+  font-size: 1rem;
+  color: var(--light-blue);
+  margin: 0;
+}
+
+.hero-divider {
+  height: 1px;
+  background: var(--border);
+  margin: 1rem 0;
+}
+
+.hero-lab {
+  font-size: 0.95rem;
+  color: var(--purple);
+  margin: 0;
   font-weight: 500;
 }
 
-.hero-meta {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.3rem 1.5rem;
-  font-family: var(--font-mono);
-  font-size: 12.5px;
-  color: var(--text-3);
+.hero-lab-dept {
+  font-size: 0.9rem;
+  color: var(--text-2);
+  margin: 0;
 }
 
-.hero-meta a { color: var(--accent); }
-.hero-meta a:hover { color: var(--light-blue); }
+.hero-advisor {
+  font-size: 0.9rem;
+  color: var(--orange);
+  margin: 0.15rem 0 0;
+  font-style: italic;
+}
+
+.hero-contact {
+  font-family: var(--font-mono);
+  font-size: 13.5px;
+  color: var(--text);
+  margin: 0;
+  line-height: 2;
+}
+
+.hero-contact a {
+  color: var(--light-green);
+}
+
+.hero-contact a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.contact-label {
+  color: var(--blue);
+  font-weight: 600;
+}
+
+/* legacy - unused */
+.hero-tagline { display: none; }
+.hero-meta { display: none; }
 
 /* ── Home: Sections ── */
 .home-section {
@@ -314,7 +354,24 @@ main a:hover {
   text-align: right;
 }
 
+/* journal name */
 .pub-list em { font-style: italic; color: var(--orange); }
+
+/* author name highlight */
+.pub-list u { color: var(--yellow); text-decoration: none; }
+.pub-list u strong { color: var(--yellow); }
+
+/* DOI links */
+.pub-list a { color: var(--light-green); }
+.pub-list a:hover { color: #fff; }
+
+/* year / parenthetical */
+.pub-list li { color: var(--text); }
+
+/* title text in quotes - handled by default text color */
+
+/* patent section header */
+.pub-list p em { color: var(--purple); font-style: italic; }
 
 /* ── Footer ── */
 footer {

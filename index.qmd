@@ -5,18 +5,21 @@ toc: false
 
 ::: {.hero}
 <p class="hero-name">Dong-Joon Yi</p>
+<p class="hero-position">Ph.D. student,</p>
+<p class="hero-dept">Department of Electronic Engineering, Hanyang University</p>
 
-<p class="hero-tagline">
-Ph.D. candidate in Electronic Engineering at <strong>Hanyang University</strong>,
-working on <strong>quantitative defect spectroscopy</strong> and <strong>explainable AI</strong>
-for 2D materials and oxide semiconductors.
+<div class="hero-divider"></div>
+
+<p class="hero-lab">Semiconductor Nanophotonics Laboratory,</p>
+<p class="hero-lab-dept">Department of Physics, Hanyang University, Republic of Korea</p>
+<p class="hero-advisor">(Advisor: Prof. Mun Seok Jeong)</p>
+
+<div class="hero-divider"></div>
+
+<p class="hero-contact">
+  <span class="contact-label">E-mail</span> : <a href="mailto:iverydj@hanyang.ac.kr">iverydj@hanyang.ac.kr</a> / <a href="mailto:iver.ydj@gmail.com">iver.ydj@gmail.com</a><br>
+  <span class="contact-label">Mobile</span> : +82 10 4617 6517
 </p>
-
-<div class="hero-meta">
-  <span>SNLab · Advisor: Prof. Mun Seok Jeong</span>
-  <a href="mailto:iver.ydj@gmail.com">iver.ydj@gmail.com</a>
-  <a href="mailto:iverydj@hanyang.ac.kr">iverydj@hanyang.ac.kr</a>
-</div>
 :::
 
 ::: {.home-section}
