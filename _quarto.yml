@@ -23,11 +23,11 @@ website:
       - href: assets/CV.pdf
         text: CV
   page-footer:
-    left: "© Dong-Joon Yi"
+    left: "Dong-Joon Yi"
 
 format:
   html:
-    theme: cosmo
+    theme: default
     css: styles.css
     toc: false
     anchor-sections: true

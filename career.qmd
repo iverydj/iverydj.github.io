@@ -1,52 +1,48 @@
-﻿---
+---
 title: "Career"
 toc: true
 ---
 
 ::: {.section-block}
-## Education {.section-title}
+## Education
 
-- **Ph.D. student in Electronic Engineering**  
-  Hanyang University, Seoul, Republic of Korea  
-  Mar 2024 - Aug 2027 (expected) | GPA: 4.3/4.5
+- **Ph.D. candidate in Electronic Engineering** (GPA 4.3/4.5)
+  Hanyang University, Seoul, Republic of Korea — Mar 2024 – Aug 2027 (expected)
+  Semiconductor Nanophotonics Laboratory, Advisor: Prof. Mun Seok Jeong
 
-- **M.S. in Solid-state Physics**  
-  Dongguk University, Seoul, Republic of Korea  
-  Sep 2022 - Feb 2024 | GPA: 4.5/4.5
+- **M.S. in Solid-state Physics** (GPA 4.5/4.5)
+  Dongguk University, Seoul, Republic of Korea — Sep 2022 – Feb 2024
+  Advanced Physics on Electromaterial Laboratory, Advisor: Prof. Kwun-Bum Chung
+  Thesis: *"Performance Control of InSnZnO/InGaZnO Multi-Channel-Layered Transistors with Defect Analysis of Amorphous Oxide Semiconductors"*
 
-- **B.S. in Physics**  
-  Dongguk University, Seoul, Republic of Korea  
-  Mar 2016 - Aug 2022 | GPA: 4.2/4.5
+- **B.S. in Physics** (GPA 4.2/4.5)
+  Dongguk University, Seoul, Republic of Korea — Mar 2016 – Aug 2022
+  Undergraduate researcher, APEL — Jul 2021 – Aug 2022
+  Military Service in the Republic of Korea — Jun 2019 – Apr 2021
 :::
 
 ::: {.section-block}
-## Appointments {.section-title}
+## Research Fellowship
 
-- **Ph.D. researcher**, Semiconductor Nanophotonics Laboratory (SNLab), Hanyang University  
-  Mar 2024 - Present
-
-- **M.S. researcher**, Advanced Physics on Electromaterial Laboratory (APEL), Dongguk University  
-  Sep 2022 - Feb 2024
-
-- **Undergraduate researcher**, APEL, Dongguk University  
-  Jul 2021 - Aug 2022
-
+- **"Deep-Level Transient Spectroscopy and Nanospectroscopy for Ultrafine Defect Analysis Using Explainable AI in 2D Quantum Semiconductors"**
+  Basic Science Research Program, National Research Foundation of Korea (NRF), funded by the Ministry of Education — Sep 2025 – Aug 2027, 50M KRW
 :::
 
 ::: {.section-block}
-## Scholarships and Awards {.section-title}
+## Scholarships & Awards
 
-- Physics Department Alumni Scholarship (Dongguk University), 2022 and 2023
+- HY-BrainKorea G3 2nd Award (Hanyang University), 2025
+- IC-PBL Graduate Championship 3rd Award (Hanyang University), 2024
+- Dongguk Future Talent Scholarship (Dongguk University), 2022, 2023
+- Physics Department Alumni Scholarship (Dongguk University), 2022, 2023
 - Dongguk 1.1.1 Scholarship (Dongguk University), 2021
-- Dongguk Future Talent Scholarship (Dongguk University), 2022 and 2023
-- IC-PBL Graduate Championship, 3rd Award (Hanyang University), 2024
 :::
 
 ::: {.section-block}
-## Skills {.section-title}
+## Skills
 
-- **Spectroscopy:** tip-enhanced nano-spectroscopy, ellipsometry, DLTS, and XPS
-- **Machine Learning:** Physics-based analysis, deep learning for spectroscopic data, and explainable AI
-- **Simulation:** Finite-Difference Time-Domain (FDTD), inverse design with adjoint optimization
-- **Fabrication and Characterization:** Electrical I-V/transient tests,  photolithography, sputtering
+- **Spectroscopy:** Optical spectroscopy (Raman, PL), Ellipsometry, DLTS, Tip-enhanced nanospectroscopy
+- **Machine Learning:** Physics-based data analysis, Deep learning for experimental data, Explainable AI (XAI)
+- **Simulation:** FDTD simulations, Inverse design with adjoint optimization
+- **Others:** Electrical characterization (I-V, etc), XPS, Photolithography, Sputtering
 :::
