@@ -32,3 +32,6 @@ format:
     toc: false
     anchor-sections: true
     link-external-newwindow: true
+    grid:
+      body-width: 1080px
+      margin-width: 0px
