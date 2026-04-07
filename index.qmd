@@ -1,54 +1,30 @@
-﻿---
+---
 title: "Home"
 toc: false
 ---
 
 ::: {.hero}
-<p class="eyebrow">Ph.D. Candidate</p>
-# Dong-Joon Yi {.hero-title}
+# Dong-Joon Yi
 
-<p class="hero-subtitle">
-I investigate defect-physics based on spectroscopy and explainable AI for Advanced electronic and photonic devices.
+<p class="hero-role">Ph.D. Candidate · Electronic Engineering · Hanyang University</p>
+
+<p class="hero-bio">
+결함 분광학(DLTS, PICTS, Raman/PL)과 설명가능 AI를 결합하여, 차세대 산화물 반도체 및 2D 소재의 결함-소자 특성 관계를 규명합니다. 정수진 교수님의 Semiconductor Nanophotonics Laboratory(SNLab)에서 연구하고 있습니다.
 </p>
 
-<div class="hero-actions">
-  <a class="action-link" href="research.html">Research</a>
-  <a class="action-link" href="publications.html">Publications</a>
-  <a class="action-link" href="assets/CV.pdf">2-page CV</a>
+<div class="hero-links">
+  <a href="research.html">Research</a>
+  <a href="publications.html">Publications</a>
+  <a href="career.html">Career</a>
+  <a href="assets/CV.pdf">CV (PDF)</a>
 </div>
 :::
 
-::: {.info-grid}
-::: {.info-card}
-### Defect Spectroscopy
-Energy-level extraction and trap-density quantification using DLTS, PICTS, Raman/PL, and interface-sensitive analysis.
-:::
+::: {.contact-block}
+## Contact
 
-::: {.info-card}
-### Explainable AI for Experiments
-Interpretation-focused models that connect spectral and electrical features to physically meaningful mechanisms.
-:::
-
-::: {.info-card}
-### Device Translation
-Device characterization and simulation workflows that turn defect-level findings into engineering guidance.
-:::
-:::
-
-::: {.section-block}
-## Current Position {.section-title}
-
-- Ph.D. candidate, Semiconductor Nanophotonics Laboratory (SNLab), Hanyang University
-- Advisor: Prof. Mun Seok Jeong
-- Focus: Defect physics, interpretable data analysis, and advanced device structures
-:::
-
-::: {.section-block}
-## Contact {.section-title}
-
-- Personal Email: [iver.ydj@gmail.com](mailto:iver.ydj@gmail.com)
-- Academic Email: [iverydj@hanyang.ac.kr](mailto:iverydj@hanyang.ac.kr)
-- Department: [Department of Electronic Engineering, Hanyang University](https://ee.hanyang.ac.kr/)
-- Google Scholar: <https://scholar.google.co.kr/citations?user=MZE2mWsAAAAJ&hl=ko&oi=ao>
-- Full CV (Google Docs): <https://docs.google.com/document/d/1lrk7ocGFDo48wUvRRMkrh3YgPosDd4Yo/edit?usp=sharing&ouid=104466598745421942872&rtpof=true&sd=true>
+- [iver.ydj@gmail.com](mailto:iver.ydj@gmail.com)
+- [iverydj@hanyang.ac.kr](mailto:iverydj@hanyang.ac.kr)
+- [Google Scholar](https://scholar.google.co.kr/citations?user=MZE2mWsAAAAJ&hl=ko&oi=ao)
+- [Dept. of Electronic Engineering, Hanyang University](https://ee.hanyang.ac.kr/)
 :::

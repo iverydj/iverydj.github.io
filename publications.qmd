@@ -1,18 +1,10 @@
-﻿---
+---
 title: "Publications"
 toc: false
 ---
 
-::: {.section-block}
-## Notes {.section-title}
-
-- Source file: `data/publications.md`
-- Recommended line style: Author list, "Title," *Journal*, (Year), DOI link
-- Author contribution markers are preserved exactly as entered in the source file
-:::
-
 ::: {.section-block .pub-list}
-## Full List {.section-title}
 
 {{< include data/publications.md >}}
+
 :::

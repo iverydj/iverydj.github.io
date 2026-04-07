@@ -1,4 +1,4 @@
-﻿project:
+project:
   type: website
   output-dir: docs
   render:
@@ -21,10 +21,9 @@ website:
         text: Publications
     right:
       - href: assets/CV.pdf
-        text: "2-page CV (PDF)"
+        text: CV
   page-footer:
-    left: "Dong-Joon Yi"
-    right: "Defect spectroscopy | Explainable AI | Device physics"
+    left: "© Dong-Joon Yi"
 
 format:
   html:

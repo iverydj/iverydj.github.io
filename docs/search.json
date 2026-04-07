@@ -4,21 +4,7 @@
     "href": "publications.html",
     "title": "Publications",
     "section": "",
-    "text": "Source file: data/publications.md\nRecommended line style: Author list, “Title,” Journal, (Year), DOI link\nAuthor contribution markers are preserved exactly as entered in the source file"
-  },
-  {
-    "objectID": "publications.html#notes",
-    "href": "publications.html#notes",
-    "title": "Publications",
-    "section": "",
-    "text": "Source file: data/publications.md\nRecommended line style: Author list, “Title,” Journal, (Year), DOI link\nAuthor contribution markers are preserved exactly as entered in the source file"
-  },
-  {
-    "objectID": "publications.html#full-list",
-    "href": "publications.html#full-list",
-    "title": "Publications",
-    "section": "Full List",
-    "text": "Full List\n\nT. G. Weldemhret‡, D.-J. Yi‡, K. Jeong, K.-B. Chung, “Evaluation of the high mobility and stability of InGaZnO/InSnZnO bilayer thin-film transistors via quantitative defect analysis”, Surfaces and Interfaces, (2025), DOI:10.1016/j.surfin.2025.106870\nS. Bang‡, C. Lee‡, D. Choi, D. Y. Park, D. H. Kim, D. Lee, D.-J. Yi, J. Song, S. J. Yun, D.-W. Kim, M. S. Jeong, “High Performance P-Channel Transistor Based on Amorphous Tellurium Trioxide”, Advanced Materials, (2025), DOI:10.1002/adma.202504948\nD. H. Kim,† J. Yoo, H. C. Suh, Y. S. Won, S. H. Kim, D.-J. Yi, B. G. Jeong, C. Lee, D. Lee, K. K. Kim, S. M. Lee, E. K. Koh, M. S. Jeong, “Anomalous phonon softening with inherent strain in wrinkled monolayer WSe2”, Advanced Materials, (2025), DOI:10.1002/adma.202419414\nK. Jeong†, D. Y. Shin, J.-M. Park, D.-J. Yi, H. Hong, H.-S. Kim, K.-B. Chung, “Noncontact Monitoring and Imaging of the Operation and Performance of Thin-Film Field-Effect Transistors”, Advanced Science, (2025), DOI:10.1002/advs.202407923\nA. Song†, M. J. Kim, D.-J. Yi, S. Kwon, D.-W. Kim, S. Kim, J.-H. Bae, S. Park, Y. S. Rim, K.-S. Jeong, K.-B. and Chung, “Control of sensitivity in metal oxide electrolyte gated field-effect transistor-based glucose sensor by electronegativity modulation”, Scientific Reports, (2024), DOI:10.1038/s41598-024-76885-x\nH. Hong†, M. J. Kim, D.-J. Yi, D. Y. Shin, Y.-K. Moon, K.-S. Son, J. H. Lim, K. Jeong, K.-B. Chung, “Quantitative dynamic evolution of unoccupied states in hydrogen diffused InGaZnSnO TFT under positive bias temperature stress”, ACS Applied Electronic Materials, (2024), DOI:10.1021/acsaelm.4c01430\nH. Hong†, D.-J. Yi, Y.-K. Moon, K.-S. Son, J. H. Lim, K. Jeong, K.-B. Chung, “Double gated a-InGaZnO TFT properties based on quantitative defect analysis and computational modeling”, IEEE Transactions on Electron Devices, (2024), DOI:10.1109/TED.2023.3347503\nH. Hong†, M. J. Kim, D.-J. Yi, Y.-K. Moon, K.-S. Son, J. H. Lim, K. Jeong, K.-B. Chung, “Quantitative analysis of defect states in InGaZnO within 2 eV below the conduction band via photo-induced current transient spectroscopy”, Scientific Reports, (2023), DOI:10.1038/s41598-023-40162-0\n\n[Patents]\n\nK. CHUNG, K. JEONG, D. Yi, “Device array analysis method and analysis apparatus therefor”, US Patents, (2025)"
+    "text": "T. G. Weldemhret‡, D.-J. Yi‡, K. Jeong, K.-B. Chung, “Evaluation of the high mobility and stability of InGaZnO/InSnZnO bilayer thin-film transistors via quantitative defect analysis”, Surfaces and Interfaces, (2025), DOI:10.1016/j.surfin.2025.106870\nS. Bang‡, C. Lee‡, D. Choi, D. Y. Park, D. H. Kim, D. Lee, D.-J. Yi, J. Song, S. J. Yun, D.-W. Kim, M. S. Jeong, “High Performance P-Channel Transistor Based on Amorphous Tellurium Trioxide”, Advanced Materials, (2025), DOI:10.1002/adma.202504948\nD. H. Kim,† J. Yoo, H. C. Suh, Y. S. Won, S. H. Kim, D.-J. Yi, B. G. Jeong, C. Lee, D. Lee, K. K. Kim, S. M. Lee, E. K. Koh, M. S. Jeong, “Anomalous phonon softening with inherent strain in wrinkled monolayer WSe2”, Advanced Materials, (2025), DOI:10.1002/adma.202419414\nK. Jeong†, D. Y. Shin, J.-M. Park, D.-J. Yi, H. Hong, H.-S. Kim, K.-B. Chung, “Noncontact Monitoring and Imaging of the Operation and Performance of Thin-Film Field-Effect Transistors”, Advanced Science, (2025), DOI:10.1002/advs.202407923\nA. Song†, M. J. Kim, D.-J. Yi, S. Kwon, D.-W. Kim, S. Kim, J.-H. Bae, S. Park, Y. S. Rim, K.-S. Jeong, K.-B. and Chung, “Control of sensitivity in metal oxide electrolyte gated field-effect transistor-based glucose sensor by electronegativity modulation”, Scientific Reports, (2024), DOI:10.1038/s41598-024-76885-x\nH. Hong†, M. J. Kim, D.-J. Yi, D. Y. Shin, Y.-K. Moon, K.-S. Son, J. H. Lim, K. Jeong, K.-B. Chung, “Quantitative dynamic evolution of unoccupied states in hydrogen diffused InGaZnSnO TFT under positive bias temperature stress”, ACS Applied Electronic Materials, (2024), DOI:10.1021/acsaelm.4c01430\nH. Hong†, D.-J. Yi, Y.-K. Moon, K.-S. Son, J. H. Lim, K. Jeong, K.-B. Chung, “Double gated a-InGaZnO TFT properties based on quantitative defect analysis and computational modeling”, IEEE Transactions on Electron Devices, (2024), DOI:10.1109/TED.2023.3347503\nH. Hong†, M. J. Kim, D.-J. Yi, Y.-K. Moon, K.-S. Son, J. H. Lim, K. Jeong, K.-B. Chung, “Quantitative analysis of defect states in InGaZnO within 2 eV below the conduction band via photo-induced current transient spectroscopy”, Scientific Reports, (2023), DOI:10.1038/s41598-023-40162-0\n\n[Patents]\n\nK. CHUNG, K. JEONG, D. Yi, “Device array analysis method and analysis apparatus therefor”, US Patents, (2025)"
   },
   {
     "objectID": "research.html",
@@ -53,21 +39,14 @@
     "href": "index.html",
     "title": "Home",
     "section": "",
-    "text": "Ph.D. Candidate\n\n\n\n\nI investigate defect-physics based on spectroscopy and explainable AI for Advanced electronic and photonic devices.\n\n\nResearch Publications 2-page CV"
-  },
-  {
-    "objectID": "index.html#current-position",
-    "href": "index.html#current-position",
-    "title": "Home",
-    "section": "Current Position",
-    "text": "Current Position\n\nPh.D. candidate, Semiconductor Nanophotonics Laboratory (SNLab), Hanyang University\nAdvisor: Prof. Mun Seok Jeong\nFocus: Defect physics, interpretable data analysis, and advanced device structures"
+    "text": "Ph.D. Candidate · Electronic Engineering · Hanyang University\n\n\n결함 분광학(DLTS, PICTS, Raman/PL)과 설명가능 AI를 결합하여, 차세대 산화물 반도체 및 2D 소재의 결함-소자 특성 관계를 규명합니다. 정수진 교수님의 Semiconductor Nanophotonics Laboratory(SNLab)에서 연구하고 있습니다.\n\n\nResearch Publications Career CV (PDF)"
   },
   {
     "objectID": "index.html#contact",
     "href": "index.html#contact",
     "title": "Home",
     "section": "Contact",
-    "text": "Contact\n\nPersonal Email: iver.ydj@gmail.com\nAcademic Email: iverydj@hanyang.ac.kr\nDepartment: Department of Electronic Engineering, Hanyang University\nGoogle Scholar: https://scholar.google.co.kr/citations?user=MZE2mWsAAAAJ&hl=ko&oi=ao\nFull CV (Google Docs): https://docs.google.com/document/d/1lrk7ocGFDo48wUvRRMkrh3YgPosDd4Yo/edit?usp=sharing&ouid=104466598745421942872&rtpof=true&sd=true"
+    "text": "Contact\n\niver.ydj@gmail.com\niverydj@hanyang.ac.kr\nGoogle Scholar\nDept. of Electronic Engineering, Hanyang University"
   },
   {
     "objectID": "career.html",
