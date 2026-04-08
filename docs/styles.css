@@ -354,24 +354,87 @@ main a:hover {
   text-align: right;
 }
 
-/* journal name */
+/* ── Publication structured colors ── */
+
+/* note line */
+.pub-note {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--green);
+  margin-bottom: 0.5rem;
+}
+
+/* styled list */
+.pub-styled {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  counter-reset: pub;
+}
+
+.pub-styled li {
+  counter-increment: pub;
+  position: relative;
+  padding: 0.7rem 0 0.7rem 2.2rem;
+  border-bottom: 1px solid var(--border-light);
+  font-size: 13.5px;
+  line-height: 1.8;
+  margin-bottom: 0;
+}
+
+.pub-styled li:last-child { border-bottom: none; }
+
+.pub-styled li::before {
+  content: counter(pub);
+  position: absolute;
+  left: 0;
+  top: 0.7rem;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-3);
+  width: 1.5rem;
+  text-align: right;
+}
+
+/* patent list: separate counter */
+.pub-patents { counter-reset: pat; }
+.pub-patents li { counter-increment: pat; }
+.pub-patents li::before { content: counter(pat); }
+
+/* authors: default text */
+.pub-authors { color: var(--text); }
+
+/* my name highlight */
+.pub-authors u { text-decoration: none; }
+.pub-authors u b { color: var(--yellow); font-weight: 700; }
+
+/* title in quotes: cyan */
+.pub-title { color: var(--cyan); }
+
+/* journal name: orange */
+.pub-journal { color: var(--orange); font-style: italic; }
+
+/* year: purple */
+.pub-year { color: var(--purple); font-weight: 500; }
+
+/* DOI: green link */
+.pub-doi a { color: var(--light-green); font-family: var(--font-mono); font-size: 12px; }
+.pub-doi a:hover { color: #fff; }
+
+/* patent header */
+.pub-patent-header {
+  color: var(--purple);
+  font-style: italic;
+  font-weight: 600;
+  margin-top: 1.5rem;
+  margin-bottom: 0.3rem;
+}
+
+/* legacy pub-list overrides */
 .pub-list em { font-style: italic; color: var(--orange); }
-
-/* author name highlight */
-.pub-list u { color: var(--yellow); text-decoration: none; }
+.pub-list u { text-decoration: none; }
 .pub-list u strong { color: var(--yellow); }
-
-/* DOI links */
-.pub-list a { color: var(--light-green); }
-.pub-list a:hover { color: #fff; }
-
-/* year / parenthetical */
-.pub-list li { color: var(--text); }
-
-/* title text in quotes - handled by default text color */
-
-/* patent section header */
-.pub-list p em { color: var(--purple); font-style: italic; }
 
 /* ── Footer ── */
 footer {
