@@ -1,9 +1,9 @@
-<p class="pub-note">† First, ‡ Co-first, * Corresponding</p>
+<p class="pub-note">† First author, * Corresponding author</p>
 
 <ul class="pub-styled">
 
 <li>
-<span class="pub-authors">T. G. Weldemhret‡, <u><b>D.-J. Yi‡</b></u>, K. Jeong, K.-B. Chung*</span>
+<span class="pub-authors">T. G. Weldemhret†, <u><b>D.-J. Yi†</b></u>, K. Jeong, K.-B. Chung*</span>
 <span class="pub-title">"Evaluation of the high mobility and stability of InGaZnO/InSnZnO bilayer thin-film transistors via quantitative defect analysis"</span>
 <span class="pub-journal">Surfaces and Interfaces</span>
 <span class="pub-year">(2025)</span>
@@ -11,7 +11,7 @@
 </li>
 
 <li>
-<span class="pub-authors">S. Bang‡, C. Lee‡, D. Choi, D. Y. Park, D. H. Kim, D. Lee, <u><b>D.-J. Yi</b></u>, J. Song, S. J. Yun, D.-W. Kim*, M. S. Jeong*</span>
+<span class="pub-authors">S. Bang†, C. Lee†, D. Choi, D. Y. Park, D. H. Kim, D. Lee, <u><b>D.-J. Yi</b></u>, J. Song, S. J. Yun, D.-W. Kim*, M. S. Jeong*</span>
 <span class="pub-title">"High Performance P-Channel Transistor Based on Amorphous Tellurium Trioxide"</span>
 <span class="pub-journal">Advanced Materials</span>
 <span class="pub-year">(2025)</span>
