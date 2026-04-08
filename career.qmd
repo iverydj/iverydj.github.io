@@ -8,7 +8,7 @@ toc: true
 
 <p class="edu-entry">
 <span class="edu-degree">Ph.D. candidate in Electronic Engineering</span> — <span class="edu-school">Hanyang University</span>, Seoul<br>
-<span class="edu-detail">GPA 4.3 / 4.5 · Mar 2024 – present (Apr 2026)</span><br>
+<span class="edu-detail">GPA 4.3 / 4.5 · Mar 2024 – present</span><br>
 <span class="edu-lab">Semiconductor Nanophotonics Laboratory</span><br>
 <span class="edu-advisor">Advisor: Prof. Mun Seok Jeong</span>
 </p>
