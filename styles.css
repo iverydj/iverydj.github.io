@@ -421,16 +421,16 @@ main a:hover {
 
 /* my name highlight */
 .pub-authors u { text-decoration: none; }
-.pub-authors u b { color: var(--purple); font-weight: 700; }
+.pub-authors u b { color: var(--yellow); font-weight: 700; }
 
 /* title in quotes: cyan */
-.pub-title { color: var(--cyan); }
+.pub-title { color: var(--light-blue); }
 
 /* journal name: orange */
 .pub-journal { color: var(--orange); font-style: italic; }
 
 /* year: purple */
-.pub-year { color: var(--yellow); font-weight: 500; }
+.pub-year { color: var(--purple); font-weight: 500; }
 
 /* DOI: green link */
 .pub-doi a { color: var(--light-green); font-family: var(--font-mono); font-size: 12px; }
