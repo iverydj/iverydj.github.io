@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>research – Dong-Joon Yi</title>
+<title>Research – Dong-Joon Yi</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -71,7 +71,7 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-fixed fullcontent">
+<body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -104,10 +104,6 @@ ul.task-list li input[type="checkbox"] {
     <a class="nav-link" href="./publications.html"> 
 <span class="menu-text">Publications</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./cv.html"> 
-<span class="menu-text">Full CV</span></a>
-  </li>  
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
@@ -119,7 +115,9 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
+    </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
@@ -142,86 +140,36 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>﻿## Research Focus</p>
-<p>My research centers on quantitative defect and interface analysis in next-generation solid-state materials, especially oxide semiconductors and two-dimensional (2D) systems. I connect material-level evidence to device-level behavior through integrated measurement, modeling, and interpretation workflows.</p>
-<p>The research strategy combines:</p>
-<ol type="1">
-<li>Defect-resolved electrical and optical spectroscopy</li>
-<li>Nanoscale spectroscopic mapping</li>
-<li>Device fabrication and characterization</li>
-<li>Explainable AI for physically interpretable experimental analysis</li>
-</ol>
-<div class="figure-frame">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="data/research_total.png" class="img-fluid figure-img" alt="Integrated workflow connecting spectroscopy, XAI, and device engineering."></p>
-<figcaption>Overview of the integrated workflow from defect spectroscopy to device-level interpretation.</figcaption>
-</figure>
-</div>
-<p class="caption">
-Integrated workflow: defect-resolved measurements, interpretable analytics, and translation to device design.
-</p>
-</div>
-<section id="defect-and-optical-spectroscopy" class="level2 section-title section-block">
-<h2 class="section-title anchored" data-anchor-id="defect-and-optical-spectroscopy">1. Defect and Optical Spectroscopy</h2>
-<p>Defects in oxide and 2D materials affect mobility, threshold behavior, stability, and optical response. The key objective is not only to detect defects, but to quantify their energy levels, densities, kinetics, and interfacial roles.</p>
+<div class="section-block">
+<p>My research focuses on quantitative defect spectroscopy and experimental data analysis for two-dimensional (2D) materials and oxide semiconductors. I aim to extract physically meaningful parameters from electrical and optical measurements and relate them directly to material properties and device behavior, with an emphasis on interpretability and reproducibility.</p>
+<section id="defect-optical-spectroscopy" class="level3">
+<h3 class="anchored" data-anchor-id="defect-optical-spectroscopy">1. Defect &amp; Optical Spectroscopy</h3>
 <ul>
-<li><strong>DLTS and PICTS</strong> are used to extract deep-level parameters and correlate them with transistor metrics.</li>
-<li><strong>Raman and photoluminescence spectroscopy</strong> track strain, doping, phase behavior, and defect-induced changes.</li>
-<li><strong>XPS and spectroscopic ellipsometry</strong> link chemistry and optical constants to electrical performance trends.</li>
+<li>Quantitative analysis of intrinsic and extrinsic defects in 2D materials and oxide semiconductors.</li>
+<li>Extraction of defect energy levels, densities, and carrier dynamics using Deep Level Transient Spectroscopy (DLTS) and Photo-Induced Current Transient Spectroscopy (PICTS).</li>
+<li>Raman/Photoluminescence (PL) spectroscopy for probing defect states, doping, strain, and phase transitions.</li>
+<li>X-ray Photoelectron Spectroscopy (XPS) and spectroscopic ellipsometry (SE) for chemical composition, bonding states, and optical properties.</li>
+<li>Tip-Enhanced Raman Spectroscopy (TERS) for spatially resolved defect and structural inhomogeneity analysis beyond the diffraction limit.</li>
 </ul>
-<div class="figure-frame">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="data/research_part1.png" class="img-fluid figure-img" alt="Spectroscopic defect analysis map for oxide and 2D materials."></p>
-<figcaption>Representative spectroscopy and defect-analysis map for material and interface characterization.</figcaption>
-</figure>
-</div>
-<p class="caption">
-Defect characterization pipeline for extracting physically meaningful parameters from spectroscopy.
-</p>
-</div>
 </section>
-<section id="explainable-ai-for-experimental-data" class="level2 section-title section-block">
-<h2 class="section-title anchored" data-anchor-id="explainable-ai-for-experimental-data">2. Explainable AI for Experimental Data</h2>
-<p>Experimental datasets are often small, condition-dependent, and heterogeneous. In this environment, AI should improve interpretation and reproducibility, not only predictive accuracy.</p>
+<section id="explainable-artificial-intelligence-xai-for-experimental-data" class="level3">
+<h3 class="anchored" data-anchor-id="explainable-artificial-intelligence-xai-for-experimental-data">2. Explainable Artificial Intelligence (XAI) for Experimental Data</h3>
 <ul>
-<li>End-to-end pipelines are designed for preprocessing, feature extraction, model training, and robust validation.</li>
-<li>Explainability methods identify decisive spectral or electrical regions and support hypothesis generation.</li>
-<li>Data-limited strategies, including physics-aware preprocessing and stability checks, improve generalization.</li>
+<li>Development of analysis pipelines for spectroscopic and electrical datasets, including preprocessing, feature extraction, modeling, and validation.</li>
+<li>XAI to identify physically relevant data features.</li>
+<li>Connection of AI-extracted features to defect-related mechanisms and material properties under data-limited experimental conditions.</li>
 </ul>
-<div class="figure-frame">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="data/research_part2.png" class="img-fluid figure-img" alt="Explainable AI analysis framework for spectroscopy and electrical measurement data."></p>
-<figcaption>Explainable AI framework for spectroscopic and electrical datasets under experimental constraints.</figcaption>
-</figure>
-</div>
-<p class="caption">
-Interpretability-first AI workflow for extracting reliable and physically grounded evidence from experiments.
-</p>
-</div>
 </section>
-<section id="advanced-electronic-and-photonic-devices" class="level2 section-title section-block">
-<h2 class="section-title anchored" data-anchor-id="advanced-electronic-and-photonic-devices">3. Advanced Electronic and Photonic Devices</h2>
-<p>Material quality alone does not determine device outcomes. Performance and reliability depend on how defects and interfaces are managed in structure and process design.</p>
+<section id="advanced-electronic-photonic-devices" class="level3">
+<h3 class="anchored" data-anchor-id="advanced-electronic-photonic-devices">3. Advanced Electronic &amp; Photonic Devices</h3>
 <ul>
-<li>Device behavior is analyzed through quantitative current-voltage and transient-response interpretation.</li>
-<li>Oxide and 2D platforms are evaluated for logic-oriented and emerging architectures.</li>
-<li>FDTD simulation and inverse-design strategies are used when optical-field engineering is required.</li>
+<li>Fabrication and characterization of electronic devices based on 2D materials and oxide semiconductors, including logic and neuromorphic devices.</li>
+<li>Quantitative analysis of device electrical responses (e.g., I–V characteristics and transient behavior) to identify dominant transport and trapping mechanisms.</li>
+<li>Finite-Difference Time-Domain (FDTD) simulations to evaluate optical responses and electric-field distributions in nano- to micro-scale structures, supporting the design and analysis of photonic components.</li>
 </ul>
-<div class="figure-frame">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="data/research_part3.png" class="img-fluid figure-img" alt="Device-level interpretation and simulation framework based on defect-informed material analysis."></p>
-<figcaption>Device-oriented translation of defect analysis with simulation-assisted design.</figcaption>
-</figure>
-</div>
-<p class="caption">
-Translation from defect-level insight to electronic and photonic device engineering decisions.
-</p>
-</div>
+<p>My work integrates defect-resolved spectroscopy, explainable analysis of experimental data, and device-level characterization to obtain quantitatively grounded insight into solid-state materials. The primary objective is to extract physically meaningful parameters from measurements and connect them directly to material behavior and device performance.</p>
 </section>
+</div>
 
 
 

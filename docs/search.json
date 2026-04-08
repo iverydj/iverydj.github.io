@@ -1,66 +1,45 @@
 [
   {
-    "objectID": "cv.html",
-    "href": "cv.html",
-    "title": "Full CV",
+    "objectID": "publications.html",
+    "href": "publications.html",
+    "title": "Publications",
     "section": "",
-    "text": "Hanyang University, HYU (Seoul, Republic of Korea)\nPh.D. candidate in Electronic Engineering (GPA 4.3/4.5) · Mar 2024 – Aug 2027 (est)\nSemiconductor Nanophotonics Laboratory\nAdvisor: Prof. Mun Seok Jeong\nDongguk University, DGU (Seoul, Republic of Korea)\nM.S. in Solid-state Physics (GPA 4.5/4.5) · Sep 2022 – Feb 2024\nAdvanced Physics on Electromaterial Laboratory\nAdvisor: Prof. Kwun-Bum Chung\nThesis: “Performance Control of InSnZnO/InGaZnO Multi-Channel-Layered Transistors with Defect Analysis of Amorphous Oxide Semiconductors”\nB.S. in Physics (GPA 4.2/4.5) · Mar 2016 – Aug 2022\nMilitary Service in the Republic of Korea · Jun 2019 – Apr 2021\nUndergraduate researcher in Advanced Physics on Electromaterial Laboratory · Jul 2021 – Aug 2022"
+    "text": "† First, ‡ Co-first, * Corresponding\n\n\n\nT. G. Weldemhret‡, D.-J. Yi‡, K. Jeong, K.-B. Chung* “Evaluation of the high mobility and stability of InGaZnO/InSnZnO bilayer thin-film transistors via quantitative defect analysis” Surfaces and Interfaces (2025) DOI:10.1016/j.surfin.2025.106870\n\n\nS. Bang‡, C. Lee‡, D. Choi, D. Y. Park, D. H. Kim, D. Lee, D.-J. Yi, J. Song, S. J. Yun, D.-W. Kim, M. S. Jeong “High Performance P-Channel Transistor Based on Amorphous Tellurium Trioxide” Advanced Materials (2025) DOI:10.1002/adma.202504948\n\n\nD. H. Kim†, J. Yoo, H. C. Suh, Y. S. Won, S. H. Kim, D.-J. Yi, B. G. Jeong, C. Lee, D. Lee, K. K. Kim, S. M. Lee, E. K. Koh, M. S. Jeong* “Anomalous phonon softening with inherent strain in wrinkled monolayer WSe2” Advanced Materials (2025) DOI:10.1002/adma.202419414\n\n\nK. Jeong†, D. Y. Shin, J.-M. Park, D.-J. Yi, H. Hong, H.-S. Kim, K.-B. Chung “Noncontact Monitoring and Imaging of the Operation and Performance of Thin-Film Field-Effect Transistors” Advanced Science (2025) DOI:10.1002/advs.202407923\n\n\nA. Song†, M. J. Kim, D.-J. Yi, S. Kwon, D.-W. Kim, S. Kim, J.-H. Bae, S. Park, Y. S. Rim, K.-S. Jeong, K.-B. Chung* “Control of sensitivity in metal oxide electrolyte gated field-effect transistor-based glucose sensor by electronegativity modulation” Scientific Reports (2024) DOI:10.1038/s41598-024-76885-x\n\n\nH. Hong†, M. J. Kim, D.-J. Yi, D. Y. Shin, Y.-K. Moon, K.-B. Chung* “Quantitative dynamic evolution of unoccupied states in hydrogen diffused InGaZnSnO TFT under positive bias temperature stress” ACS Applied Electronic Materials (2024) DOI:10.1021/acsaelm.4c01430\n\n\nH. Hong†, D.-J. Yi, Y.-K. Moon, K.-S. Son, J. H. Lim, K. Jeong, K.-B. Chung* “Double gated a-InGaZnO TFT properties based on quantitative defect analysis and computational modeling” IEEE Transactions on Electron Devices (2024) DOI:10.1109/TED.2023.3347503\n\n\nH. Hong†, M. J. Kim, D.-J. Yi, Y.-K. Moon, K.-S. Son, J. H. Lim, K. Jeong, K.-B. Chung “Quantitative analysis of defect states in InGaZnO within 2 eV below the conduction band via photo-induced current transient spectroscopy” Scientific Reports (2023) DOI:10.1038/s41598-023-40162-0\n\n\n\n[Patents]\n\n\n\nK.-B. Chung, K. Jeong, D.-J. Yi, (Dongguk University Industry Academy Cooperation Foundation) “Device Array Analysis Method and Analysis Apparatus Therefor” US Patent, 18771046\n\n\nK.-B. Chung, K. Jeong, D.-J. Yi, H. Hong, (Dongguk University Industry Academy Cooperation Foundation) “Method of Confirming Performance of Secondary Battery and Apparatus of Performing the Same” Patent, Republic of Korea, 10-2023-0161220\n\n\nK.-B. Chung, K. Jeong, D.-J. Yi, (Dongguk University Industry Academy Cooperation Foundation) “Analysis Method of Semiconductor Device and Analysis Apparatus for the Method” Patent, Republic of Korea, 10-2024-0049532"
   },
   {
-    "objectID": "cv.html#education-careers",
-    "href": "cv.html#education-careers",
-    "title": "Full CV",
+    "objectID": "research.html",
+    "href": "research.html",
+    "title": "Research",
     "section": "",
-    "text": "Hanyang University, HYU (Seoul, Republic of Korea)\nPh.D. candidate in Electronic Engineering (GPA 4.3/4.5) · Mar 2024 – Aug 2027 (est)\nSemiconductor Nanophotonics Laboratory\nAdvisor: Prof. Mun Seok Jeong\nDongguk University, DGU (Seoul, Republic of Korea)\nM.S. in Solid-state Physics (GPA 4.5/4.5) · Sep 2022 – Feb 2024\nAdvanced Physics on Electromaterial Laboratory\nAdvisor: Prof. Kwun-Bum Chung\nThesis: “Performance Control of InSnZnO/InGaZnO Multi-Channel-Layered Transistors with Defect Analysis of Amorphous Oxide Semiconductors”\nB.S. in Physics (GPA 4.2/4.5) · Mar 2016 – Aug 2022\nMilitary Service in the Republic of Korea · Jun 2019 – Apr 2021\nUndergraduate researcher in Advanced Physics on Electromaterial Laboratory · Jul 2021 – Aug 2022"
+    "text": "My research focuses on quantitative defect spectroscopy and experimental data analysis for two-dimensional (2D) materials and oxide semiconductors. I aim to extract physically meaningful parameters from electrical and optical measurements and relate them directly to material properties and device behavior, with an emphasis on interpretability and reproducibility.\n\n1. Defect & Optical Spectroscopy\n\nQuantitative analysis of intrinsic and extrinsic defects in 2D materials and oxide semiconductors.\nExtraction of defect energy levels, densities, and carrier dynamics using Deep Level Transient Spectroscopy (DLTS) and Photo-Induced Current Transient Spectroscopy (PICTS).\nRaman/Photoluminescence (PL) spectroscopy for probing defect states, doping, strain, and phase transitions.\nX-ray Photoelectron Spectroscopy (XPS) and spectroscopic ellipsometry (SE) for chemical composition, bonding states, and optical properties.\nTip-Enhanced Raman Spectroscopy (TERS) for spatially resolved defect and structural inhomogeneity analysis beyond the diffraction limit.\n\n\n\n2. Explainable Artificial Intelligence (XAI) for Experimental Data\n\nDevelopment of analysis pipelines for spectroscopic and electrical datasets, including preprocessing, feature extraction, modeling, and validation.\nXAI to identify physically relevant data features.\nConnection of AI-extracted features to defect-related mechanisms and material properties under data-limited experimental conditions.\n\n\n\n3. Advanced Electronic & Photonic Devices\n\nFabrication and characterization of electronic devices based on 2D materials and oxide semiconductors, including logic and neuromorphic devices.\nQuantitative analysis of device electrical responses (e.g., I–V characteristics and transient behavior) to identify dominant transport and trapping mechanisms.\nFinite-Difference Time-Domain (FDTD) simulations to evaluate optical responses and electric-field distributions in nano- to micro-scale structures, supporting the design and analysis of photonic components.\n\nMy work integrates defect-resolved spectroscopy, explainable analysis of experimental data, and device-level characterization to obtain quantitatively grounded insight into solid-state materials. The primary objective is to extract physically meaningful parameters from measurements and connect them directly to material behavior and device performance."
   },
   {
-    "objectID": "cv.html#scholarships-awards",
-    "href": "cv.html#scholarships-awards",
-    "title": "Full CV",
-    "section": "Scholarships & Awards",
-    "text": "Scholarships & Awards\n\n\n\n\n\n\n\n\nAward\nAffiliation\nYear\n\n\n\n\nHY-BrainKorea G3 2nd Award\nHanyang University\n2025\n\n\nIC-PBL Graduate Championship 3rd Award\nHanyang University\n2024\n\n\nDongguk Future Talent Scholarship\nDongguk University\n2022, 2023\n\n\nPhysics Department Alumni Scholarship\nDongguk University\n2022, 2023\n\n\nDongguk 1.1.1 Scholarship\nDongguk University\n2021"
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Home",
+    "section": "",
+    "text": "Dong-Joon Yi\n\n\nPh.D. student,\n\n\nDepartment of Electronic Engineering, Hanyang University\n\n\n\n\n\nSemiconductor Nanophotonics Laboratory,\n\n\nDepartment of Physics, Hanyang University, Republic of Korea\n\n\n(Advisor: Prof. Mun Seok Jeong)\n\n\n\n\n\nE-mail : iverydj@hanyang.ac.kr / iver.ydj@gmail.com Mobile : +82 10 4617 6517 Google Scholar : scholar.google.co.kr Full CV : Download (PDF)"
   },
   {
-    "objectID": "cv.html#skills",
-    "href": "cv.html#skills",
-    "title": "Full CV",
-    "section": "Skills",
-    "text": "Skills\n\n\n\n\n\n\n\nCategory\nDetails\n\n\n\n\nSpectroscopy\nOptical spectroscopy (Raman, Photoluminescence), Ellipsometry, Deep-level transient spectroscopy (DLTS), Tip-enhanced nanospectroscopy\n\n\nMachine Learning\nPhysics-based data analysis, Deep learning for experimental data, Explainable Artificial Intelligence (XAI)\n\n\nSimulation\nFinite-Difference Time-Domain (FDTD) simulations, Inverse design with adjoint optimization\n\n\nOthers\nElectrical characterization (I-V, etc), X-ray Photoelectron Spectroscopy (XPS), Photolithography, Sputtering"
-  },
-  {
-    "objectID": "cv.html#research",
-    "href": "cv.html#research",
-    "title": "Full CV",
-    "section": "Research",
-    "text": "Research\nMy research focuses on quantitative defect spectroscopy and experimental data analysis for two-dimensional (2D) materials and oxide semiconductors. I aim to extract physically meaningful parameters from electrical and optical measurements and relate them directly to material properties and device behavior, with an emphasis on interpretability and reproducibility.\n\n1. Defect & Optical Spectroscopy\n\nQuantitative analysis of intrinsic and extrinsic defects in 2D materials and oxide semiconductors.\nExtraction of defect energy levels, densities, and carrier dynamics using Deep Level Transient Spectroscopy (DLTS) and Photo-Induced Current Transient Spectroscopy (PICTS).\nRaman/Photoluminescence (PL) spectroscopy for probing defect states, doping, strain, and phase transitions.\nX-ray Photoelectron Spectroscopy (XPS) and spectroscopic ellipsometry (SE) for chemical composition, bonding states, and optical properties.\nTip-Enhanced Raman Spectroscopy (TERS) for spatially resolved defect and structural inhomogeneity analysis beyond the diffraction limit.\n\n\n\n2. Explainable Artificial Intelligence (XAI) for Experimental Data\n\nDevelopment of analysis pipelines for spectroscopic and electrical datasets, including preprocessing, feature extraction, modeling, and validation.\nXAI to identify physically relevant data features.\nConnection of AI-extracted features to defect-related mechanisms and material properties under data-limited experimental conditions.\n\n\n\n3. Advanced Electronic & Photonic Devices\n\nFabrication and characterization of electronic devices based on 2D materials and oxide semiconductors, including logic and neuromorphic devices.\nQuantitative analysis of device electrical responses (e.g., I–V characteristics and transient behavior) to identify dominant transport and trapping mechanisms.\nFinite-Difference Time-Domain (FDTD) simulations to evaluate optical responses and electric-field distributions in nano- to micro-scale structures, supporting the design and analysis of photonic components.\n\nMy work integrates defect-resolved spectroscopy, explainable analysis of experimental data, and device-level characterization to obtain quantitatively grounded insight into solid-state materials. The primary objective is to extract physically meaningful parameters from measurements and connect them directly to material behavior and device performance."
-  },
-  {
-    "objectID": "cv.html#publications",
-    "href": "cv.html#publications",
-    "title": "Full CV",
-    "section": "Publications",
-    "text": "Publications\n\n† First, ‡ Co-first, * Corresponding\n\n\n\nT. G. Weldemhret‡, D.-J. Yi‡, K. Jeong, K.-B. Chung* “Evaluation of the high mobility and stability of InGaZnO/InSnZnO bilayer thin-film transistors via quantitative defect analysis” Surfaces and Interfaces (2025) DOI:10.1016/j.surfin.2025.106870\n\n\nS. Bang‡, C. Lee‡, D. Choi, D. Y. Park, D. H. Kim, D. Lee, D.-J. Yi, J. Song, S. J. Yun, D.-W. Kim, M. S. Jeong “High Performance P-Channel Transistor Based on Amorphous Tellurium Trioxide” Advanced Materials (2025) DOI:10.1002/adma.202504948\n\n\nD. H. Kim†, J. Yoo, H. C. Suh, Y. S. Won, S. H. Kim, D.-J. Yi, B. G. Jeong, C. Lee, D. Lee, K. K. Kim, S. M. Lee, E. K. Koh, M. S. Jeong* “Anomalous phonon softening with inherent strain in wrinkled monolayer WSe2” Advanced Materials (2025) DOI:10.1002/adma.202419414\n\n\nK. Jeong†, D. Y. Shin, J.-M. Park, D.-J. Yi, H. Hong, H.-S. Kim, K.-B. Chung “Noncontact Monitoring and Imaging of the Operation and Performance of Thin-Film Field-Effect Transistors” Advanced Science (2025) DOI:10.1002/advs.202407923\n\n\nA. Song†, M. J. Kim, D.-J. Yi, S. Kwon, D.-W. Kim, S. Kim, J.-H. Bae, S. Park, Y. S. Rim, K.-S. Jeong, K.-B. Chung* “Control of sensitivity in metal oxide electrolyte gated field-effect transistor-based glucose sensor by electronegativity modulation” Scientific Reports (2024) DOI:10.1038/s41598-024-76885-x\n\n\nH. Hong†, M. J. Kim, D.-J. Yi, D. Y. Shin, Y.-K. Moon, K.-B. Chung* “Quantitative dynamic evolution of unoccupied states in hydrogen diffused InGaZnSnO TFT under positive bias temperature stress” ACS Applied Electronic Materials (2024) DOI:10.1021/acsaelm.4c01430\n\n\nH. Hong†, D.-J. Yi, Y.-K. Moon, K.-S. Son, J. H. Lim, K. Jeong, K.-B. Chung* “Double gated a-InGaZnO TFT properties based on quantitative defect analysis and computational modeling” IEEE Transactions on Electron Devices (2024) DOI:10.1109/TED.2023.3347503\n\n\nH. Hong†, M. J. Kim, D.-J. Yi, Y.-K. Moon, K.-S. Son, J. H. Lim, K. Jeong, K.-B. Chung “Quantitative analysis of defect states in InGaZnO within 2 eV below the conduction band via photo-induced current transient spectroscopy” Scientific Reports (2023) DOI:10.1038/s41598-023-40162-0\n\n\n\n[Patents]\n\n\n\nK.-B. Chung, K. Jeong, D.-J. Yi, (Dongguk University Industry Academy Cooperation Foundation) “Device Array Analysis Method and Analysis Apparatus Therefor” US Patent, 18771046\n\n\nK.-B. Chung, K. Jeong, D.-J. Yi, H. Hong, (Dongguk University Industry Academy Cooperation Foundation) “Method of Confirming Performance of Secondary Battery and Apparatus of Performing the Same” Patent, Republic of Korea, 10-2023-0161220\n\n\nK.-B. Chung, K. Jeong, D.-J. Yi, (Dongguk University Industry Academy Cooperation Foundation) “Analysis Method of Semiconductor Device and Analysis Apparatus for the Method” Patent, Republic of Korea, 10-2024-0049532"
-  },
-  {
-    "objectID": "cv.html#research-fellowship",
-    "href": "cv.html#research-fellowship",
-    "title": "Full CV",
-    "section": "Research Fellowship",
-    "text": "Research Fellowship\n“Deep-Level Transient Spectroscopy and Nanospectroscopy for Ultrafine Defect Analysis Using Explainable AI in 2D Quantum Semiconductors”\nBasic Science Research Program through the National Research Foundation of Korea (NRF)\nFunded by the Ministry of Education · Sep 2025 – Aug 2027 · 50M KRW"
+    "objectID": "index.html#research-interests",
+    "href": "index.html#research-interests",
+    "title": "Home",
+    "section": "Research Interests",
+    "text": "Research Interests\n\nRaman / Photoluminescence Spectroscopy Tip-Enhanced Nanospectroscopy Deep-Level Transient Spectroscopy Explainable AI Finite-Difference Time-Domain Simulation"
   },
   {
     "objectID": "career.html",
     "href": "career.html",
     "title": "Career",
     "section": "",
-    "text": "Ph.D. candidate in Electronic Engineering — Hanyang University, Seoul\nGPA 4.3 / 4.5 · Mar 2024 – Aug 2027 (expected)\nSemiconductor Nanophotonics Laboratory\nAdvisor: Prof. Mun Seok Jeong\nM.S. in Solid-state Physics — Dongguk University, Seoul\nGPA 4.5 / 4.5 · Sep 2022 – Feb 2024\nAdvanced Physics on Electromaterial Laboratory\nAdvisor: Prof. Kwun-Bum Chung\nThesis: “Performance Control of InSnZnO/InGaZnO Multi-Channel-Layered Transistors with Defect Analysis of Amorphous Oxide Semiconductors”\nB.S. in Physics — Dongguk University, Seoul\nGPA 4.2 / 4.5 · Mar 2016 – Aug 2022\nUndergraduate researcher, APEL · Jul 2021 – Aug 2022\nMilitary Service in the Republic of Korea · Jun 2019 – Apr 2021"
+    "text": "Ph.D. candidate in Electronic Engineering — Hanyang University, Seoul\nGPA 4.3 / 4.5 · Mar 2024 – present(Apr 2026)\nSemiconductor Nanophotonics Laboratory\nAdvisor: Prof. Mun Seok Jeong\nM.S. in Solid-state Physics — Dongguk University, Seoul\nGPA 4.5 / 4.5 · Sep 2022 – Feb 2024\nAdvanced Physics on Electromaterial Laboratory\nAdvisor: Prof. Kwun-Bum Chung\nThesis: “Performance Control of InSnZnO/InGaZnO Multi-Channel-Layered Transistors with Defect Analysis of Amorphous Oxide Semiconductors”\nB.S. in Physics — Dongguk University, Seoul\nGPA 4.2 / 4.5 · Mar 2016 – Aug 2022\nUndergraduate researcher, APEL · Jul 2021 – Aug 2022"
   },
   {
     "objectID": "career.html#education",
     "href": "career.html#education",
     "title": "Career",
     "section": "",
-    "text": "Ph.D. candidate in Electronic Engineering — Hanyang University, Seoul\nGPA 4.3 / 4.5 · Mar 2024 – Aug 2027 (expected)\nSemiconductor Nanophotonics Laboratory\nAdvisor: Prof. Mun Seok Jeong\nM.S. in Solid-state Physics — Dongguk University, Seoul\nGPA 4.5 / 4.5 · Sep 2022 – Feb 2024\nAdvanced Physics on Electromaterial Laboratory\nAdvisor: Prof. Kwun-Bum Chung\nThesis: “Performance Control of InSnZnO/InGaZnO Multi-Channel-Layered Transistors with Defect Analysis of Amorphous Oxide Semiconductors”\nB.S. in Physics — Dongguk University, Seoul\nGPA 4.2 / 4.5 · Mar 2016 – Aug 2022\nUndergraduate researcher, APEL · Jul 2021 – Aug 2022\nMilitary Service in the Republic of Korea · Jun 2019 – Apr 2021"
+    "text": "Ph.D. candidate in Electronic Engineering — Hanyang University, Seoul\nGPA 4.3 / 4.5 · Mar 2024 – present(Apr 2026)\nSemiconductor Nanophotonics Laboratory\nAdvisor: Prof. Mun Seok Jeong\nM.S. in Solid-state Physics — Dongguk University, Seoul\nGPA 4.5 / 4.5 · Sep 2022 – Feb 2024\nAdvanced Physics on Electromaterial Laboratory\nAdvisor: Prof. Kwun-Bum Chung\nThesis: “Performance Control of InSnZnO/InGaZnO Multi-Channel-Layered Transistors with Defect Analysis of Amorphous Oxide Semiconductors”\nB.S. in Physics — Dongguk University, Seoul\nGPA 4.2 / 4.5 · Mar 2016 – Aug 2022\nUndergraduate researcher, APEL · Jul 2021 – Aug 2022"
   },
   {
     "objectID": "career.html#research-fellowship",
@@ -75,54 +54,5 @@
     "title": "Career",
     "section": "Skills",
     "text": "Skills\n\n\n\n\n\n\n\nCategory\nDetails\n\n\n\n\nSpectroscopy\nRaman, Photoluminescence, Ellipsometry, DLTS, Tip-enhanced nanospectroscopy\n\n\nMachine Learning\nPhysics-based data analysis, Deep learning for experimental data, Explainable AI (XAI)\n\n\nSimulation\nFDTD simulations, Inverse design with adjoint optimization\n\n\nOthers\nElectrical characterization (I-V, etc), XPS, Photolithography, Sputtering"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Home",
-    "section": "",
-    "text": "Dong-Joon Yi\n\n\nPh.D. student,\n\n\nDepartment of Electronic Engineering, Hanyang University\n\n\n\n\n\nSemiconductor Nanophotonics Laboratory,\n\n\nDepartment of Physics, Hanyang University, Republic of Korea\n\n\n(Advisor: Prof. Mun Seok Jeong)\n\n\n\n\n\nE-mail : iverydj@hanyang.ac.kr / iver.ydj@gmail.com Mobile : +82 10 4617 6517 Google Scholar : scholar.google.co.kr"
-  },
-  {
-    "objectID": "index.html#research-interests",
-    "href": "index.html#research-interests",
-    "title": "Home",
-    "section": "Research Interests",
-    "text": "Research Interests\n\nRaman / Photoluminescence Spectroscopy Tip-Enhanced Nanospectroscopy Deep-Level Transient Spectroscopy Explainable AI Finite-Difference Time-Domain Simulation"
-  },
-  {
-    "objectID": "research.html",
-    "href": "research.html",
-    "title": "Research",
-    "section": "",
-    "text": "## Research Focus\nMy research centers on quantitative defect and interface analysis in next-generation solid-state materials, especially oxide semiconductors and two-dimensional (2D) systems. I connect material-level evidence to device-level behavior through integrated measurement, modeling, and interpretation workflows.\nThe research strategy combines:"
-  },
-  {
-    "objectID": "research.html#defect-and-optical-spectroscopy",
-    "href": "research.html#defect-and-optical-spectroscopy",
-    "title": "Research",
-    "section": "1. Defect and Optical Spectroscopy",
-    "text": "1. Defect and Optical Spectroscopy\nDefects in oxide and 2D materials affect mobility, threshold behavior, stability, and optical response. The key objective is not only to detect defects, but to quantify their energy levels, densities, kinetics, and interfacial roles.\n\nDLTS and PICTS are used to extract deep-level parameters and correlate them with transistor metrics.\nRaman and photoluminescence spectroscopy track strain, doping, phase behavior, and defect-induced changes.\nXPS and spectroscopic ellipsometry link chemistry and optical constants to electrical performance trends.\n\n\n\n\n\nRepresentative spectroscopy and defect-analysis map for material and interface characterization.\n\n\n\nDefect characterization pipeline for extracting physically meaningful parameters from spectroscopy."
-  },
-  {
-    "objectID": "research.html#explainable-ai-for-experimental-data",
-    "href": "research.html#explainable-ai-for-experimental-data",
-    "title": "Research",
-    "section": "2. Explainable AI for Experimental Data",
-    "text": "2. Explainable AI for Experimental Data\nExperimental datasets are often small, condition-dependent, and heterogeneous. In this environment, AI should improve interpretation and reproducibility, not only predictive accuracy.\n\nEnd-to-end pipelines are designed for preprocessing, feature extraction, model training, and robust validation.\nExplainability methods identify decisive spectral or electrical regions and support hypothesis generation.\nData-limited strategies, including physics-aware preprocessing and stability checks, improve generalization.\n\n\n\n\n\nExplainable AI framework for spectroscopic and electrical datasets under experimental constraints.\n\n\n\nInterpretability-first AI workflow for extracting reliable and physically grounded evidence from experiments."
-  },
-  {
-    "objectID": "research.html#advanced-electronic-and-photonic-devices",
-    "href": "research.html#advanced-electronic-and-photonic-devices",
-    "title": "Research",
-    "section": "3. Advanced Electronic and Photonic Devices",
-    "text": "3. Advanced Electronic and Photonic Devices\nMaterial quality alone does not determine device outcomes. Performance and reliability depend on how defects and interfaces are managed in structure and process design.\n\nDevice behavior is analyzed through quantitative current-voltage and transient-response interpretation.\nOxide and 2D platforms are evaluated for logic-oriented and emerging architectures.\nFDTD simulation and inverse-design strategies are used when optical-field engineering is required.\n\n\n\n\n\nDevice-oriented translation of defect analysis with simulation-assisted design.\n\n\n\nTranslation from defect-level insight to electronic and photonic device engineering decisions."
-  },
-  {
-    "objectID": "publications.html",
-    "href": "publications.html",
-    "title": "Publications",
-    "section": "",
-    "text": "† First, ‡ Co-first, * Corresponding\n\n\n\nT. G. Weldemhret‡, D.-J. Yi‡, K. Jeong, K.-B. Chung* “Evaluation of the high mobility and stability of InGaZnO/InSnZnO bilayer thin-film transistors via quantitative defect analysis” Surfaces and Interfaces (2025) DOI:10.1016/j.surfin.2025.106870\n\n\nS. Bang‡, C. Lee‡, D. Choi, D. Y. Park, D. H. Kim, D. Lee, D.-J. Yi, J. Song, S. J. Yun, D.-W. Kim, M. S. Jeong “High Performance P-Channel Transistor Based on Amorphous Tellurium Trioxide” Advanced Materials (2025) DOI:10.1002/adma.202504948\n\n\nD. H. Kim†, J. Yoo, H. C. Suh, Y. S. Won, S. H. Kim, D.-J. Yi, B. G. Jeong, C. Lee, D. Lee, K. K. Kim, S. M. Lee, E. K. Koh, M. S. Jeong* “Anomalous phonon softening with inherent strain in wrinkled monolayer WSe2” Advanced Materials (2025) DOI:10.1002/adma.202419414\n\n\nK. Jeong†, D. Y. Shin, J.-M. Park, D.-J. Yi, H. Hong, H.-S. Kim, K.-B. Chung “Noncontact Monitoring and Imaging of the Operation and Performance of Thin-Film Field-Effect Transistors” Advanced Science (2025) DOI:10.1002/advs.202407923\n\n\nA. Song†, M. J. Kim, D.-J. Yi, S. Kwon, D.-W. Kim, S. Kim, J.-H. Bae, S. Park, Y. S. Rim, K.-S. Jeong, K.-B. Chung* “Control of sensitivity in metal oxide electrolyte gated field-effect transistor-based glucose sensor by electronegativity modulation” Scientific Reports (2024) DOI:10.1038/s41598-024-76885-x\n\n\nH. Hong†, M. J. Kim, D.-J. Yi, D. Y. Shin, Y.-K. Moon, K.-B. Chung* “Quantitative dynamic evolution of unoccupied states in hydrogen diffused InGaZnSnO TFT under positive bias temperature stress” ACS Applied Electronic Materials (2024) DOI:10.1021/acsaelm.4c01430\n\n\nH. Hong†, D.-J. Yi, Y.-K. Moon, K.-S. Son, J. H. Lim, K. Jeong, K.-B. Chung* “Double gated a-InGaZnO TFT properties based on quantitative defect analysis and computational modeling” IEEE Transactions on Electron Devices (2024) DOI:10.1109/TED.2023.3347503\n\n\nH. Hong†, M. J. Kim, D.-J. Yi, Y.-K. Moon, K.-S. Son, J. H. Lim, K. Jeong, K.-B. Chung “Quantitative analysis of defect states in InGaZnO within 2 eV below the conduction band via photo-induced current transient spectroscopy” Scientific Reports (2023) DOI:10.1038/s41598-023-40162-0\n\n\n\n[Patents]\n\n\n\nK.-B. Chung, K. Jeong, D.-J. Yi, (Dongguk University Industry Academy Cooperation Foundation) “Device Array Analysis Method and Analysis Apparatus Therefor” US Patent, 18771046\n\n\nK.-B. Chung, K. Jeong, D.-J. Yi, H. Hong, (Dongguk University Industry Academy Cooperation Foundation) “Method of Confirming Performance of Secondary Battery and Apparatus of Performing the Same” Patent, Republic of Korea, 10-2023-0161220\n\n\nK.-B. Chung, K. Jeong, D.-J. Yi, (Dongguk University Industry Academy Cooperation Foundation) “Analysis Method of Semiconductor Device and Analysis Apparatus for the Method” Patent, Republic of Korea, 10-2024-0049532"
   }
 ]

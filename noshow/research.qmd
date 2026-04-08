@@ -1,0 +1,6 @@
+﻿---
+title: "Research"
+toc: true
+---
+
+{{< include data/research_section_en.md >}}

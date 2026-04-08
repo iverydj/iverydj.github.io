@@ -19,7 +19,8 @@ toc: false
 <p class="hero-contact">
   <span class="contact-label">E-mail</span> : <a href="mailto:iverydj@hanyang.ac.kr">iverydj@hanyang.ac.kr</a> / <a href="mailto:iver.ydj@gmail.com">iver.ydj@gmail.com</a><br>
   <span class="contact-label">Mobile</span> : +82 10 4617 6517<br>
-  <span class="contact-label">Google Scholar</span> : <a href="https://scholar.google.co.kr/citations?user=MZE2mWsAAAAJ&hl=ko&oi=ao">scholar.google.co.kr</a>
+  <span class="contact-label">Google Scholar</span> : <a href="https://scholar.google.co.kr/citations?user=MZE2mWsAAAAJ&hl=ko&oi=ao">scholar.google.co.kr</a><br>
+  <span class="contact-label">Full CV</span> : <a href="assets/CV.pdf" download>Download (PDF)</a>
 </p>
 :::
 

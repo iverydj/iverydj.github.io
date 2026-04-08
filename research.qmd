@@ -1,6 +1,32 @@
-﻿---
+---
 title: "Research"
 toc: true
 ---
 
-{{< include data/research_section_en.md >}}
+::: {.section-block}
+
+My research focuses on quantitative defect spectroscopy and experimental data analysis for two-dimensional (2D) materials and oxide semiconductors. I aim to extract physically meaningful parameters from electrical and optical measurements and relate them directly to material properties and device behavior, with an emphasis on interpretability and reproducibility.
+
+### 1. Defect & Optical Spectroscopy
+
+- Quantitative analysis of intrinsic and extrinsic defects in 2D materials and oxide semiconductors.
+- Extraction of defect energy levels, densities, and carrier dynamics using Deep Level Transient Spectroscopy (DLTS) and Photo-Induced Current Transient Spectroscopy (PICTS).
+- Raman/Photoluminescence (PL) spectroscopy for probing defect states, doping, strain, and phase transitions.
+- X-ray Photoelectron Spectroscopy (XPS) and spectroscopic ellipsometry (SE) for chemical composition, bonding states, and optical properties.
+- Tip-Enhanced Raman Spectroscopy (TERS) for spatially resolved defect and structural inhomogeneity analysis beyond the diffraction limit.
+
+### 2. Explainable Artificial Intelligence (XAI) for Experimental Data
+
+- Development of analysis pipelines for spectroscopic and electrical datasets, including preprocessing, feature extraction, modeling, and validation.
+- XAI to identify physically relevant data features.
+- Connection of AI-extracted features to defect-related mechanisms and material properties under data-limited experimental conditions.
+
+### 3. Advanced Electronic & Photonic Devices
+
+- Fabrication and characterization of electronic devices based on 2D materials and oxide semiconductors, including logic and neuromorphic devices.
+- Quantitative analysis of device electrical responses (e.g., I–V characteristics and transient behavior) to identify dominant transport and trapping mechanisms.
+- Finite-Difference Time-Domain (FDTD) simulations to evaluate optical responses and electric-field distributions in nano- to micro-scale structures, supporting the design and analysis of photonic components.
+
+My work integrates defect-resolved spectroscopy, explainable analysis of experimental data, and device-level characterization to obtain quantitatively grounded insight into solid-state materials. The primary objective is to extract physically meaningful parameters from measurements and connect them directly to material behavior and device performance.
+
+:::

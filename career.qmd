@@ -7,7 +7,7 @@ toc: true
 ## Education
 
 **Ph.D. candidate in Electronic Engineering** — Hanyang University, Seoul\
-GPA 4.3 / 4.5 · Mar 2024 – Aug 2027 (expected)\
+GPA 4.3 / 4.5 · Mar 2024 – present(Apr 2026)\
 Semiconductor Nanophotonics Laboratory\
 Advisor: Prof. Mun Seok Jeong
 
@@ -20,7 +20,6 @@ Thesis: *"Performance Control of InSnZnO/InGaZnO Multi-Channel-Layered Transisto
 **B.S. in Physics** — Dongguk University, Seoul\
 GPA 4.2 / 4.5 · Mar 2016 – Aug 2022\
 Undergraduate researcher, APEL · Jul 2021 – Aug 2022\
-Military Service in the Republic of Korea · Jun 2019 – Apr 2021
 :::
 
 ::: {.section-block}
