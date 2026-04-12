@@ -28,8 +28,10 @@ toc: false
 ## Research Interests
 
 <div class="research-keywords">
-  <span>Raman / Photoluminescence Spectroscopy</span>
+  <span>Material Science</span>
   <span>Tip-Enhanced Nanospectroscopy</span>
+  <span>Raman / Photoluminescence Spectroscopy</span>
+  <span>AI for Material Science &amp; Physics</span>
   <span>Deep-Level Transient Spectroscopy</span>
   <span>Explainable AI</span>
   <span>Finite-Difference Time-Domain Simulation</span>
