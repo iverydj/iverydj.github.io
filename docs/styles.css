@@ -336,38 +336,6 @@ main a:hover {
   margin-bottom: 1rem;
 }
 
-.pub-list ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  counter-reset: pub;
-}
-
-.pub-list li {
-  counter-increment: pub;
-  position: relative;
-  margin-bottom: 0;
-  padding: 0.7rem 0 0.7rem 2.2rem;
-  border-bottom: 1px solid var(--border-light);
-  font-size: 13.5px;
-  line-height: 1.7;
-}
-
-.pub-list li:last-child { border-bottom: none; }
-
-.pub-list li::before {
-  content: counter(pub);
-  position: absolute;
-  left: 0;
-  top: 0.7rem;
-  font-family: var(--font-mono);
-  font-size: 12px;
-  font-weight: 600;
-  color: var(--text-3);
-  width: 1.5rem;
-  text-align: right;
-}
-
 /* ── Publication structured colors ── */
 
 /* note line */
