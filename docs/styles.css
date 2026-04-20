@@ -378,14 +378,16 @@ main a:hover {
   margin-bottom: 0.5rem;
 }
 
-/* styled list (reversed numbering: bottom = 1) */
+/* styled list (reversed numbering: top = max, bottom = 1) */
 .pub-styled {
   list-style: none;
   margin: 0;
   padding: 0;
+  counter-reset: pub 9; /* (publication count) + 1 = 8 + 1 */
 }
 
 .pub-styled li {
+  counter-increment: pub -1;
   position: relative;
   padding: 0.7rem 0 0.7rem 2.2rem;
   border-bottom: 1px solid var(--border-light);
@@ -397,7 +399,7 @@ main a:hover {
 .pub-styled li:last-child { border-bottom: none; }
 
 .pub-styled li::before {
-  content: counter(list-item);
+  content: counter(pub);
   position: absolute;
   left: 0;
   top: 0.7rem;
@@ -408,6 +410,11 @@ main a:hover {
   width: 1.5rem;
   text-align: right;
 }
+
+/* patent list: separate counter, 3 items */
+.pub-patents { counter-reset: pat 4; }
+.pub-patents li { counter-increment: pat -1; }
+.pub-patents li::before { content: counter(pat); }
 
 /* authors: default text */
 .pub-authors { color: var(--text); }
@@ -428,6 +435,10 @@ main a:hover {
 /* DOI: green link */
 .pub-doi a { color: var(--light-green); font-family: var(--font-mono); font-size: 12px; }
 .pub-doi a:hover { color: #fff; }
+
+/* PDF link */
+.pub-pdf a { color: var(--orange); font-family: var(--font-mono); font-size: 12px; font-weight: 600; }
+.pub-pdf a:hover { color: #fff; }
 
 /* patent header */
 .pub-patent-header {

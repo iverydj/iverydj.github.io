@@ -8,6 +8,7 @@
 <span class="pub-journal">Surfaces and Interfaces</span>
 <span class="pub-year">(2025)</span>
 <span class="pub-doi"><a href="https://doi.org/10.1016/j.surfin.2025.106870">DOI:10.1016/j.surfin.2025.106870</a></span>
+<span class="pub-pdf"><a href="assets/pubs/8.pdf" target="_blank">[PDF]</a></span>
 </li>
 
 <li>
@@ -16,6 +17,7 @@
 <span class="pub-journal">Advanced Materials</span>
 <span class="pub-year">(2025)</span>
 <span class="pub-doi"><a href="https://doi.org/10.1002/adma.202504948">DOI:10.1002/adma.202504948</a></span>
+<span class="pub-pdf"><a href="assets/pubs/7.pdf" target="_blank">[PDF]</a></span>
 </li>
 
 <li>
@@ -24,6 +26,7 @@
 <span class="pub-journal">Advanced Materials</span>
 <span class="pub-year">(2025)</span>
 <span class="pub-doi"><a href="https://doi.org/10.1002/adma.202419414">DOI:10.1002/adma.202419414</a></span>
+<span class="pub-pdf"><a href="assets/pubs/6.pdf" target="_blank">[PDF]</a></span>
 </li>
 
 <li>
@@ -32,6 +35,7 @@
 <span class="pub-journal">Advanced Science</span>
 <span class="pub-year">(2025)</span>
 <span class="pub-doi"><a href="https://doi.org/10.1002/advs.202407923">DOI:10.1002/advs.202407923</a></span>
+<span class="pub-pdf"><a href="assets/pubs/5.pdf" target="_blank">[PDF]</a></span>
 </li>
 
 <li>
@@ -40,6 +44,7 @@
 <span class="pub-journal">Scientific Reports</span>
 <span class="pub-year">(2024)</span>
 <span class="pub-doi"><a href="https://doi.org/10.1038/s41598-024-76885-x">DOI:10.1038/s41598-024-76885-x</a></span>
+<span class="pub-pdf"><a href="assets/pubs/4.pdf" target="_blank">[PDF]</a></span>
 </li>
 
 <li>
@@ -48,6 +53,7 @@
 <span class="pub-journal">ACS Applied Electronic Materials</span>
 <span class="pub-year">(2024)</span>
 <span class="pub-doi"><a href="https://doi.org/10.1021/acsaelm.4c01430">DOI:10.1021/acsaelm.4c01430</a></span>
+<span class="pub-pdf"><a href="assets/pubs/3.pdf" target="_blank">[PDF]</a></span>
 </li>
 
 <li>
@@ -56,6 +62,7 @@
 <span class="pub-journal">IEEE Transactions on Electron Devices</span>
 <span class="pub-year">(2024)</span>
 <span class="pub-doi"><a href="https://doi.org/10.1109/TED.2023.3347503">DOI:10.1109/TED.2023.3347503</a></span>
+<span class="pub-pdf"><a href="assets/pubs/2.pdf" target="_blank">[PDF]</a></span>
 </li>
 
 <li>
@@ -64,6 +71,7 @@
 <span class="pub-journal">Scientific Reports</span>
 <span class="pub-year">(2023)</span>
 <span class="pub-doi"><a href="https://doi.org/10.1038/s41598-023-40162-0">DOI:10.1038/s41598-023-40162-0</a></span>
+<span class="pub-pdf"><a href="assets/pubs/1.pdf" target="_blank">[PDF]</a></span>
 </li>
 
 </ol>
