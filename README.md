@@ -46,8 +46,9 @@ quarto render
 - Edit `data/cv/*.yml`, then run `python3 scripts/build_cv.py` (needs `pyyaml`, `jinja2`) and `quarto render`.
   Career, Research, Publications and CV pages are all generated from these files, so one edit updates every page.
 - Publications: add the new paper at the **top** of `papers:` in `data/cv/publications.yml` and save its PDF as
-  `assets/pubs/<N>.pdf`, where N is the new total count. Numbering is automatic (`<ol reversed>`); the build script
-  aborts if a `pdf:` path does not match the paper's position.
+  `assets/pubs/<n>.pdf` with the next unused number (a stable id, not a display position). Lists are unnumbered;
+  the build script puts papers where D.-J. Yi is first (†) or corresponding (*) author on top, then the rest,
+  newest first within each group.
 - Scholarships/awards and military service (`awards.yml`, `cv_notes`) appear only on the CV page, by design.
 - Update `updated:` in `data/cv/profile.yml` when publishing content changes (it feeds both the Home page and the CV page).
 - Every fact appears in exactly one source file. Do not copy CV data into `.qmd` files; `data/_gen/` and `docs/` are build outputs, not sources.

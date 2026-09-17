@@ -21,7 +21,6 @@ class AppConfig:
     TEMPLATE_DIR = ROOT / "scripts" / "templates"
     OUT_DIR = ROOT / "data" / "_gen"
     ME = "D.-J. Yi"
-    PDF_DIR = "assets/pubs"
     # template file -> generated fragment (included by the .qmd pages)
     OUTPUTS = {
         "index_hero.html.j2": "index_hero.html",
@@ -37,23 +36,22 @@ class AppConfig:
 def load_data(cfg):
     data = {p.stem: yaml.safe_load(p.read_text(encoding="utf-8")) for p in cfg.DATA_DIR.glob("*.yml")}
     pubs = data["publications"]
-    data["papers"] = pubs["papers"]
+    data["papers"] = sort_papers(pubs["papers"], cfg.ME)
     data["patents"] = pubs["patents"]
     return data
 
 
-def check_pdf_numbering(cfg, papers):
-    """Paper k from the bottom is number k; its PDF must be assets/pubs/k.pdf."""
-    total = len(papers)
-    for i, paper in enumerate(papers):
-        number = total - i
+def sort_papers(papers, me):
+    """Papers where I am first (†) or corresponding (*) author come first;
+    newest first within each group (stable, so YAML order breaks year ties)."""
+    lead = re.compile(re.escape(me) + r"[†*]")
+    return sorted(papers, key=lambda p: (not lead.search(p["authors"]), -int(p["year"])))
+
+
+def check_pdfs(cfg, papers):
+    for paper in papers:
         pdf = paper.get("pdf")
-        if pdf is None:
-            continue
-        expected = f"{cfg.PDF_DIR}/{number}.pdf"
-        if pdf != expected:
-            raise ValueError(f"paper #{number} ({paper['title'][:40]}...) has pdf={pdf}, expected {expected}")
-        if not (cfg.ROOT / pdf).is_file():
+        if pdf is not None and not (cfg.ROOT / pdf).is_file():
             raise FileNotFoundError(cfg.ROOT / pdf)
 
 
@@ -94,7 +92,7 @@ def accent_first(title, n=3):
 def main():
     cfg = AppConfig
     data = load_data(cfg)
-    check_pdf_numbering(cfg, data["papers"])
+    check_pdfs(cfg, data["papers"])
 
     env = Environment(
         loader=FileSystemLoader(str(cfg.TEMPLATE_DIR)),

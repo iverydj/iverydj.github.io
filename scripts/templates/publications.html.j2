@@ -1,7 +1,7 @@
 ```{=html}
 <p class="pub-note">† First author, * Corresponding author</p>
 
-<ol class="pub-styled" reversed>
+<ul class="pub-styled">
 {% for p in papers %}
 
 <li>
@@ -19,11 +19,11 @@
 </li>
 {% endfor %}
 
-</ol>
+</ul>
 
 <p class="pub-patent-header">[Patents]</p>
 
-<ol class="pub-styled pub-patents" reversed>
+<ul class="pub-styled pub-patents">
 {% for t in patents %}
 
 <li>
@@ -33,5 +33,5 @@
 </li>
 {% endfor %}
 
-</ol>
+</ul>
 ```

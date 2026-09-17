@@ -354,7 +354,7 @@ main a:hover {
   margin-bottom: 0.5rem;
 }
 
-/* Publication numbering follows the item count via <ol reversed>. */
+/* Unnumbered publication list (order is set by scripts/build_cv.py). */
 .pub-styled {
   list-style: none;
   margin: 0;
@@ -363,7 +363,7 @@ main a:hover {
 
 .pub-styled li {
   position: relative;
-  padding: 0.7rem 0 0.7rem 2.2rem;
+  padding: 0.7rem 0;
   border-bottom: 1px solid var(--border-light);
   font-size: 13.5px;
   line-height: 1.8;
@@ -372,27 +372,7 @@ main a:hover {
 
 .pub-styled li:last-child { border-bottom: none; }
 
-.pub-styled li::before {
-  position: absolute;
-  left: 0;
-  top: 0.7rem;
-  font-family: var(--font-mono);
-  font-size: 12px;
-  font-weight: 600;
-  color: var(--text-3);
-  width: 1.5rem;
-  text-align: right;
-}
-
-ol.pub-styled { list-style: decimal outside; padding-left: 2.2rem; }
-ol.pub-styled li { padding-left: 0.6rem; }
-ol.pub-styled li::before { content: none; }
-ol.pub-styled li::marker {
-  font-family: var(--font-mono);
-  font-size: 12px;
-  font-weight: 600;
-  color: var(--text-3);
-}
+.pub-styled li::before { content: none; }
 
 /* authors: default text */
 .pub-authors { color: var(--text); }
@@ -404,8 +384,8 @@ ol.pub-styled li::marker {
 /* title in quotes: cyan */
 .pub-title { color: var(--cyan); }
 
-ol.pub-styled > li > .pub-authors,
-ol.pub-styled > li > .pub-title { display: block; margin-bottom: 0.25rem; }
+.pub-styled > li > .pub-authors,
+.pub-styled > li > .pub-title { display: block; margin-bottom: 0.25rem; }
 
 /* journal name: orange */
 .pub-journal { color: var(--orange); font-style: italic; }
@@ -531,8 +511,6 @@ tbody tr:hover { background: var(--bg-hover); }
   .contact-row { grid-template-columns: minmax(0, 1fr); }
   .section-block, .home-section { padding: 1rem; }
   .research-keywords span { font-size: 11px; }
-  .pub-styled li { padding-left: 1.5rem; }
-  .pub-styled li::before { width: 1rem; }
   .skills-tbl colgroup { display: none; }
   .skills-tbl, .skills-tbl tbody, .skills-tbl tr, .skills-tbl td { display: block; }
   .skills-tbl tr { border-bottom: 1px solid var(--border-light); }

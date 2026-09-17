@@ -102,20 +102,20 @@
 <section class="cv-section">
 <h2>{{ "Publications" | accent_first }}</h2>
 <p class="cv-note"><a href="{{ profile.scholar }}">Google Scholar</a> <span class="cv-sep">|</span> † First author <span class="cv-sep">|</span> * Corresponding author</p>
-<ol class="cv-pubs" reversed>
+<ul class="cv-pubs">
 {% for p in papers %}
   <li>{{ p.authors | authors('<span class="cv-me">', '</span>') }}, “{{ p.title }},” <span class="cv-pub-venue">{{ p.venue }}</span>{% if p.detail is defined %}, {{ p.detail }}{% endif %} ({{ p.year }}){% if p.doi is defined %}, <a class="cv-doi" href="https://doi.org/{{ p.doi }}">DOI:{{ p.doi }}</a>{% endif %}</li>
 {% endfor %}
-</ol>
+</ul>
 </section>
 
 <section class="cv-section">
 <h2>{{ "Patents" | accent_first }}</h2>
-<ol class="cv-pubs" reversed>
+<ul class="cv-pubs">
 {% for t in patents %}
   <li>{{ t.authors | authors('<span class="cv-me">', '</span>') }}. “{{ t.title }}.” <span class="cv-pub-venue">{{ t.venue }}</span>, {{ t.number }}.</li>
 {% endfor %}
-</ol>
+</ul>
 </section>
 
 <footer class="cv-footer">

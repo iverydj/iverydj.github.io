@@ -1,7 +1,8 @@
-# Newest first. Numbering is automatic (<ol reversed>): the top paper gets the
-# highest number. `pdf` must equal assets/pubs/<number>.pdf; the build script
-# asserts this. Author markers: † first author, * corresponding author.
-# "D.-J. Yi" is highlighted automatically.
+# Enter papers newest first. Display order is computed by scripts/build_cv.py:
+# papers where "D.-J. Yi" carries † (first author) or * (corresponding author)
+# go on top, then the rest; newest first within each group. Lists are unnumbered.
+# `pdf` is any existing file; assets/pubs/<n>.pdf uses n as a stable id only
+# (next new paper takes the next unused number). "D.-J. Yi" is highlighted automatically.
 papers:
   - authors: "S. Bang†, D. Choi†, H. C. Suh†, C. Lee, S. Lim, Y. J. Yu, D. H. Kim, S. H. Kim, J. Yoo, T. Kim, D. Lee, H. J. Park, U. J. Kim, D.-J. Yi, H. Oh*, D.-W. Kim*, M. S. Jeong*"
     title: Ultrawide Charge-Trap Memory Window and Photoinduced Synaptic Behavior in p-Channel Amorphous Oxide Semiconductors
