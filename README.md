@@ -13,7 +13,7 @@ GitHub Pages serves the `main` branch's `/docs` directory.
 - `career.qmd`: Career page
 - `publications.qmd`: Publications page
 - `cv.qmd` + `cv.css`: Curriculum Vitae page (paper-sheet layout with print styles; "Save as PDF" uses the browser's print dialog)
-- `data/cv/*.yml`: **The single source of CV content** (profile, education, awards, skills, grants, research, publications/covers/patents)
+- `data/cv/*.yml`: **The single source of CV content** (profile, education, awards, skills, grants, research, publications/patents)
 - `scripts/build_cv.py` + `scripts/templates/`: Generates the page fragments in `data/_gen/` from `data/cv/*.yml`
 - `data/_gen/`: Generated fragments included by the `.qmd` pages (committed so `quarto render` works without Python; never edit by hand)
 - `data/research_total.png`, `data/research_part1.png`, `data/research_part2.png`, `data/research_part3.png`: Research figures not currently displayed

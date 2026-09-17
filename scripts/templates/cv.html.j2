@@ -107,12 +107,6 @@
   <li>{{ p.authors | authors('<span class="cv-me">', '</span>') }}, “{{ p.title }},” <span class="cv-pub-venue">{{ p.venue }}</span>{% if p.detail is defined %}, {{ p.detail }}{% endif %} ({{ p.year }}){% if p.doi is defined %}, <a class="cv-doi" href="https://doi.org/{{ p.doi }}">DOI:{{ p.doi }}</a>{% endif %}</li>
 {% endfor %}
 </ol>
-<h3 class="cv-subhead">Cover Features</h3>
-<ul class="cv-pubs cv-covers">
-{% for c in covers %}
-  <li>{{ c.authors | authors('<span class="cv-me">', '</span>') }}, “{{ c.title }},” <span class="cv-pub-venue">{{ c.venue }}</span>, {{ c.detail }} ({{ c.year }}), <a class="cv-doi" href="https://doi.org/{{ c.doi }}">DOI:{{ c.doi }}</a></li>
-{% endfor %}
-</ul>
 </section>
 
 <section class="cv-section">

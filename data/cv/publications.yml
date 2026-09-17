@@ -80,14 +80,6 @@ papers:
     doi: 10.1038/s41598-023-40162-0
     pdf: assets/pubs/1.pdf
 
-covers:
-  - authors: "D. H. Kim, J. Yoo, H. C. Suh, Y. S. Won, S. H. Kim, D.-J. Yi, B. G. Jeong, C. Lee, D. Lee, K. K. Kim, S. M. Lee, E. K. Koh, M. S. Jeong"
-    title: Anomalous Phonon Softening with Inherent Strain in Wrinkled Monolayer WSe2 (Adv. Mater. 35/2025)
-    venue: Advanced Materials
-    detail: 37 (35), e70383 — Inside Front Cover
-    year: 2025
-    doi: 10.1002/adma.70383
-
 # Newest first; numbered automatically like papers.
 patents:
   - authors: "K.-B. Chung, K. Jeong, D.-J. Yi, (Dongguk University Industry Academy Cooperation Foundation)"

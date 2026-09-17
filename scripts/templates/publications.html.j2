@@ -21,20 +21,6 @@
 
 </ol>
 
-<p class="pub-patent-header">[Cover Features]</p>
-
-<ul class="pub-covers">
-{% for c in covers %}
-<li>
-<span class="pub-authors">{{ c.authors | authors }}</span>
-<span class="pub-title">“{{ c.title }}”</span>
-<span class="pub-journal">{{ c.venue }}</span> {{ c.detail }}
-<span class="pub-year">({{ c.year }})</span>
-<span class="pub-doi"><a href="https://doi.org/{{ c.doi }}">DOI:{{ c.doi }}</a></span>
-</li>
-{% endfor %}
-</ul>
-
 <p class="pub-patent-header">[Patents]</p>
 
 <ol class="pub-styled pub-patents" reversed>

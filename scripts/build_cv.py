@@ -38,7 +38,6 @@ def load_data(cfg):
     data = {p.stem: yaml.safe_load(p.read_text(encoding="utf-8")) for p in cfg.DATA_DIR.glob("*.yml")}
     pubs = data["publications"]
     data["papers"] = pubs["papers"]
-    data["covers"] = pubs["covers"]
     data["patents"] = pubs["patents"]
     return data
 

@@ -405,9 +405,7 @@ ol.pub-styled li::marker {
 .pub-title { color: var(--cyan); }
 
 ol.pub-styled > li > .pub-authors,
-ol.pub-styled > li > .pub-title,
-.pub-covers > li > .pub-authors,
-.pub-covers > li > .pub-title { display: block; margin-bottom: 0.25rem; }
+ol.pub-styled > li > .pub-title { display: block; margin-bottom: 0.25rem; }
 
 /* journal name: orange */
 .pub-journal { color: var(--orange); font-style: italic; }

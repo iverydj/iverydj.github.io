@@ -129,14 +129,12 @@
 .cv-note { font-size: 9pt; color: var(--cv-gray); margin-bottom: 0.4rem !important; }
 .cv-pubs { margin: 0; padding-left: 1.7rem; font-size: 9.5pt; list-style-position: outside; }
 ol.cv-pubs { list-style-type: decimal; }
-ul.cv-pubs { list-style-type: disc; }
 .cv-pubs li { margin: 0 0 0.3rem; padding: 0 0 0 0.15rem; position: static; font-size: inherit; line-height: 1.4; break-inside: avoid; }
 .cv-pubs li::before { content: none; }
 .cv-pubs li::marker { font-weight: 700; color: var(--cv-text); }
 .cv-me { font-weight: 700; text-decoration: underline; text-decoration-color: var(--cv-accent); text-underline-offset: 2px; }
 .cv-pub-venue { font-style: italic; }
 .cv-doi { font-family: var(--font-mono); font-size: 8.3pt; white-space: nowrap; }
-.cv-subhead { margin-top: 0.7rem !important; }
 
 /* footer */
 .cv-footer {
