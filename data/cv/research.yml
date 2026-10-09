@@ -11,7 +11,7 @@ intro:
   keywords: [Solid Materials, Defect, Spectroscopy, AI for Science]
   statements:
     - >-
-      Study physics in solid-state materials: how defects & quasi-particles affect their electrical and
+      Study physics in solid-state materials: how defects & quasiparticles affect their electrical and
       optical properties.
     - >-
       Analyze defect states and local structure with <span class="rs-tech">transient spectroscopy
@@ -22,7 +22,7 @@ intro:
 
 themes:
   - title: Defect Physics in Solid-State Materials
-    question: How do defects and quasi-particles shape the electrical and optical properties of solid-state materials?
+    question: How do defects and quasiparticles shape the electrical and optical properties of solid-state materials?
     items:
       - status: Published
         refs: [8, 1, 2, 3]

@@ -86,7 +86,7 @@
 <p class="cv-note">First†, Corresponding*</p>
 <ul class="cv-pubs">
 {% for p in papers %}
-  <li id="cv-pub-{{ p.id }}">{{ p.authors | authors('<span class="cv-me">', '</span>') }}, “{{ p.title }},” <span class="cv-pub-venue">{{ p.venue }}</span>{% if p.detail is defined %}, {{ p.detail }}{% endif %} ({{ p.year }}){% if p.doi is defined %}, <a class="cv-doi" href="https://doi.org/{{ p.doi }}">DOI:{{ p.doi }}</a>{% endif %}</li>
+  <li id="cv-pub-{{ p.id }}">{{ p.authors | authors('<span class="cv-me">', '</span>') }}, “{{ p.title | safe }},” <span class="cv-pub-venue">{{ p.venue }}</span>{% if p.detail is defined %}, {{ p.detail }}{% endif %} ({{ p.year }}){% if p.doi is defined %}, <a class="cv-doi" href="https://doi.org/{{ p.doi }}">DOI:{{ p.doi }}</a>{% else %}, <a class="cv-doi" href="{{ profile.homepage }}/{{ p.pdf }}">PDF</a>{% endif %}</li>
 {% endfor %}
 </ul>
 </section>
@@ -104,7 +104,7 @@
 <h2>{{ "Patents" | accent_first }}</h2>
 <ul class="cv-pubs">
 {% for t in patents %}
-  <li>{{ t.authors | authors('<span class="cv-me">', '</span>') }}. “{{ t.title }}.” <span class="cv-pub-venue">{{ t.venue }}</span>, {{ t.number }}.</li>
+  <li>{{ t.authors | authors('<span class="cv-me">', '</span>') }}. “{{ t.title }}.” <span class="cv-pub-venue">{{ t.venue }}</span>, {{ t.number }}. Assignee: {{ t.assignee }}.</li>
 {% endfor %}
 </ul>
 </section>

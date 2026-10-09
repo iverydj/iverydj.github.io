@@ -6,7 +6,7 @@
 
 <li id="pub-{{ p.id }}">
 <span class="pub-authors">{{ p.authors | authors }}</span>
-<span class="pub-title">“{{ p.title }}”</span>
+<span class="pub-title">“{{ p.title | safe }}”</span>
 <span class="pub-journal">{{ p.venue }}</span>{% if p.detail is defined %}, {{ p.detail }}{% endif %}
 
 <span class="pub-year">({{ p.year }})</span>
@@ -37,7 +37,8 @@
 <li>
 <span class="pub-authors">{{ t.authors | authors }}</span>
 <span class="pub-title">“{{ t.title }}”</span>
-<span class="pub-journal">{{ t.venue }}</span>, {{ t.number }}
+<span class="pub-journal">{{ t.venue }}</span>, {{ t.number }}<br>
+<span class="pub-assignee">Assignee: {{ t.assignee }}</span>
 </li>
 {% endfor %}
 
