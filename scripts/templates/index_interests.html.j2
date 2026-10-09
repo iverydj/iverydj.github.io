@@ -1,15 +1,14 @@
 ```{=html}
-<p class="research-summary">{{ research.summary | safe }}</p>
-<div class="interest-groups">
-{% for t in research.themes %}
-  <div class="interest-group">
-    <span class="interest-label">{{ t.title }}</span>
-    <div class="research-keywords">
-{% for k in t.keywords %}
-      <span>{{ k }}</span>
-{% endfor %}
-    </div>
-  </div>
+<h2 class="home-heading">{{ research.home.heading }}</h2>
+<div class="research-keywords">
+{% for k in research.home.keywords %}
+  <span>{{ k }}</span>
 {% endfor %}
 </div>
+<ul class="home-statements">
+{% for s in research.home.statements %}
+  <li>{{ s | safe }}</li>
+{% endfor %}
+</ul>
+<p class="home-more"><a href="research.html">See Research &rarr;</a></p>
 ```

@@ -8,8 +8,6 @@ toc: false
 :::
 
 ::: {.home-section}
-## Research Interests
-
 {{< include data/_gen/index_interests.html >}}
 
 :::

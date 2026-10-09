@@ -260,10 +260,10 @@ main a:hover {
   margin-top: 0.4rem;
 }
 
-.interest-groups { display: grid; gap: 0.55rem; }
-.interest-group { display: grid; grid-template-columns: 18.5rem 1fr; align-items: center; gap: 0.75rem; }
-.interest-label { font-size: 13.5px; font-weight: 600; color: var(--light-blue); }
-.interest-group .research-keywords { margin-top: 0; }
+.home-section .research-keywords { margin: 0.3rem 0 0.9rem; }
+.home-statements li { line-height: 1.7; }
+.home-more { margin: 0.8rem 0 0; font-size: 14px; }
+.home-more a { font-family: var(--font-mono); }
 
 .research-keywords span {
   display: inline-block;
@@ -312,11 +312,10 @@ main a:hover {
 }
 
 /* ── Research page colors ── */
-.research-content .rs-tech, .research-summary .rs-tech { color: var(--cyan); font-weight: 500; }
-.research-content .rs-mat, .research-summary .rs-mat { color: var(--orange); }
-.research-content .rs-method, .research-summary .rs-method { color: var(--purple); font-weight: 500; }
+.research-content .rs-tech, .home-statements .rs-tech { color: var(--cyan); font-weight: 500; }
+.research-content .rs-mat, .home-statements .rs-mat { color: var(--orange); }
+.research-content .rs-method, .home-statements .rs-method { color: var(--purple); font-weight: 500; }
 
-.research-summary { font-size: 14px; line-height: 1.7; margin: 0 0 0.7rem; }
 .research-content .rs-question { color: var(--text-2); font-style: italic; font-size: 14px; margin: 0 0 0.5rem; }
 .rs-status {
   display: inline-block;
@@ -426,6 +425,11 @@ main a:hover {
 /* PDF link */
 .pub-pdf a { color: var(--orange); font-family: var(--font-mono); font-size: 12px; font-weight: 600; }
 .pub-pdf a:hover { color: #fff; }
+
+/* manuscripts in preparation: one compact line each */
+.pub-list ul.pub-compact { margin: 0.2rem 0 0.4rem; }
+.pub-list ul.pub-compact li { padding-left: 0; margin-bottom: 0.2rem; font-size: 12.5px; line-height: 1.6; color: var(--text-2); }
+.pub-list ul.pub-compact li::before { content: none; }
 
 /* patent header */
 .pub-patent-header {
@@ -537,7 +541,6 @@ tbody tr:hover { background: var(--bg-hover); }
   .contact-row { grid-template-columns: minmax(0, 1fr); }
   .section-block, .home-section { padding: 1rem; }
   .research-keywords span { font-size: 11px; }
-  .interest-group { grid-template-columns: 1fr; gap: 0.3rem; }
   .skills-tbl colgroup { display: none; }
   .skills-tbl, .skills-tbl tbody, .skills-tbl tr, .skills-tbl td { display: block; }
   .skills-tbl tr { border-bottom: 1px solid var(--border-light); }
