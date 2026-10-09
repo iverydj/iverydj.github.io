@@ -18,7 +18,19 @@
 
 ::: {.research-theme}
 
-## 2. Interpretable AI for Science
+## 2. Defect and Nanoscale Spectroscopy
+
+<p class="rs-question">How can defect states and local structure be measured, from devices to the nanoscale?</p>
+
+- <span class="rs-tech">Transient spectroscopy (PICTS/DLTS)</span> of defect states in <span class="rs-mat">2D semiconductors</span>. <span class="rs-meta"><span class="rs-status rs-status-ongoing">Ongoing</span></span>
+- Nanoscale mapping of defects and strain in <span class="rs-mat">2D materials</span> by <span class="rs-tech">tip-enhanced spectroscopy</span>. <span class="rs-meta"><span class="rs-status rs-status-ongoing">Ongoing</span></span>
+- <span class="rs-tech">Electromagnetic simulation</span> of near-field enhancement in tip-enhanced spectroscopy. <span class="rs-meta"><span class="rs-status rs-status-published">Published</span> <span class="rs-refs"><a href="https://doi.org/10.1016/j.matdes.2026.116066">Mater. Des. 2026</a></span></span>
+
+:::
+
+::: {.research-theme}
+
+## 3. Interpretable AI for Science
 
 <p class="rs-question">How can machine learning extract physically meaningful information from experimental data?</p>
 
@@ -27,18 +39,6 @@
 - Simulation of analog in-memory learning based on measured synaptic characteristics of <span class="rs-mat">InSe</span> neuromorphic devices. <span class="rs-meta"><span class="rs-status rs-status-in-preparation">In preparation</span></span>
 - Numerical precision and the reliability of <span class="rs-method">scientific machine learning</span>. <span class="rs-meta"><span class="rs-status rs-status-published">Published</span> <span class="rs-refs"><a href="assets/pubs/10.pdf">ICML 2026</a></span></span>
 - Review of the physical interpretability of machine-learning analysis in spectroscopy. <span class="rs-meta"><span class="rs-status rs-status-in-preparation">In preparation</span></span>
-
-:::
-
-::: {.research-theme}
-
-## 3. Defect and Nanoscale Spectroscopy
-
-<p class="rs-question">How can defect states and local structure be measured, from devices to the nanoscale?</p>
-
-- <span class="rs-tech">Transient spectroscopy (PICTS/DLTS)</span> of defect states in <span class="rs-mat">2D semiconductors</span>. <span class="rs-meta"><span class="rs-status rs-status-ongoing">Ongoing</span></span>
-- Nanoscale mapping of defects and strain in <span class="rs-mat">2D materials</span> by <span class="rs-tech">tip-enhanced spectroscopy</span>. <span class="rs-meta"><span class="rs-status rs-status-ongoing">Ongoing</span></span>
-- <span class="rs-tech">Electromagnetic simulation</span> of near-field enhancement in tip-enhanced spectroscopy. <span class="rs-meta"><span class="rs-status rs-status-published">Published</span> <span class="rs-refs"><a href="https://doi.org/10.1016/j.matdes.2026.116066">Mater. Des. 2026</a></span></span>
 
 :::
 
