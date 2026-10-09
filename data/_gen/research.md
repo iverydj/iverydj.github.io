@@ -36,7 +36,7 @@
 
 - <span class="rs-method">Interpretable machine learning</span> relating <span class="rs-tech">Raman</span> spectra to electrical properties. <span class="rs-meta"><span class="rs-status rs-status-in-preparation">In preparation</span></span>
 - <span class="rs-method">Deep-learning</span> noise reduction of experimental spectra that preserves spectral parameters. <span class="rs-meta"><span class="rs-status rs-status-in-preparation">In preparation</span></span>
-- Simulation of analog in-memory learning based on measured synaptic characteristics of <span class="rs-mat">InSe</span> neuromorphic devices. <span class="rs-meta"><span class="rs-status rs-status-in-preparation">In preparation</span></span>
+- Simulation of analog in-memory learning based on measured synaptic characteristics of <span class="rs-mat">ferroelectric InSe</span> neuromorphic devices. <span class="rs-meta"><span class="rs-status rs-status-in-preparation">In preparation</span></span>
 - Numerical precision and the reliability of <span class="rs-method">scientific machine learning</span>. <span class="rs-meta"><span class="rs-status rs-status-published">Published</span> <span class="rs-refs"><a href="assets/pubs/10.pdf">ICML 2026</a></span></span>
 - Review of the physical interpretability of machine-learning analysis in spectroscopy. <span class="rs-meta"><span class="rs-status rs-status-in-preparation">In preparation</span></span>
 
