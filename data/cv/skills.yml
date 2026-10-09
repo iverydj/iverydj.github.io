@@ -1,11 +1,12 @@
 - category: Spectroscopy
-  items: Raman, photoluminescence, tip-enhanced Raman spectroscopy (TERS), spectroscopic ellipsometry, XPS
+  items: Optical spectroscopy (Raman, photoluminescence, ellipsometry), tip-enhanced nanospectroscopy, X-ray photoelectron spectroscopy
+- category: Scanning Probe Microscopy
+  items: Atomic force microscopy (AFM), Kelvin probe force microscopy (KPFM), piezoresponse force microscopy (PFM)
 - category: Defect & Electrical
-  items: DLTS, PICTS, I–V and transient measurements of thin-film and 2D transistors
+  items: Deep-level transient spectroscopy (DLTS), photo-induced current transient spectroscopy (PICTS), I–V
 - category: Machine Learning
-  items: Deep learning for spectroscopic data (PyTorch), explainable AI (SHAP, Sobol sensitivity analysis), physics-preserving denoising
+  items: Deep learning for scientific data, explainable AI
 - category: Simulation
-  items: FDTD (Meep), including a self-developed CUDA-accelerated, multi-GPU fork of Meep
-  link: https://github.com/iverydj/gpmeep-releases
+  items: Finite-difference time-domain (FDTD) simulation, including a self-developed CUDA-accelerated, multi-GPU fork of Meep
 - category: Fabrication
-  items: Photolithography, sputtering
+  items: Photolithography, magnetron sputtering

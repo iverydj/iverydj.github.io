@@ -6,7 +6,7 @@
 </colgroup>
 <tbody>
 {% for s in skills %}
-<tr><td><strong>{{ s.category }}</strong></td><td>{{ s['items'] }}{% if s.link is defined %} (<a href="{{ s.link }}">{{ s.link | replace('https://', '') }}</a>){% endif %}</td></tr>
+<tr><td><strong>{{ s.category }}</strong></td><td>{{ s['items'] }}</td></tr>
 {% endfor %}
 </tbody>
 </table>

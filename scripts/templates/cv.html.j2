@@ -79,7 +79,7 @@
 
 <section class="cv-section">
 <h2>{{ "Publications" | accent_first }}</h2>
-<p class="cv-note"><a href="{{ profile.scholar }}">Google Scholar</a> <span class="cv-sep">|</span> † First author <span class="cv-sep">|</span> * Corresponding author</p>
+<p class="cv-note"><a href="{{ profile.scholar }}">Google Scholar</a> <span class="cv-sep">|</span> First†, Corresponding*</p>
 <ul class="cv-pubs">
 {% for p in papers %}
   <li>{{ p.authors | authors('<span class="cv-me">', '</span>') }}, “{{ p.title }},” <span class="cv-pub-venue">{{ p.venue }}</span>{% if p.detail is defined %}, {{ p.detail }}{% endif %} ({{ p.year }}){% if p.doi is defined %}, <a class="cv-doi" href="https://doi.org/{{ p.doi }}">DOI:{{ p.doi }}</a>{% endif %}</li>
@@ -125,7 +125,7 @@
 <table class="cv-table cv-skills">
 <tbody>
 {% for s in skills %}
-<tr><td class="cv-skill-cat">{{ s.category }}</td><td>{{ s['items'] }}{% if s.link is defined %} (<a href="{{ s.link }}">{{ s.link | replace('https://', '') }}</a>){% endif %}</td></tr>
+<tr><td class="cv-skill-cat">{{ s.category }}</td><td>{{ s['items'] }}</td></tr>
 {% endfor %}
 </tbody>
 </table>
