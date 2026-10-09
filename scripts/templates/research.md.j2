@@ -11,6 +11,14 @@
 
 <p class="rs-question">{{ t.question }}</p>
 
+{% if t.figure is defined %}
+<figure class="rs-figure">
+<img src="{{ t.figure.file }}" alt="{{ t.figure.alt }}" loading="lazy">
+<figcaption>{{ t.figure.caption }} Adapted from {{ [t.figure.ref] | cite }}.</figcaption>
+</figure>
+
+{% endif %}
+
 {% for item in t['items'] %}
 - {{ item.text | safe }}{% if item.refs is defined %} <span class="rs-meta"><span class="rs-refs">{{ item.refs | cite }}</span></span>{% endif +%}
 {% endfor %}
