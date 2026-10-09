@@ -1,18 +1,12 @@
 # Research overview. Revised 2026-10-09: defect physics in solid-state materials is the subject;
-# defect/nanoscale spectroscopy and interpretable AI are the tools (one theme each).
-# `home` feeds the Home page; `summary` and `themes` feed the Research and CV pages.
+# interpretable AI and defect/nanoscale spectroscopy are the tools (one theme each).
+# `intro` feeds the Home page (heading, keywords, statements) and the opening of the Research and
+# CV pages (statements); `themes` feed the Research and CV pages.
 # Inline <span> classes: rs-mat = material, rs-tech = technique, rs-method = method.
 # Item status: Published | In preparation | Ongoing. Unpublished work stays at topic level.
 # `refs`: stable pdf ids (assets/pubs/<n>.pdf) of supporting papers; my author role is computed.
-summary: >-
-  I study defect physics in solid-state materials: how defects affect their electrical and optical
-  properties. I measure defect states and local structure with
-  <span class="rs-tech">transient spectroscopy (PICTS/DLTS)</span>, <span class="rs-tech">Raman
-  spectroscopy</span>, and <span class="rs-tech">tip-enhanced nanospectroscopy</span>, and I develop and
-  apply <span class="rs-method">interpretable machine learning</span> to extract physically meaningful
-  information from experimental data.
-
-home:
+# `role`: optional, for unpublished work where I am not the first author; shown on the CV only.
+intro:
   heading: Experimental physicist with spectroscopy and explainable AI
   keywords: [Solid Materials, Defect, AI for Science, Spectroscopy]
   statements:
@@ -28,17 +22,45 @@ home:
 
 themes:
   - title: Defect Physics in Solid-State Materials
-    question: How do defects affect the electrical properties of solid-state materials and devices?
+    question: How do defects and quasi-particles shape the electrical and optical properties of solid-state materials?
     items:
       - status: Published
         refs: [8, 1, 2, 3]
         text: >-
-          Quantitative analysis of defect states in <span class="rs-mat">oxide semiconductors</span> and their
-          correlation with device characteristics and stability.
+          Defect states in <span class="rs-mat">oxide semiconductors</span> and their relation to device
+          characteristics and stability.
       - status: In preparation
         text: >-
           Defect-mediated control of carrier type in <span class="rs-mat">2D semiconductors</span> for
           complementary devices.
+      - status: Ongoing
+        text: >-
+          Exciton modulation in <span class="rs-mat">2D semiconductors</span> through coupling to
+          <span class="rs-mat">plasmonic nanostructures</span>.
+
+  - title: Interpretable AI for Science
+    question: How can machine learning extract physically meaningful information from experimental data?
+    items:
+      - status: In preparation
+        text: >-
+          <span class="rs-method">Interpretable machine learning</span> relating <span class="rs-tech">Raman</span>
+          spectra to electrical properties.
+      - status: In preparation
+        text: >-
+          <span class="rs-method">Deep-learning</span> noise reduction of experimental spectra that preserves
+          spectral parameters.
+      - status: In preparation
+        role: co-author
+        text: >-
+          Simulation of analog in-memory learning based on measured synaptic characteristics of
+          <span class="rs-mat">InSe</span> neuromorphic devices.
+      - status: Published
+        refs: [10]
+        text: >-
+          Numerical precision and the reliability of <span class="rs-method">scientific machine learning</span>.
+      - status: In preparation
+        text: >-
+          Review of the physical interpretability of machine-learning analysis in spectroscopy.
 
   - title: Defect and Nanoscale Spectroscopy
     question: How can defect states and local structure be measured, from devices to the nanoscale?
@@ -56,27 +78,3 @@ themes:
         text: >-
           <span class="rs-tech">Electromagnetic simulation</span> of near-field enhancement in tip-enhanced
           spectroscopy.
-      - status: Ongoing
-        text: >-
-          Modulation of excitonic properties in <span class="rs-mat">2D semiconductors</span> by coupling to
-          <span class="rs-mat">plasmonic nanostructures</span>.
-
-  - title: Interpretable AI for Science
-    question: How can machine learning extract physically interpretable information from experimental data?
-    items:
-      - status: In preparation
-        text: >-
-          Correlation of <span class="rs-tech">Raman</span> spectra with electrical properties using
-          <span class="rs-method">interpretable machine learning</span>.
-      - status: In preparation
-        text: >-
-          <span class="rs-method">Deep-learning</span>-based noise reduction of experimental spectra with
-          preservation of spectral parameters.
-      - status: Published
-        refs: [10]
-        text: >-
-          Effect of numerical precision on the reliability of <span class="rs-method">scientific machine
-          learning</span>.
-      - status: In preparation
-        text: >-
-          Review of the physical interpretability of machine-learning analysis in spectroscopy.

@@ -20,7 +20,11 @@
 
 <section class="cv-section cv-research">
 <h2>{{ "Research Interests" | accent_first }}</h2>
-<p class="cv-para">{{ research.summary | safe }}</p>
+<ul class="cv-items">
+{% for s in research.intro.statements %}
+  <li>{{ s | safe }}</li>
+{% endfor %}
+</ul>
 </section>
 
 <section class="cv-section">
@@ -71,7 +75,7 @@
 <h3>{{ loop.index }}. {{ t.title }}</h3>
 <ul class="cv-items">
 {% for item in t['items'] %}
-  <li>{{ item.text | safe }} <span class="cv-status">({{ item.status }}{% if item.refs is defined %}: {{ item.refs | cite }}{% endif %})</span></li>
+  <li>{{ item.text | safe }} <span class="cv-status">({{ item.status }}{% if item.role is defined %}, {{ item.role }}{% endif %}{% if item.refs is defined %}: {{ item.refs | cite }}{% endif %})</span></li>
 {% endfor %}
 </ul>
 {% endfor %}
