@@ -1,7 +1,7 @@
 - category: Spectroscopy
   items: Raman, photoluminescence, tip-enhanced Raman spectroscopy (TERS), spectroscopic ellipsometry, XPS
 - category: Defect & Electrical
-  items: PICTS, DLTS, I–V and transient measurements of thin-film and 2D transistors
+  items: DLTS, PICTS, I–V and transient measurements of thin-film and 2D transistors
 - category: Machine Learning
   items: Deep learning for spectroscopic data (PyTorch), explainable AI (SHAP, Sobol sensitivity analysis), physics-preserving denoising
 - category: Simulation

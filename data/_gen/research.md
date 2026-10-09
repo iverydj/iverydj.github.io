@@ -1,4 +1,4 @@
-I study how defects and disorder determine the electrical and optical properties of low-dimensional and oxide semiconductors. I measure defect levels with <span class="rs-tech">transient spectroscopy (PICTS/DLTS)</span>, map disorder and strain with <span class="rs-tech">Raman and tip-enhanced Raman spectroscopy (TERS)</span>, and use <span class="rs-method">interpretable machine learning</span> to extract physical parameters from spectra and relate them to electrical properties.
+I study how defects and disorder determine the electrical and optical properties of solid-state materials. I measure defect levels with <span class="rs-tech">transient spectroscopy (PICTS/DLTS)</span> and map disorder and strain with <span class="rs-tech">Raman and tip-enhanced Raman nanospectroscopy (TERS)</span>. I also use <span class="rs-method">interpretable machine learning</span> to interpret experimental data physically, identifying which measured features reflect defects and disorder and how they connect to material properties.
 
 ### 1. Defects and Dopants in Semiconductor Devices
 
@@ -22,5 +22,5 @@ I study how defects and disorder determine the electrical and optical properties
 
 - Mapping local defects and strain in <span class="rs-mat">2D materials</span> with <span class="rs-tech">tip-enhanced Raman spectroscopy (TERS)</span>. <span class="rs-status rs-status-ongoing">Ongoing</span>
 - <span class="rs-tech">Finite-difference time-domain (FDTD)</span> modeling of gap-mode near-field enhancement to validate machine-learning predictions of TERS nanoprobe geometry. <span class="rs-status rs-status-published">Published</span> <span class="rs-refs"><a href="https://doi.org/10.1016/j.matdes.2026.116066">Mater. Des. 2026</a> (co-author)</span>
-- Modulating excitons in <span class="rs-mat">2D semiconductors</span> through energy transfer and plasmon–exciton coupling in <span class="rs-mat">nanoparticle-on-mirror</span> cavities designed with GPU-accelerated FDTD. <span class="rs-status rs-status-ongoing">Ongoing</span>
+- Modulating excitons in <span class="rs-mat">2D semiconductors</span> through energy transfer and plasmon–exciton coupling in <span class="rs-mat">plasmonic nanostructures</span> designed with GPU-accelerated FDTD. <span class="rs-status rs-status-ongoing">Ongoing</span>
 

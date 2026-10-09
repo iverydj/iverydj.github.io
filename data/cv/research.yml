@@ -5,19 +5,19 @@
 # Item status: Published | In preparation | Ongoing. Unpublished work stays at topic level.
 # `refs`: stable pdf ids (assets/pubs/<n>.pdf) of supporting papers; my author role is computed.
 summary: >-
-  I study how defects and disorder determine the electrical and optical properties of
-  low-dimensional and oxide semiconductors. I measure defect levels with
-  <span class="rs-tech">transient spectroscopy (PICTS/DLTS)</span>, map disorder and strain with
-  <span class="rs-tech">Raman and tip-enhanced Raman spectroscopy (TERS)</span>, and use
-  <span class="rs-method">interpretable machine learning</span> to extract physical parameters from
-  spectra and relate them to electrical properties.
+  I study how defects and disorder determine the electrical and optical properties of solid-state
+  materials. I measure defect levels with <span class="rs-tech">transient spectroscopy (PICTS/DLTS)</span>
+  and map disorder and strain with <span class="rs-tech">Raman and tip-enhanced Raman nanospectroscopy
+  (TERS)</span>. I also use <span class="rs-method">interpretable machine learning</span> to interpret
+  experimental data physically, identifying which measured features reflect defects and disorder and how
+  they connect to material properties.
 
 interests:
-  - Defects & Disorder in Semiconductors
-  - Defect-Engineered Doping & Complementary Devices
+  - Defects in Solid Materials
+  - Defect Engineering & Electrical Devices
   - Electrical Defect Spectroscopy (PICTS/DLTS)
   - Raman & Tip-Enhanced Nanospectroscopy
-  - Interpretable Machine Learning for Spectroscopy
+  - Interpretable AI for Science
 
 themes:
   - title: Defects and Dopants in Semiconductor Devices
@@ -72,5 +72,5 @@ themes:
       - status: Ongoing
         text: >-
           Modulating excitons in <span class="rs-mat">2D semiconductors</span> through energy transfer and
-          plasmon–exciton coupling in <span class="rs-mat">nanoparticle-on-mirror</span> cavities designed
-          with GPU-accelerated FDTD.
+          plasmon–exciton coupling in <span class="rs-mat">plasmonic nanostructures</span> designed with
+          GPU-accelerated FDTD.

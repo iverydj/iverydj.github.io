@@ -22,8 +22,8 @@
     <dd><a href="{{ profile.scholar }}">View profile</a></dd>
   </div>
   <div class="contact-row">
-    <dt class="contact-label">ORCID</dt>
-    <dd><a href="https://orcid.org/{{ profile.orcid }}">{{ profile.orcid }}</a></dd>
+    <dt class="contact-label">GitHub</dt>
+    <dd><a href="{{ profile.github }}">{{ profile.github | replace('https://', '') }}</a></dd>
   </div>
 </dl>
 ```
