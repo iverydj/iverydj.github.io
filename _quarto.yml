@@ -56,7 +56,7 @@ format:
         </style>
         </noscript>
     toc: false
-    anchor-sections: true
+    anchor-sections: false
     link-external-newwindow: true
     grid:
       body-width: 1080px

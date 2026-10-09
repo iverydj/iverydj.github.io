@@ -23,16 +23,10 @@
 
 <h2 class="pub-patent-header">[In Preparation]</h2>
 
-<ul class="pub-styled pub-manuscripts">
+<ul class="pub-compact">
 {% for m in manuscripts %}
-
-<li>
-<span class="pub-authors">{{ m.authors | authors }}</span>
-<span class="pub-title">“{{ m.title | safe }}”</span>
-{% if m.venue is defined %}<span class="pub-journal">{{ m.venue }}</span>, {% endif %}in preparation
-</li>
+<li><span class="pub-authors">{{ m.authors | authors }}</span>, “{{ m.title | safe }}”{% if m.venue is defined %}, <span class="pub-journal">{{ m.venue }}</span>{% endif %}</li>
 {% endfor %}
-
 </ul>
 
 <h2 class="pub-patent-header">[Patents]</h2>

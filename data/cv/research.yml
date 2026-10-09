@@ -1,10 +1,9 @@
 # Research overview. Revised 2026-10-09: defect physics in solid-state materials is the subject;
 # defect/nanoscale spectroscopy and interpretable AI are the tools (one theme each).
-# Used by the Home (summary + theme keywords), Research and CV pages.
+# `home` feeds the Home page; `summary` and `themes` feed the Research and CV pages.
 # Inline <span> classes: rs-mat = material, rs-tech = technique, rs-method = method.
 # Item status: Published | In preparation | Ongoing. Unpublished work stays at topic level.
 # `refs`: stable pdf ids (assets/pubs/<n>.pdf) of supporting papers; my author role is computed.
-# `keywords`: tags shown under each theme on the Home page.
 summary: >-
   I study defect physics in solid-state materials: how defects affect their electrical and optical
   properties. I measure defect states and local structure with
@@ -13,12 +12,23 @@ summary: >-
   apply <span class="rs-method">interpretable machine learning</span> to extract physically meaningful
   information from experimental data.
 
+home:
+  heading: Experimental physicist with spectroscopy and explainable AI
+  keywords: [Solid Materials, Defect, AI for Science, Spectroscopy]
+  statements:
+    - >-
+      Study physics in solid-state materials: how defects & quasi-particles affect their electrical and
+      optical properties.
+    - >-
+      Analyze defect states and local structure with <span class="rs-tech">transient spectroscopy
+      (PICTS/DLTS)</span> and <span class="rs-tech">tip-enhanced nanospectroscopy</span>.
+    - >-
+      Develop and apply <span class="rs-method">interpretable machine learning</span> to extract physically
+      meaningful information from experimental data.
+
 themes:
   - title: Defect Physics in Solid-State Materials
     question: How do defects affect the electrical properties of solid-state materials and devices?
-    keywords:
-      - Defects in Solid Materials
-      - Defect Engineering & Electrical Devices
     items:
       - status: Published
         refs: [8, 1, 2, 3]
@@ -32,9 +42,6 @@ themes:
 
   - title: Defect and Nanoscale Spectroscopy
     question: How can defect states and local structure be measured, from devices to the nanoscale?
-    keywords:
-      - Electrical Defect Spectroscopy (PICTS/DLTS)
-      - Raman & Tip-Enhanced Nanospectroscopy
     items:
       - status: Ongoing
         text: >-
@@ -56,9 +63,6 @@ themes:
 
   - title: Interpretable AI for Science
     question: How can machine learning extract physically interpretable information from experimental data?
-    keywords:
-      - Explainable AI (XAI)
-      - Machine Learning for Spectroscopic Data
     items:
       - status: In preparation
         text: >-
