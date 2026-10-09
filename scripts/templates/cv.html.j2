@@ -88,10 +88,10 @@
 </section>
 
 <section class="cv-section">
-<h2>{{ "Manuscripts in Preparation" | accent_first }}</h2>
+<h2>{{ "In Preparation" | accent_first }}</h2>
 <ul class="cv-pubs">
 {% for m in manuscripts %}
-  <li>{{ m.authors | authors('<span class="cv-me">', '</span>') }}, “{{ m.title }},”{% if m.venue is defined %} <span class="cv-pub-venue">{{ m.venue }}</span>,{% endif %} in preparation.</li>
+  <li>{{ m.authors | authors('<span class="cv-me">', '</span>') }}, “{{ m.title | safe }},”{% if m.venue is defined %} <span class="cv-pub-venue">{{ m.venue }}</span>,{% endif %} in preparation.</li>
 {% endfor %}
 </ul>
 </section>

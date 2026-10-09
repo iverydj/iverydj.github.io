@@ -28,7 +28,7 @@
 
 <li>
 <span class="pub-authors">{{ m.authors | authors }}</span>
-<span class="pub-title">“{{ m.title }}”</span>
+<span class="pub-title">“{{ m.title | safe }}”</span>
 {% if m.venue is defined %}<span class="pub-journal">{{ m.venue }}</span>, {% endif %}in preparation
 </li>
 {% endfor %}

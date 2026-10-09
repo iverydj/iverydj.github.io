@@ -18,6 +18,7 @@ papers:
     venue: International Conference on Machine Learning (ICML), Position Paper Track
     year: 2026
     pdf: assets/pubs/10.pdf
+    short: ICML
 
   - authors: "H. C. Suh†, T. Kim†, D.-J. Yi, D. H. Kim, S. H. Kim, J. Yoo, S. Bang, D. Lee, J. H. Kim, Y. S. Won, K. K. Kim, M. S. Jeong*"
     title: "Prediction and assessment of nanoprobe for tip-enhanced Raman spectroscopy: Data-driven artificial intelligence approach"
@@ -88,12 +89,12 @@ papers:
     short: Sci. Rep.
 
 # Manuscripts in preparation (working titles, not yet submitted). Move an entry to `papers:`
-# once it is published. "D.-J. Yi" is highlighted automatically.
+# once it is published. "D.-J. Yi" is highlighted automatically. Titles may contain HTML (<sub>).
 manuscripts:
   - authors: "D.-J. Yi† et al."
     title: Predicting the electrical conductivity of carbon-nanotube films from Raman spectra with interpretable deep learning
   - authors: "D.-J. Yi† et al."
-    title: Carrier-type conversion of two-dimensional Mo₁₋ₓWₓTe₂ for complementary inverters
+    title: Carrier-type conversion of two-dimensional Mo<sub>1−x</sub>W<sub>x</sub>Te<sub>2</sub> for complementary inverters
   - authors: "D.-J. Yi† et al."
     title: Physics-preserving recovery of noisy Raman spectra of two-dimensional materials with deep learning
   - authors: "D.-J. Yi† et al."

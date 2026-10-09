@@ -20,57 +20,56 @@ interests:
   - Interpretable AI for Science
 
 themes:
-  - title: Defects and Dopants in Semiconductor Devices
-    question: How do defects and dopants control carrier type, trapping, and stability in semiconductor devices?
+  - title: Defect Physics in Solid-State Materials
+    question: How do defects affect the electrical properties of solid-state materials and devices?
     items:
       - status: Published
         refs: [8, 1, 2, 3]
         text: >-
-          Quantitative analysis of defect energy levels and densities in
-          <span class="rs-mat">amorphous oxide semiconductor</span> thin-film transistors by
-          <span class="rs-tech">photo-induced current transient spectroscopy (PICTS)</span>, related to
-          mobility and bias-stress stability.
+          Quantitative analysis of defect states in <span class="rs-mat">oxide semiconductors</span> and their
+          correlation with device characteristics and stability.
       - status: In preparation
         text: >-
-          Converting the carrier type of two-dimensional <span class="rs-mat">Mo₁₋ₓWₓTe₂</span> through
-          defect engineering to build complementary (n/p) inverters.
-      - status: Ongoing
-        text: >-
-          Extending PICTS to <span class="rs-mat">2D semiconductors</span> to resolve defect levels in
-          atomically thin channels.
+          Defect-mediated control of carrier type in <span class="rs-mat">2D semiconductors</span> for
+          complementary devices.
 
-  - title: Reading Defects and Disorder from Spectra
-    question: What can a spectrum tell us, quantitatively, about disorder and the properties it controls?
-    items:
-      - status: In preparation
-        text: >-
-          Predicting the electrical conductivity of <span class="rs-mat">carbon-nanotube</span> films from
-          Raman disorder bands, with <span class="rs-method">explainable AI</span> identifying which spectral
-          features carry the information.
-      - status: In preparation
-        text: >-
-          Denoising experimental Raman spectra of <span class="rs-mat">2D materials</span> with
-          <span class="rs-method">deep learning</span> while preserving physical parameters such as peak
-          position and width.
-      - status: In preparation
-        text: >-
-          Review on when a machine-learning explanation of a spectrum counts as physical
-          evidence.
-
-  - title: Defects, Strain, and Excitons at the Nanoscale
-    question: How do defects, strain, and excitons behave below the optical diffraction limit?
+  - title: Defect and Nanoscale Spectroscopy
+    question: How can defect states and local structure be measured, from devices to the nanoscale?
     items:
       - status: Ongoing
         text: >-
-          Mapping local defects and strain in <span class="rs-mat">2D materials</span> with
-          <span class="rs-tech">tip-enhanced Raman spectroscopy (TERS)</span>.
+          <span class="rs-tech">Transient spectroscopy (DLTS/PICTS)</span> of defect states in
+          <span class="rs-mat">2D semiconductors</span>.
+      - status: Ongoing
+        text: >-
+          Nanoscale mapping of defects and strain in <span class="rs-mat">2D materials</span> by
+          <span class="rs-tech">tip-enhanced spectroscopy</span>.
       - status: Published
         refs: [9]
         text: >-
-          <span class="rs-tech">Finite-difference time-domain (FDTD)</span> modeling of gap-mode near-field
-          enhancement to validate machine-learning predictions of TERS nanoprobe geometry.
+          <span class="rs-tech">Electromagnetic simulation</span> of near-field enhancement in tip-enhanced
+          spectroscopy.
       - status: Ongoing
         text: >-
-          Modulating excitons in <span class="rs-mat">2D semiconductors</span> through energy transfer and
-          plasmon–exciton coupling in <span class="rs-mat">plasmonic nanostructures</span> designed with
-          GPU-accelerated FDTD.
+          Modulation of excitonic properties in <span class="rs-mat">2D semiconductors</span> by coupling to
+          <span class="rs-mat">plasmonic nanostructures</span>.
+
+  - title: Interpretable AI for Science
+    question: How can machine learning extract physically interpretable information from experimental data?
+    items:
+      - status: In preparation
+        text: >-
+          Correlation of <span class="rs-tech">Raman</span> spectra with electrical properties using
+          <span class="rs-method">interpretable machine learning</span>.
+      - status: In preparation
+        text: >-
+          <span class="rs-method">Deep-learning</span>-based noise reduction of experimental spectra with
+          preservation of spectral parameters.
+      - status: Published
+        refs: [10]
+        text: >-
+          Effect of numerical precision on the reliability of <span class="rs-method">scientific machine
+          learning</span>.
+      - status: In preparation
+        text: >-
+          Review of the physical interpretability of machine-learning analysis in spectroscopy.
