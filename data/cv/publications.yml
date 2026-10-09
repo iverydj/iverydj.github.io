@@ -102,6 +102,8 @@ manuscripts:
   - authors: "D.-J. Yi† et al."
     title: AI-driven spectroscopy with explainability for physical interpretation
     venue: Applied Physics Reviews
+  - authors: "…, D.-J. Yi, …"
+    title: Ferroelectric InSe synaptic devices for analog in-memory learning
 
 # Newest first; numbered automatically like papers.
 patents:
