@@ -75,6 +75,10 @@
 .cv-items li { margin: 0 0 0.2rem; line-height: 1.45; }
 .cv-items li::marker { color: var(--cv-accent); }
 .cv-sheet .cv-para { font-size: 10pt; text-align: left; }
+.cv-research > h2 + .cv-items { margin-top: 0; color: var(--cv-text); font-size: 10pt; }
+.cv-research > h2 + .cv-items > li { padding-left: 0.1rem; margin-bottom: 0.35rem; line-height: 1.5; }
+.cv-research > h2 + .cv-items > li:last-child { margin-bottom: 0; }
+.cv-research > h2 + .cv-items > li::marker { color: var(--cv-gray); }
 .cv-research .rs-tech, .cv-research .rs-method { color: inherit; font-weight: 600; }
 .cv-research .rs-mat { color: inherit; }
 .cv-status { color: var(--cv-gray); font-size: 9pt; }
@@ -135,6 +139,7 @@
   #quarto-margin-sidebar, #quarto-sidebar, .anchorjs-link, #title-block-header { display: none !important; }
   .cv-sheet { border: 0; box-shadow: none; max-width: none; margin: 0; padding: 0; font-size: 10pt; }
   .cv-sheet h2, .cv-sheet h3 { break-after: avoid; }
+  .cv-research > h2 + .cv-items { break-inside: avoid; }
   .cv-header, .cv-entry, .cv-pubs li, .cv-items li, .cv-table tr { break-inside: avoid; }
   .cv-sheet p, .cv-sheet li { orphans: 3; widows: 3; }
   .cv-sheet a { color: var(--cv-accent); }
