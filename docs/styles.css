@@ -165,17 +165,11 @@ body.nav-fixed { padding-top: 0 !important; }
   color: var(--text-2);
   line-height: 1.65;
 }
-.rs-status {
-  flex-shrink: 0;
-  white-space: nowrap;
-  font-size: 0.78rem;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-}
-.rs-status-published { color: var(--text); font-weight: 600; }
-.rs-status-in-preparation { color: var(--text-2); font-weight: 500; }
-.rs-status-ongoing { color: var(--text-2); font-weight: 400; }
 .rs-refs { min-width: 0; }
+
+/* Citation targets: clear the pinned navbar and mark the paper a citation jumped to. */
+.pub-styled li[id] { scroll-margin-top: 6rem; }
+.pub-styled li:target { box-shadow: inset 3px 0 0 var(--accent); padding-left: 0.9rem; }
 
 /* Career: stable section labels and a clear rhythm between entries. */
 .career-edu, .career-fellowship, .career-skills {

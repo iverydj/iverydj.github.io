@@ -4,7 +4,7 @@
 <ul class="pub-styled">
 {% for p in papers %}
 
-<li>
+<li id="pub-{{ p.id }}">
 <span class="pub-authors">{{ p.authors | authors }}</span>
 <span class="pub-title">“{{ p.title }}”</span>
 <span class="pub-journal">{{ p.venue }}</span>{% if p.detail is defined %}, {{ p.detail }}{% endif %}

@@ -75,7 +75,7 @@
 <h3>{{ loop.index }}. {{ t.title }}</h3>
 <ul class="cv-items">
 {% for item in t['items'] %}
-  <li>{{ item.text | safe }} <span class="cv-status">({{ item.status }}{% if item.refs is defined %}: {{ item.refs | cite }}{% endif %})</span></li>
+  <li>{{ item.text | safe }}{% if item.refs is defined %} <span class="cv-status">({{ item.refs | cite('#cv-pub-') }})</span>{% endif %}</li>
 {% endfor %}
 </ul>
 {% endfor %}
@@ -86,7 +86,7 @@
 <p class="cv-note">First†, Corresponding*</p>
 <ul class="cv-pubs">
 {% for p in papers %}
-  <li>{{ p.authors | authors('<span class="cv-me">', '</span>') }}, “{{ p.title }},” <span class="cv-pub-venue">{{ p.venue }}</span>{% if p.detail is defined %}, {{ p.detail }}{% endif %} ({{ p.year }}){% if p.doi is defined %}, <a class="cv-doi" href="https://doi.org/{{ p.doi }}">DOI:{{ p.doi }}</a>{% endif %}</li>
+  <li id="cv-pub-{{ p.id }}">{{ p.authors | authors('<span class="cv-me">', '</span>') }}, “{{ p.title }},” <span class="cv-pub-venue">{{ p.venue }}</span>{% if p.detail is defined %}, {{ p.detail }}{% endif %} ({{ p.year }}){% if p.doi is defined %}, <a class="cv-doi" href="https://doi.org/{{ p.doi }}">DOI:{{ p.doi }}</a>{% endif %}</li>
 {% endfor %}
 </ul>
 </section>

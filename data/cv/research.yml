@@ -3,8 +3,9 @@
 # `intro` feeds the Home page (heading, keywords, statements) and the opening of the Research and
 # CV pages (statements); `themes` feed the Research and CV pages.
 # Inline <span> classes: rs-mat = material, rs-tech = technique, rs-method = method.
-# Item status: Published | In preparation | Ongoing. Unpublished work stays at topic level.
-# `refs`: stable pdf ids (assets/pubs/<n>.pdf) of supporting papers, shown as linked "Venue Year".
+# Item status: Published | In preparation | Ongoing (kept as data; not displayed). Unpublished work stays at topic level.
+# `refs`: stable pdf ids (assets/pubs/<n>.pdf) of supporting papers, shown as "Venue Year" linking to the
+# paper's entry on the Publications page (and within the CV on the CV page).
 intro:
   heading: Experimental physicist with spectroscopy and explainable AI
   keywords: [Solid Materials, Defect, Spectroscopy, AI for Science]

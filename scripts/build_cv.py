@@ -39,9 +39,16 @@ def load_data(cfg):
     data = {p.stem: yaml.safe_load(p.read_text(encoding="utf-8")) for p in cfg.DATA_DIR.glob("*.yml")}
     pubs = data["publications"]
     data["papers"] = sort_papers(pubs["papers"], cfg.ME)
+    for paper in data["papers"]:
+        paper["id"] = paper_id(paper)
     data["manuscripts"] = pubs["manuscripts"]
     data["patents"] = pubs["patents"]
     return data
+
+
+def paper_id(paper):
+    """Stable id from assets/pubs/<n>.pdf; used for page anchors and research.yml `refs`."""
+    return int(re.fullmatch(r"assets/pubs/(\d+)\.pdf", paper["pdf"]).group(1))
 
 
 def sort_papers(papers, me):
@@ -66,20 +73,16 @@ def check_research_statuses(cfg, research):
 
 
 def make_cite_filter(papers):
-    """research.yml `refs` (stable pdf ids) -> linked 'Short Year' citations."""
-    by_id = {}
-    for paper in papers:
-        m = re.fullmatch(r"assets/pubs/(\d+)\.pdf", paper.get("pdf", ""))
-        if m:
-            by_id[int(m.group(1))] = paper
+    """research.yml `refs` (paper ids) -> 'Short Year' links to the paper's entry on this site.
+    `prefix` is the anchor base: the Publications page by default, '#cv-pub-' inside the CV."""
+    by_id = {paper["id"]: paper for paper in papers}
 
-    def cite(ids):
+    def cite(ids, prefix="publications.html#pub-"):
         parts = []
         for i in ids:
             paper = by_id[i]
-            href = f"https://doi.org/{paper['doi']}" if "doi" in paper else paper["pdf"]
             label = html.escape(f"{paper['short']} {paper['year']}", quote=False)
-            parts.append(f'<a href="{html.escape(href)}">{label}</a>')
+            parts.append(f'<a href="{prefix}{i}">{label}</a>')
         return Markup("; ".join(parts))
     return cite
 

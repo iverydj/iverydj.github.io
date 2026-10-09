@@ -85,6 +85,7 @@
 .cv-sheet .cv-note { color: var(--cv-gray); font-size: 9pt; margin-bottom: 0.5rem; }
 .cv-pubs { margin: 0; padding: 0; list-style: none; font-size: 9.5pt; }
 .cv-pubs li { margin: 0 0 0.6rem; line-height: 1.45; break-inside: avoid; }
+.cv-pubs li[id] { scroll-margin-top: 6rem; }
 .cv-me { color: var(--cv-accent); font-weight: 700; text-decoration: underline; text-underline-offset: 0.12em; }
 .cv-pub-venue { font-style: italic; }
 .cv-doi { font-size: 9pt; overflow-wrap: anywhere; }
