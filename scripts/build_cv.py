@@ -39,6 +39,7 @@ def load_data(cfg):
     data = {p.stem: yaml.safe_load(p.read_text(encoding="utf-8")) for p in cfg.DATA_DIR.glob("*.yml")}
     pubs = data["publications"]
     data["papers"] = sort_papers(pubs["papers"], cfg.ME)
+    data["manuscripts"] = pubs["manuscripts"]
     data["patents"] = pubs["patents"]
     return data
 
@@ -62,6 +63,35 @@ def check_research_statuses(cfg, research):
         for item in theme["items"]:
             if item["status"] not in cfg.RESEARCH_STATUSES:
                 raise ValueError(f"unknown research status {item['status']!r} in theme {theme['title']!r}")
+
+
+def author_role(paper, me):
+    """My role on a paper, read from the role markers after my name."""
+    marks = re.search(re.escape(me) + r"([†*]*)", paper["authors"]).group(1)
+    if "†" in marks:
+        return "co-first author" if paper["authors"].count("†") > 1 else "first author"
+    if "*" in marks:
+        return "corresponding author"
+    return "co-author"
+
+
+def make_cite_filter(papers, me):
+    """research.yml `refs` (stable pdf ids) -> linked 'Short Year (role)' citations."""
+    by_id = {}
+    for paper in papers:
+        m = re.fullmatch(r"assets/pubs/(\d+)\.pdf", paper.get("pdf", ""))
+        if m:
+            by_id[int(m.group(1))] = paper
+
+    def cite(ids):
+        parts = []
+        for i in ids:
+            paper = by_id[i]
+            href = f"https://doi.org/{paper['doi']}" if "doi" in paper else paper["pdf"]
+            label = html.escape(f"{paper['short']} {paper['year']}", quote=False)
+            parts.append(f'<a href="{html.escape(href)}">{label}</a> ({author_role(paper, me)})')
+        return Markup("; ".join(parts))
+    return cite
 
 
 def make_authors_filter(me):
@@ -113,6 +143,7 @@ def main():
         keep_trailing_newline=True,
     )
     env.filters["authors"] = make_authors_filter(cfg.ME)
+    env.filters["cite"] = make_cite_filter(data["papers"], cfg.ME)
     env.filters["accent_first"] = accent_first
     env.filters["edu_lines"] = edu_lines
 

@@ -12,9 +12,9 @@
   <p class="cv-affil">{{ profile.lab }} <span class="cv-sep">|</span> Advisor: {{ profile.advisor }}</p>
   <p class="cv-contact">
     {% for m in profile.emails %}<a href="mailto:{{ m }}">{{ m }}</a>{% if not loop.last %} <span class="cv-sep">|</span> {% endif %}{% endfor %}
-    <span class="cv-sep">|</span> <a href="tel:{{ profile.phone | replace(' ', '') }}">{{ profile.phone }}</a>
     <span class="cv-sep">|</span> <a href="{{ profile.homepage }}">{{ profile.homepage | replace('https://', '') }}</a>
     <span class="cv-sep">|</span> <a href="{{ profile.scholar }}">Google Scholar</a>
+    <span class="cv-sep">|</span> <a href="https://orcid.org/{{ profile.orcid }}">ORCID {{ profile.orcid }}</a>
   </p>
 </header>
 
@@ -71,7 +71,7 @@
 <h3>{{ loop.index }}. {{ t.title }}</h3>
 <ul class="cv-items">
 {% for item in t['items'] %}
-  <li>{{ item.text | safe }} <span class="cv-status">({{ item.status }})</span></li>
+  <li>{{ item.text | safe }} <span class="cv-status">({{ item.status }}{% if item.refs is defined %}: {{ item.refs | cite }}{% endif %})</span></li>
 {% endfor %}
 </ul>
 {% endfor %}
@@ -83,6 +83,15 @@
 <ul class="cv-pubs">
 {% for p in papers %}
   <li>{{ p.authors | authors('<span class="cv-me">', '</span>') }}, “{{ p.title }},” <span class="cv-pub-venue">{{ p.venue }}</span>{% if p.detail is defined %}, {{ p.detail }}{% endif %} ({{ p.year }}){% if p.doi is defined %}, <a class="cv-doi" href="https://doi.org/{{ p.doi }}">DOI:{{ p.doi }}</a>{% endif %}</li>
+{% endfor %}
+</ul>
+</section>
+
+<section class="cv-section">
+<h2>{{ "Manuscripts in Preparation" | accent_first }}</h2>
+<ul class="cv-pubs">
+{% for m in manuscripts %}
+  <li>{{ m.authors | authors('<span class="cv-me">', '</span>') }}, “{{ m.title }},”{% if m.venue is defined %} <span class="cv-pub-venue">{{ m.venue }}</span>,{% endif %} in preparation.</li>
 {% endfor %}
 </ul>
 </section>
@@ -116,7 +125,7 @@
 <table class="cv-table cv-skills">
 <tbody>
 {% for s in skills %}
-<tr><td class="cv-skill-cat">{{ s.category }}</td><td>{{ s['items'] }}</td></tr>
+<tr><td class="cv-skill-cat">{{ s.category }}</td><td>{{ s['items'] }}{% if s.link is defined %} (<a href="{{ s.link }}">{{ s.link | replace('https://', '') }}</a>){% endif %}</td></tr>
 {% endfor %}
 </tbody>
 </table>

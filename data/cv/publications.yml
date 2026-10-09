@@ -3,6 +3,7 @@
 # go on top, then the rest; newest first within each group. Lists are unnumbered.
 # `pdf` is any existing file; assets/pubs/<n>.pdf uses n as a stable id only
 # (next new paper takes the next unused number). "D.-J. Yi" is highlighted automatically.
+# `short` (abbreviated venue) is needed only for papers cited by id from research.yml `refs`.
 papers:
   - authors: "S. Bang†, D. Choi†, H. C. Suh†, C. Lee, S. Lim, Y. J. Yu, D. H. Kim, S. H. Kim, J. Yoo, T. Kim, D. Lee, H. J. Park, U. J. Kim, D.-J. Yi, H. Oh*, D.-W. Kim*, M. S. Jeong*"
     title: Ultrawide Charge-Trap Memory Window and Photoinduced Synaptic Behavior in p-Channel Amorphous Oxide Semiconductors
@@ -24,6 +25,7 @@ papers:
     year: 2026
     doi: 10.1016/j.matdes.2026.116066
     pdf: assets/pubs/9.pdf
+    short: Mater. Des.
 
   - authors: "T. G. Weldemhret†, D.-J. Yi†, K. Jeong, K.-B. Chung*"
     title: Evaluation of the high mobility and stability of InGaZnO/InSnZnO bilayer thin-film transistors via quantitative defect analysis
@@ -31,6 +33,7 @@ papers:
     year: 2025
     doi: 10.1016/j.surfin.2025.106870
     pdf: assets/pubs/8.pdf
+    short: Surf. Interfaces
 
   - authors: "S. Bang†, C. Lee†, D. Choi, D. Y. Park, D. H. Kim, D. Lee, D.-J. Yi, J. Song, S. J. Yun, D.-W. Kim*, M. S. Jeong*"
     title: High Performance P-Channel Transistor Based on Amorphous Tellurium Trioxide
@@ -66,6 +69,7 @@ papers:
     year: 2024
     doi: 10.1021/acsaelm.4c01430
     pdf: assets/pubs/3.pdf
+    short: ACS Appl. Electron. Mater.
 
   - authors: "H. Hong†, D.-J. Yi, Y.-K. Moon, K.-S. Son, J. H. Lim, K. Jeong, K.-B. Chung*"
     title: Double gated a-InGaZnO TFT properties based on quantitative defect analysis and computational modeling
@@ -73,6 +77,7 @@ papers:
     year: 2024
     doi: 10.1109/TED.2023.3347503
     pdf: assets/pubs/2.pdf
+    short: IEEE Trans. Electron Devices
 
   - authors: "H. Hong†, M. J. Kim, D.-J. Yi, Y.-K. Moon, K.-S. Son, J. H. Lim, K. Jeong*, K.-B. Chung*"
     title: Quantitative analysis of defect states in InGaZnO within 2 eV below the conduction band via photo-induced current transient spectroscopy
@@ -80,18 +85,33 @@ papers:
     year: 2023
     doi: 10.1038/s41598-023-40162-0
     pdf: assets/pubs/1.pdf
+    short: Sci. Rep.
+
+# Manuscripts in preparation (working titles, not yet submitted). Move an entry to `papers:`
+# once it is published. "D.-J. Yi" is highlighted automatically.
+manuscripts:
+  - authors: "D.-J. Yi† et al."
+    title: Predicting the electrical conductivity of carbon-nanotube films from Raman spectra with interpretable deep learning
+  - authors: "D.-J. Yi† et al."
+    title: Carrier-type conversion of two-dimensional Mo₁₋ₓWₓTe₂ for complementary inverters
+  - authors: "D.-J. Yi† et al."
+    title: Physics-preserving recovery of noisy Raman spectra of two-dimensional materials with deep learning
+  - authors: "D.-J. Yi† et al."
+    title: Deep-learning classification of bacterial SERS spectra on metal–organic framework substrates
+  - authors: "D.-J. Yi† et al."
+    title: AI-driven spectroscopy with explainability for physical interpretation
+    venue: Applied Physics Reviews
 
 # Newest first; numbered automatically like papers.
 patents:
+  # One family: KR application 10-2024-0049532 (2024-04-12) granted 2025-11-26 as KR 10-2892259 B1;
+  # US 18/771,046 claims its priority (filed 2024-07-12, published US 2025/0321188 A1, pending).
+  # Checked on Google Patents 2026-10-09.
   - authors: "K.-B. Chung, K. Jeong, D.-J. Yi, (Dongguk University Industry Academy Cooperation Foundation)"
     title: Device Array Analysis Method and Analysis Apparatus Therefor
-    venue: US Patent
-    number: "18771046"
-  - authors: "K.-B. Chung, K. Jeong, D.-J. Yi, (Dongguk University Industry Academy Cooperation Foundation)"
-    title: Analysis Method of Semiconductor Device and Analysis Apparatus for the Method
-    venue: Patent, Republic of Korea
-    number: 10-2024-0049532
+    venue: Korean Patent
+    number: 10-2892259 (granted 2025); U.S. Patent Application 18/771,046 (pending)
   - authors: "K.-B. Chung, K. Jeong, D.-J. Yi, H. Hong, (Dongguk University Industry Academy Cooperation Foundation)"
     title: Method of Confirming Performance of Secondary Battery and Apparatus of Performing the Same
-    venue: Patent, Republic of Korea
+    venue: Korean Patent Application
     number: 10-2023-0161220

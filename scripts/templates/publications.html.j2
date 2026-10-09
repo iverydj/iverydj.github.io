@@ -21,6 +21,20 @@
 
 </ul>
 
+<p class="pub-patent-header">[Manuscripts in Preparation]</p>
+
+<ul class="pub-styled pub-manuscripts">
+{% for m in manuscripts %}
+
+<li>
+<span class="pub-authors">{{ m.authors | authors }}</span>
+<span class="pub-title">“{{ m.title }}”</span>
+{% if m.venue is defined %}<span class="pub-journal">{{ m.venue }}</span>, {% endif %}in preparation
+</li>
+{% endfor %}
+
+</ul>
+
 <p class="pub-patent-header">[Patents]</p>
 
 <ul class="pub-styled pub-patents">

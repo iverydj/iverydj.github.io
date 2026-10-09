@@ -1,7 +1,7 @@
 ```{=html}
 <p class="last-update">Last updated: {{ profile.updated }}</p>
 <p class="hero-name">{{ profile.name_first }} {{ profile.name_last }}</p>
-<p class="hero-position">{{ profile.position }}</p>
+<p class="hero-position">{{ profile.position }}{% if education[0].expected is defined %} <span class="hero-expected">(expected {{ education[0].expected }})</span>{% endif %}</p>
 <p class="hero-dept">{{ profile.department }}, {{ profile.school }}</p>
 
 <div class="hero-divider"></div>
@@ -18,12 +18,12 @@
     <dd>{% for m in profile.emails %}<a href="mailto:{{ m }}">{{ m }}</a>{% if not loop.last %} / {% endif %}{% endfor %}</dd>
   </div>
   <div class="contact-row">
-    <dt class="contact-label">Mobile</dt>
-    <dd><a href="tel:{{ profile.phone | replace(' ', '') }}">{{ profile.phone }}</a></dd>
-  </div>
-  <div class="contact-row">
     <dt class="contact-label">Google Scholar</dt>
     <dd><a href="{{ profile.scholar }}">View profile</a></dd>
+  </div>
+  <div class="contact-row">
+    <dt class="contact-label">ORCID</dt>
+    <dd><a href="https://orcid.org/{{ profile.orcid }}">{{ profile.orcid }}</a></dd>
   </div>
 </dl>
 ```

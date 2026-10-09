@@ -6,5 +6,6 @@
   items: Deep learning for spectroscopic data (PyTorch), explainable AI (SHAP, Sobol sensitivity analysis), physics-preserving denoising
 - category: Simulation
   items: FDTD (Meep), including a self-developed CUDA-accelerated, multi-GPU fork of Meep
+  link: https://github.com/iverydj/gpmeep-releases
 - category: Fabrication
   items: Photolithography, sputtering
