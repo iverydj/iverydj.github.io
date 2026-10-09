@@ -47,7 +47,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, [tabindex]:focus-vis
   border-radius: 2px;
   box-shadow: none !important;
 }
-a.anchorjs-link:focus-visible { opacity: 1; }
 
 /* A compact mobile menu; the header include supplies inline links without JS. */
 #quarto-header { position: sticky; top: 0; }
@@ -117,15 +116,32 @@ body.nav-fixed { padding-top: 0 !important; }
 .contact-label { font-size: 0.73rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--text-2); margin-bottom: 0.15rem; }
 .contact-row dd { margin: 0; overflow-wrap: anywhere; }
 .home-section { border-top: 1px solid var(--rule); padding-top: 1.5rem; }
-.home-section > h2 { font: 600 0.8rem/1.5 var(--font-sans); text-transform: uppercase; letter-spacing: 0.12em; color: var(--accent); margin: 0 0 0.85rem; }
+.home-section > .home-heading {
+  max-width: 36ch;
+  font: 500 clamp(1.5rem, 2.8vw, 2rem)/1.3 var(--font-serif);
+  letter-spacing: -0.025em;
+  margin: 0 0 1rem;
+}
+.research-keywords { display: flex; flex-wrap: wrap; gap: 0.45rem 0.55rem; }
+.research-keywords > span {
+  padding: 0.15rem 0.6rem;
+  border: 1px solid var(--rule);
+  border-radius: 3px;
+  background: var(--tint);
+  color: var(--text-2);
+  font-size: 0.78rem;
+  font-weight: 500;
+  line-height: 1.5;
+}
+.home-statements { margin: 1.3rem 0 1rem; padding-left: 1.05rem; font-size: 1rem; line-height: 1.65; }
+.home-statements > li { padding-left: 0.25rem; margin-bottom: 0.5rem; }
+.home-statements > li:last-child { margin-bottom: 0; }
+.home-statements > li::marker { color: var(--text-2); font-size: 0.75em; }
+.home-statements .rs-tech, .home-statements .rs-method { color: var(--accent); font-weight: 600; }
+.home-more { margin: 0; font-size: 0.92rem; font-weight: 500; }
+.home-more a { display: inline-block; padding-block: 0.15rem; text-underline-offset: 0.24em; }
 .research-summary { max-width: 88ch; font-size: 1.15rem; line-height: 1.65; margin: 0 0 1.8rem; }
 .research-summary .rs-tech, .research-summary .rs-method { font-weight: 600; }
-.interest-groups { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 2rem; }
-.interest-group { border-top: 2px solid var(--accent); padding-top: 0.85rem; }
-.interest-label { font-size: 1.2rem; margin: 0 0 0.7rem; min-height: 2.8em; }
-.research-keywords { display: grid; gap: 0.4rem; }
-.research-keywords span { color: var(--text-2); font-size: 0.9rem; line-height: 1.45; padding-left: 0.8rem; position: relative; }
-.research-keywords span::before { content: ""; position: absolute; top: 0.65em; left: 0; width: 4px; height: 4px; border-radius: 50%; background: var(--accent); }
 
 /* Research: questions and subject headings beside the supporting work. */
 .research-content > .research-summary { margin-bottom: 2.5rem; }
@@ -211,7 +227,11 @@ body.nav-fixed { padding-top: 0 !important; }
 .pub-pdf { font-size: 0.83rem; font-weight: 600; margin-left: 0.6rem; }
 .pub-pdf a { display: inline-block; padding: 0.1rem 0.35rem; border: 1px solid var(--rule); border-radius: 2px; }
 .pub-pdf a:hover { border-color: var(--accent); background: var(--tint); }
-.pub-patent-header { margin: 2.7rem 0 1rem; font-size: 1.65rem; }
+.pub-patent-header { margin: 2.4rem 0 0.9rem; font-size: 1.4rem; letter-spacing: -0.01em; }
+.pub-compact { list-style: none; padding: 0; margin: 0; color: var(--text-2); font-size: 0.9rem; line-height: 1.55; }
+.pub-compact > li { margin-bottom: 0.45rem; }
+.pub-compact > li:last-child { margin-bottom: 0; }
+.pub-compact .pub-authors { display: inline; max-width: none; margin: 0; font-size: inherit; }
 
 /* The footer is secondary, but still meets text contrast requirements. */
 .nav-footer { background: var(--bg); border-top: 1px solid var(--rule); margin-top: 3rem; color: var(--text-2); font-size: 0.82rem; padding: 1.2rem 1.5rem; }
@@ -242,8 +262,6 @@ body.nav-fixed { padding-top: 0 !important; }
   .contact-row { display: grid; grid-template-columns: 6.5rem minmax(0, 1fr); gap: 0.75rem; margin-bottom: 0.6rem; }
   .contact-label { padding-top: 0.2rem; }
   .research-summary { font-size: 1.06rem; }
-  .interest-groups { grid-template-columns: minmax(0, 1fr); gap: 1.5rem; }
-  .interest-label { min-height: 0; }
   .research-theme { display: block; margin-top: 1.8rem; padding-top: 1.3rem; }
   .rs-question { margin-bottom: 1.4rem; }
   .career-edu, .career-fellowship, .career-skills { display: block; margin-top: 1.8rem; padding-top: 1.3rem; }
