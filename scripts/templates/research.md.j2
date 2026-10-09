@@ -12,7 +12,7 @@
 <p class="rs-question">{{ t.question }}</p>
 
 {% for item in t['items'] %}
-- {{ item.text | safe }}{% if item.refs is defined %} <span class="rs-meta"><span class="rs-refs">{{ item.refs | cite }}</span></span>{% endif %}
+- {{ item.text | safe }}{% if item.refs is defined %} <span class="rs-meta"><span class="rs-refs">{{ item.refs | cite }}</span></span>{% endif +%}
 {% endfor %}
 
 :::

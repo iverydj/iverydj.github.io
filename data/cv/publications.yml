@@ -57,14 +57,14 @@ papers:
     doi: 10.1002/advs.202407923
     pdf: assets/pubs/5.pdf
 
-  - authors: "A. Song†, M. J. Kim, D.-J. Yi, S. Kwon, D.-W. Kim, S. Kim, J.-H. Bae, S. Park, Y. S. Rim*, K.-S. Jeong*, K.-B. Chung*"
+  - authors: "A. Song†, M. J. Kim†, D.-J. Yi, S. Kwon, D.-W. Kim, S. Kim, J.-H. Bae, S. Park, Y. S. Rim*, K.-S. Jeong*, K.-B. Chung*"
     title: Control of sensitivity in metal oxide electrolyte gated field-effect transistor-based glucose sensor by electronegativity modulation
     venue: Scientific Reports
     year: 2024
     doi: 10.1038/s41598-024-76885-x
     pdf: assets/pubs/4.pdf
 
-  - authors: "H. Hong†, M. J. Kim, D.-J. Yi, D. Y. Shin, Y.-K. Moon, K.-S. Son, J. H. Lim, K. Jeong*, K.-B. Chung*"
+  - authors: "H. Hong†, M. J. Kim†, D.-J. Yi, D. Y. Shin, Y.-K. Moon, K.-S. Son, J. H. Lim, K. Jeong*, K.-B. Chung*"
     title: Quantitative dynamic evolution of unoccupied states in hydrogen diffused InGaZnSnO TFT under positive bias temperature stress
     venue: ACS Applied Electronic Materials
     year: 2024

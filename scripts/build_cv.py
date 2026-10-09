@@ -72,6 +72,15 @@ def check_research_statuses(cfg, research):
                 raise ValueError(f"unknown research status {item['status']!r} in theme {theme['title']!r}")
 
 
+def check_research_md(rendered, research):
+    """Each research item must be its own Markdown bullet: Jinja's trim_blocks can silently
+    glue bullets together when a template line ends with a block tag."""
+    expected = sum(len(t["items"]) for t in research["themes"])
+    found = sum(1 for line in rendered.splitlines() if line.startswith("- "))
+    if found != expected:
+        raise ValueError(f"research.md has {found} bullet lines, expected {expected} (glued list items?)")
+
+
 def make_cite_filter(papers):
     """research.yml `refs` (paper ids) -> 'Short Year' links to the paper's entry on this site.
     `prefix` is the anchor base: the Publications page by default, '#cv-pub-' inside the CV."""
@@ -143,6 +152,8 @@ def main():
     cfg.OUT_DIR.mkdir(parents=True, exist_ok=True)
     for template_name, out_name in cfg.OUTPUTS.items():
         rendered = env.get_template(template_name).render(**data)
+        if out_name == "research.md":
+            check_research_md(rendered, data["research"])
         out_path = cfg.OUT_DIR / out_name
         out_path.write_text(rendered, encoding="utf-8")
         print(f"wrote {out_path.relative_to(cfg.ROOT)} ({len(rendered)} chars)")
