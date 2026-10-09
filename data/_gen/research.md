@@ -1,4 +1,4 @@
-I study how defects and disorder determine the electrical and optical properties of solid-state materials. I measure defect levels with <span class="rs-tech">transient spectroscopy (PICTS/DLTS)</span> and map disorder and strain with <span class="rs-tech">Raman and tip-enhanced Raman nanospectroscopy (TERS)</span>. I also use <span class="rs-method">interpretable machine learning</span> to interpret experimental data physically, identifying which measured features reflect defects and disorder and how they connect to material properties.
+I study defect physics in solid-state materials: how defects affect their electrical and optical properties. I measure defect states and local structure with <span class="rs-tech">transient spectroscopy (PICTS/DLTS)</span>, <span class="rs-tech">Raman spectroscopy</span>, and <span class="rs-tech">tip-enhanced nanospectroscopy</span>, and I develop and apply <span class="rs-method">interpretable machine learning</span> to extract physically meaningful information from experimental data.
 
 ### 1. Defect Physics in Solid-State Materials
 
@@ -11,7 +11,7 @@ I study how defects and disorder determine the electrical and optical properties
 
 <p class="rs-question">How can defect states and local structure be measured, from devices to the nanoscale?</p>
 
-- <span class="rs-tech">Transient spectroscopy (DLTS/PICTS)</span> of defect states in <span class="rs-mat">2D semiconductors</span>. <span class="rs-status rs-status-ongoing">Ongoing</span>
+- <span class="rs-tech">Transient spectroscopy (PICTS/DLTS)</span> of defect states in <span class="rs-mat">2D semiconductors</span>. <span class="rs-status rs-status-ongoing">Ongoing</span>
 - Nanoscale mapping of defects and strain in <span class="rs-mat">2D materials</span> by <span class="rs-tech">tip-enhanced spectroscopy</span>. <span class="rs-status rs-status-ongoing">Ongoing</span>
 - <span class="rs-tech">Electromagnetic simulation</span> of near-field enhancement in tip-enhanced spectroscopy. <span class="rs-status rs-status-published">Published</span> <span class="rs-refs"><a href="https://doi.org/10.1016/j.matdes.2026.116066">Mater. Des. 2026</a> (co-author)</span>
 - Modulation of excitonic properties in <span class="rs-mat">2D semiconductors</span> by coupling to <span class="rs-mat">plasmonic nanostructures</span>. <span class="rs-status rs-status-ongoing">Ongoing</span>
