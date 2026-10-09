@@ -93,7 +93,7 @@ body.nav-fixed { padding-top: 0 !important; }
   .navbar-nav.me-auto { margin-left: auto; margin-right: 1.3rem !important; }
 }
 
-/* Home: identity and affiliation on the left, contact details on the right. */
+/* Home: identity, affiliation and email on the left; profile links on the right. */
 .hero {
   display: grid;
   grid-template-columns: minmax(0, 1.65fr) minmax(0, 1fr);
@@ -109,6 +109,7 @@ body.nav-fixed { padding-top: 0 !important; }
 .hero-affiliation { grid-column: 1; margin-top: 1.1rem; }
 .hero-lab { font-size: 0.96rem; font-weight: 600; margin: 0; }
 .hero-lab-dept, .hero-advisor { font-size: 0.9rem; color: var(--text-2); margin: 0; }
+.hero-email { font-size: 0.94rem; margin: 0.8rem 0 0; overflow-wrap: anywhere; }
 .hero-contact { grid-column: 2; grid-row: 2 / 4; align-self: center; border-left: 1px solid var(--rule); padding-left: 2rem; margin: 0; font-size: 0.94rem; }
 .contact-row { margin-bottom: 0.85rem; }
 .contact-row:last-child { margin-bottom: 0; }

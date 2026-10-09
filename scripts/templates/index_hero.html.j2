@@ -10,13 +10,10 @@
 <p class="hero-lab">{{ profile.lab }}</p>
 <p class="hero-lab-dept">{{ profile.lab_department }}, Republic of Korea</p>
 <p class="hero-advisor">(Advisor: {{ profile.advisor }})</p>
+<p class="hero-email">{% for m in profile.emails %}<a href="mailto:{{ m }}">{{ m }}</a>{% if not loop.last %} / {% endif %}{% endfor %}</p>
 </div>
 
 <dl class="hero-contact">
-  <div class="contact-row">
-    <dt class="contact-label">Email</dt>
-    <dd>{% for m in profile.emails %}<a href="mailto:{{ m }}">{{ m }}</a>{% if not loop.last %} / {% endif %}{% endfor %}</dd>
-  </div>
   <div class="contact-row">
     <dt class="contact-label">Google Scholar</dt>
     <dd><a href="{{ profile.scholar }}">View profile</a></dd>
