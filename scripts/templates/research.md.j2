@@ -11,11 +11,15 @@
 
 <p class="rs-question">{{ t.question }}</p>
 
-{% if t.figure is defined %}
-<figure class="rs-figure">
-<img src="{{ t.figure.file }}" alt="{{ t.figure.alt }}" loading="lazy">
-<figcaption>{{ t.figure.caption }} Adapted from {{ [t.figure.ref] | cite }}.</figcaption>
+{% if t.figures is defined %}
+<div class="rs-figures">
+{% for f in t.figures %}
+<figure class="rs-fig">
+<button type="button" class="rs-zoom" aria-label="Enlarge figure"><img src="{{ f.file }}" alt="{{ f.alt }}" loading="lazy"></button>
+<figcaption>{{ f.caption | safe }} <span class="rs-fig-src">{{ [f.ref] | cite }}</span></figcaption>
 </figure>
+{% endfor %}
+</div>
 
 {% endif %}
 
@@ -26,3 +30,25 @@
 :::
 
 {% endfor %}
+
+<dialog class="rs-dialog" aria-label="Enlarged figure">
+<form method="dialog"><button class="rs-dialog-close" aria-label="Close">&times;</button></form>
+<img alt="">
+<p class="rs-dialog-cap"></p>
+</dialog>
+<script>
+(() => {
+  const dialog = document.querySelector(".rs-dialog");
+  if (!dialog || !dialog.showModal) return;
+  document.documentElement.classList.add("rs-js");
+  const img = dialog.querySelector("img"), cap = dialog.querySelector(".rs-dialog-cap");
+  document.querySelectorAll(".rs-zoom").forEach(button => button.addEventListener("click", () => {
+    const thumb = button.querySelector("img");
+    img.src = thumb.currentSrc || thumb.src;
+    img.alt = thumb.alt;
+    cap.innerHTML = button.closest("figure").querySelector("figcaption").innerHTML;
+    dialog.showModal();
+  }));
+  dialog.addEventListener("click", event => { if (event.target === dialog) dialog.close(); });
+})();
+</script>

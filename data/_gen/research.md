@@ -10,10 +10,16 @@
 
 <p class="rs-question">How do defects and quasiparticles shape the electrical and optical properties of solid-state materials?</p>
 
-<figure class="rs-figure">
-<img src="assets/research/defect_band.webp" alt="Band alignment of ITZO and IGZO, defect densities versus ITZO thickness, and band diagrams of trapping under positive and negative bias stress." loading="lazy">
-<figcaption>Defect states above and below the Fermi level track threshold-voltage shifts under positive and negative bias stress in ITZO/IGZO thin-film transistors. Adapted from <a href="publications.html#pub-8">Surf. Interfaces 2025</a>.</figcaption>
+<div class="rs-figures">
+<figure class="rs-fig">
+<button type="button" class="rs-zoom" aria-label="Enlarge figure"><img src="assets/research/defect_band.webp" alt="Band alignment of ITZO and IGZO, defect densities versus ITZO thickness, and band diagrams of trapping under bias stress." loading="lazy"></button>
+<figcaption>Defect states and bias-stress threshold shifts in ITZO/IGZO thin-film transistors. <span class="rs-fig-src"><a href="publications.html#pub-8">Surf. Interfaces 2025</a></span></figcaption>
 </figure>
+<figure class="rs-fig">
+<button type="button" class="rs-zoom" aria-label="Enlarge figure"><img src="assets/research/picts_dos.webp" alt="Defect density versus activation energy in a-IGZO at gate biases of 0, -5 and -10 V and after removing the bias." loading="lazy"></button>
+<figcaption>Defect density versus activation energy in a-IGZO before and after negative gate bias. <span class="rs-fig-src"><a href="publications.html#pub-1">Sci. Rep. 2023</a></span></figcaption>
+</figure>
+</div>
 
 
 - Defect states in <span class="rs-mat">oxide semiconductors</span> and their relation to device characteristics and stability. <span class="rs-meta"><span class="rs-refs"><a href="publications.html#pub-8">Surf. Interfaces 2025</a>; <a href="publications.html#pub-1">Sci. Rep. 2023</a>; <a href="publications.html#pub-2">IEEE Trans. Electron Devices 2024</a>; <a href="publications.html#pub-3">ACS Appl. Electron. Mater. 2024</a></span></span>
@@ -28,10 +34,16 @@
 
 <p class="rs-question">How can defect states and local structure be measured, from devices to the nanoscale?</p>
 
-<figure class="rs-figure">
-<img src="assets/research/picts_principle.webp" alt="Schematic of PICTS on an IGZO thin-film transistor, with the light pulse and the resulting current transient." loading="lazy">
-<figcaption>Photo-induced current transient spectroscopy (PICTS): a light pulse excites carriers, and the current transient after the pulse, as trapped carriers are released, yields defect energies and densities. Adapted from <a href="publications.html#pub-1">Sci. Rep. 2023</a>.</figcaption>
+<div class="rs-figures">
+<figure class="rs-fig">
+<button type="button" class="rs-zoom" aria-label="Enlarge figure"><img src="assets/research/picts_principle.webp" alt="Schematic of PICTS on an IGZO thin-film transistor, with the light pulse and the resulting current transient." loading="lazy"></button>
+<figcaption>Principle of photo-induced current transient spectroscopy (PICTS). <span class="rs-fig-src"><a href="publications.html#pub-1">Sci. Rep. 2023</a></span></figcaption>
 </figure>
+<figure class="rs-fig">
+<button type="button" class="rs-zoom" aria-label="Enlarge figure"><img src="assets/research/ters_linescan.webp" alt="Raman line scans of monolayer WS2 measured by confocal Raman and by TERS, and the A1g intensity profiles." loading="lazy"></button>
+<figcaption>Confocal versus tip-enhanced Raman line scans of monolayer WS<sub>2</sub>. <span class="rs-fig-src"><a href="publications.html#pub-9">Mater. Des. 2026</a></span></figcaption>
+</figure>
+</div>
 
 
 - <span class="rs-tech">Transient spectroscopy (PICTS/DLTS)</span> of defect states in <span class="rs-mat">2D semiconductors</span>.
@@ -46,10 +58,16 @@
 
 <p class="rs-question">How can machine learning extract physically meaningful information from experimental data?</p>
 
-<figure class="rs-figure">
-<img src="assets/research/tip_ml_fdtd.webp" alt="Etching current profiles, machine-learning predicted tip shapes, SEM images of the fabricated tips, and FDTD near-field maps." loading="lazy">
-<figcaption>A machine-learning model predicts TERS nanoprobe geometry from the etching current; predictions are checked against SEM images and FDTD near-field simulations. Adapted from <a href="publications.html#pub-9">Mater. Des. 2026</a>.</figcaption>
+<div class="rs-figures">
+<figure class="rs-fig">
+<button type="button" class="rs-zoom" aria-label="Enlarge figure"><img src="assets/research/tip_ml_fdtd.webp" alt="Etching current profiles, machine-learning predicted tip shapes, SEM images of the fabricated tips, and FDTD near-field maps." loading="lazy"></button>
+<figcaption>Machine-learning-predicted nanoprobe geometry checked against SEM and FDTD. <span class="rs-fig-src"><a href="publications.html#pub-9">Mater. Des. 2026</a></span></figcaption>
 </figure>
+<figure class="rs-fig">
+<button type="button" class="rs-zoom" aria-label="Enlarge figure"><img src="assets/research/precision_geometry.webp" alt="Water molecule geometries optimized with Hartree-Fock and DFT in double (FP64) and single (FP32) precision." loading="lazy"></button>
+<figcaption>Water geometry optimized in FP64 versus FP32; single precision yields unphysical structures. <span class="rs-fig-src"><a href="publications.html#pub-10">ICML 2026</a></span></figcaption>
+</figure>
+</div>
 
 
 - <span class="rs-method">Interpretable machine learning</span> relating <span class="rs-tech">Raman</span> spectra to electrical properties.
@@ -60,3 +78,25 @@
 
 :::
 
+
+<dialog class="rs-dialog" aria-label="Enlarged figure">
+<form method="dialog"><button class="rs-dialog-close" aria-label="Close">&times;</button></form>
+<img alt="">
+<p class="rs-dialog-cap"></p>
+</dialog>
+<script>
+(() => {
+  const dialog = document.querySelector(".rs-dialog");
+  if (!dialog || !dialog.showModal) return;
+  document.documentElement.classList.add("rs-js");
+  const img = dialog.querySelector("img"), cap = dialog.querySelector(".rs-dialog-cap");
+  document.querySelectorAll(".rs-zoom").forEach(button => button.addEventListener("click", () => {
+    const thumb = button.querySelector("img");
+    img.src = thumb.currentSrc || thumb.src;
+    img.alt = thumb.alt;
+    cap.innerHTML = button.closest("figure").querySelector("figcaption").innerHTML;
+    dialog.showModal();
+  }));
+  dialog.addEventListener("click", event => { if (event.target === dialog) dialog.close(); });
+})();
+</script>
