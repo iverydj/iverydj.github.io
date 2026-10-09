@@ -8,7 +8,7 @@
 <p class="rs-question">{{ t.question }}</p>
 
 {% for item in t['items'] %}
-- {{ item.text | safe }} <span class="rs-status rs-status-{{ item.status | lower | replace(' ', '-') }}">{{ item.status }}</span>{% if item.refs is defined %} <span class="rs-refs">{{ item.refs | cite }}</span>{% endif +%}
+- {{ item.text | safe }} <span class="rs-meta"><span class="rs-status rs-status-{{ item.status | lower | replace(' ', '-') }}">{{ item.status }}</span>{% if item.refs is defined %} <span class="rs-refs">{{ item.refs | cite }}</span>{% endif %}</span>
 {% endfor %}
 
 :::

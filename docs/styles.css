@@ -49,7 +49,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, [tabindex]:focus-vis
 }
 a.anchorjs-link:focus-visible { opacity: 1; }
 
-/* Navigation stays visible at every width, including without JavaScript. */
+/* A compact mobile menu; the header include supplies inline links without JS. */
 #quarto-header { position: sticky; top: 0; }
 body.nav-fixed { padding-top: 0 !important; }
 .navbar {
@@ -62,6 +62,7 @@ body.nav-fixed { padding-top: 0 !important; }
 .navbar-brand, .navbar-title { font: 500 1.2rem/1.4 var(--font-serif); color: var(--text) !important; }
 .navbar-brand { margin-right: 2.5rem; }
 .navbar-brand-container { margin-left: 0 !important; margin-right: auto !important; }
+.navbar .navbar-brand-container { order: 0; }
 .navbar-nav { gap: 0.7rem; }
 .navbar-nav .nav-link {
   color: var(--text-2);
@@ -71,11 +72,26 @@ body.nav-fixed { padding-top: 0 !important; }
   text-underline-offset: 0.45em;
 }
 .navbar-nav .nav-link.active { color: var(--accent); text-decoration: underline; text-decoration-thickness: 2px; }
-.navbar-nav .nav-link:hover { color: var(--accent); text-decoration: underline; }
+.navbar-nav .nav-link:hover { color: var(--accent); }
+.navbar-nav .menu-text { position: relative; }
+.navbar-nav .nav-link:not(.active) .menu-text::after {
+  content: "";
+  position: absolute;
+  inset-inline: 0;
+  bottom: -0.35em;
+  height: 1px;
+  background: currentColor;
+  transform: scaleX(0);
+  transform-origin: left;
+}
+.navbar-nav .nav-link:is(:hover, :focus-visible) .menu-text::after { transform: scaleX(1); }
 #quarto-search { color: var(--text-2); }
 #quarto-search .aa-DetachedSearchButton { min-width: 44px; min-height: 44px; }
-.navbar-toggler { display: none; }
+.navbar-toggler { color: var(--text-2); border-color: var(--rule); }
+.navbar-toggler-icon { filter: brightness(0) saturate(100%); opacity: 0.65; }
 @media (min-width: 992px) {
+  .navbar .navbar-collapse { order: 1; }
+  .navbar #quarto-search { order: 2; }
   .navbar-nav.me-auto { margin-left: auto; margin-right: 1.3rem !important; }
 }
 
@@ -128,9 +144,19 @@ body.nav-fixed { padding-top: 0 !important; }
 .research-theme li { margin-bottom: 1.2rem; line-height: 1.6; }
 .research-theme li:last-child { margin-bottom: 0; }
 .research-content .rs-tech, .research-content .rs-method { font-weight: 600; }
+.rs-meta {
+  display: flex;
+  align-items: baseline;
+  gap: 0.6rem;
+  margin-top: 0.5rem;
+  font-size: 0.84rem;
+  color: var(--text-2);
+  line-height: 1.65;
+}
 .rs-status {
   display: inline-block;
-  margin-left: 0.35rem;
+  flex-shrink: 0;
+  white-space: nowrap;
   padding: 0.05rem 0.45rem;
   border: 1px solid;
   border-radius: 3px;
@@ -142,7 +168,7 @@ body.nav-fixed { padding-top: 0 !important; }
 .rs-status-published { color: #285847; background: #e9f0e9; border-color: #a3b7a6; }
 .rs-status-in-preparation { color: #735519; background: #f4eedf; border-color: #cabc99; }
 .rs-status-ongoing { color: #36596c; background: #e9eef1; border-color: #aebfc8; }
-.rs-refs { display: block; margin-top: 0.5rem; font-size: 0.84rem; color: var(--text-2); line-height: 1.65; }
+.rs-refs { min-width: 0; }
 
 /* Career: stable section labels and a clear rhythm between entries. */
 .career-edu, .career-fellowship, .career-skills {
@@ -192,12 +218,16 @@ body.nav-fixed { padding-top: 0 !important; }
 .nav-footer a { color: var(--accent); }
 .nav-footer .nav-footer-contents { color: var(--text-2); }
 
-@media (max-width: 991px) {
-  .navbar > .navbar-container { flex-wrap: wrap; }
+@media (max-width: 991.98px) {
+  .navbar { padding-block: 0.35rem; }
+  .navbar > .navbar-container { flex-wrap: wrap; padding-inline: 1rem; min-height: 44px; }
   .navbar-brand { margin-right: 0.75rem; }
-  .navbar .navbar-container > .navbar-nav { flex-basis: 100%; order: 3; flex-direction: row; flex-wrap: wrap; gap: 1.5rem; margin: 0 !important; overflow: visible; }
+  .navbar .navbar-toggler { display: block; order: 3; flex: 0 0 44px; width: 44px; height: 44px; padding: 0.45rem; margin-left: 0.4rem; }
+  .navbar .navbar-collapse { order: 4; flex-basis: 100%; }
+  .navbar-collapse.show, .navbar-collapse.collapsing { padding-block: 0.5rem; border-top: 1px solid var(--rule); }
+  .navbar .navbar-nav { gap: 0.15rem; margin: 0; max-height: calc(100dvh - 80px); }
   .navbar #quarto-search { order: 2; margin-left: auto; }
-  .navbar .nav-link { font-size: 0.94rem; padding-block: 0.4rem !important; }
+  .navbar .nav-link { font-size: 0.94rem; padding-block: 0.5rem !important; }
   .hero { column-gap: 2rem; }
   .hero-contact { padding-left: 1.4rem; }
   .research-theme { column-gap: 2rem; }
@@ -227,11 +257,37 @@ body.nav-fixed { padding-top: 0 !important; }
   .nav-footer { margin-top: 2rem; }
 }
 
-/* Motion only confirms an interaction; content is never hidden for a reveal. */
-@media (prefers-reduced-motion: no-preference) {
-  a, button { transition: color 140ms ease, background-color 140ms ease, border-color 140ms ease, text-decoration-color 140ms ease; }
+/* Content starts readable; this one-time entrance never depends on JavaScript. */
+@keyframes content-enter {
+  from { opacity: 0.65; transform: translateY(8px); }
+  to { opacity: 1; transform: none; }
+}
+.research-theme:focus-within { border-top-color: var(--accent); }
+.pub-styled > li:focus-within { background-color: #235c5006; }
+@media (hover: hover) {
+  .research-theme:hover { border-top-color: var(--accent); }
+  .pub-styled > li:hover { background-color: #235c5006; }
+}
+@media screen and (prefers-reduced-motion: no-preference) {
+  #quarto-document-content > :is(header, .hero, .home-section, .section-block, .cv-toolbar, .cv-sheet) {
+    animation: content-enter 380ms cubic-bezier(0.2, 0.7, 0.2, 1) backwards;
+  }
+  #quarto-document-content > :nth-child(2) { animation-delay: 45ms; }
+  #quarto-document-content > :nth-child(3) { animation-delay: 90ms; }
+  #quarto-document-content > :nth-child(n + 4) { animation-delay: 120ms; }
+  a, button { transition: color 180ms ease, background-color 180ms ease, border-color 180ms ease, text-decoration-color 180ms ease; }
+  .navbar-nav .menu-text::after { transition: transform 220ms ease; }
+  .research-theme { transition: border-color 220ms ease; }
+  .pub-styled > li { transition: background-color 220ms ease; }
 }
 @media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
+@media print {
   *, *::before, *::after {
     animation: none !important;
     transition: none !important;

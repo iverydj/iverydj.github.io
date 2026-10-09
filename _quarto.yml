@@ -13,7 +13,8 @@ website:
   navbar:
     background: "#f7f6f2"
     foreground: "#242e2b"
-    collapse: false
+    collapse: true
+    collapse-below: lg
     pinned: true
     left:
       - href: research.qmd
@@ -35,6 +36,25 @@ format:
     fontsize: 17px
     smooth-scroll: false
     css: styles.css
+    include-in-header:
+      text: |
+        <noscript>
+        <style>
+        @media (max-width: 991.98px) {
+          #quarto-header .navbar > .navbar-container { flex-wrap: nowrap; }
+          #quarto-header .navbar-toggler, #quarto-header #quarto-search { display: none; }
+          #quarto-header #navbarCollapse { display: flex; flex: 1 1 auto; padding: 0; border: 0; }
+          #quarto-header .navbar-nav { flex-direction: row; gap: 0.5rem; margin-left: auto; overflow: visible; }
+        }
+        @media (max-width: 680px) {
+          #quarto-header .navbar > .navbar-container { padding-inline: 0.65rem; }
+          #quarto-header .navbar-brand { margin-right: 0.65rem; }
+          #quarto-header .navbar-brand, #quarto-header .navbar-title { font-size: 0.95rem; }
+          #quarto-header .navbar-nav { gap: 0.35rem; }
+          #quarto-header .navbar-nav .nav-link { font-size: 0.75rem; padding-inline: 0 !important; }
+        }
+        </style>
+        </noscript>
     toc: false
     anchor-sections: true
     link-external-newwindow: true

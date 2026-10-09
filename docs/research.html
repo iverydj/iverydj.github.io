@@ -69,6 +69,23 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<noscript>
+<style>
+@media (max-width: 991.98px) {
+  #quarto-header .navbar > .navbar-container { flex-wrap: nowrap; }
+  #quarto-header .navbar-toggler, #quarto-header #quarto-search { display: none; }
+  #quarto-header #navbarCollapse { display: flex; flex: 1 1 auto; padding: 0; border: 0; }
+  #quarto-header .navbar-nav { flex-direction: row; gap: 0.5rem; margin-left: auto; overflow: visible; }
+}
+@media (max-width: 680px) {
+  #quarto-header .navbar > .navbar-container { padding-inline: 0.65rem; }
+  #quarto-header .navbar-brand { margin-right: 0.65rem; }
+  #quarto-header .navbar-brand, #quarto-header .navbar-title { font-size: 0.95rem; }
+  #quarto-header .navbar-nav { gap: 0.35rem; }
+  #quarto-header .navbar-nav .nav-link { font-size: 0.75rem; padding-inline: 0 !important; }
+}
+</style>
+</noscript>
 
 
 <link rel="stylesheet" href="styles.css">
@@ -78,14 +95,19 @@ ul.task-list li input[type="checkbox"] {
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand " data-bs-theme="dark">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">Dong-Joon Yi</span>
     </a>
   </div>
-          <ul class="navbar-nav navbar-nav-scroll me-auto">
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
     <a class="nav-link active" href="./research.html" aria-current="page"> 
 <span class="menu-text">Research</span></a>
@@ -103,9 +125,9 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">CV</span></a>
   </li>  
 </ul>
-          <div class="quarto-navbar-tools">
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
 </div>
-            <div id="quarto-search" class="" title="Search"></div>
       </div> <!-- /container-fluid -->
     </nav>
 </header>
@@ -146,8 +168,8 @@ I study defect physics in solid-state materials: how defects affect their electr
 How do defects affect the electrical properties of solid-state materials and devices?
 </p>
 <ul>
-<li>Quantitative analysis of defect states in <span class="rs-mat">oxide semiconductors</span> and their correlation with device characteristics and stability. <span class="rs-status rs-status-published">Published</span> <span class="rs-refs"><a href="https://doi.org/10.1016/j.surfin.2025.106870">Surf. Interfaces 2025</a> (co-first author); <a href="https://doi.org/10.1038/s41598-023-40162-0">Sci. Rep.&nbsp;2023</a> (co-author); <a href="https://doi.org/10.1109/TED.2023.3347503">IEEE Trans. Electron Devices 2024</a> (co-author); <a href="https://doi.org/10.1021/acsaelm.4c01430">ACS Appl. Electron. Mater. 2024</a> (co-author)</span></li>
-<li>Defect-mediated control of carrier type in <span class="rs-mat">2D semiconductors</span> for complementary devices. <span class="rs-status rs-status-in-preparation">In preparation</span></li>
+<li>Quantitative analysis of defect states in <span class="rs-mat">oxide semiconductors</span> and their correlation with device characteristics and stability. <span class="rs-meta"><span class="rs-status rs-status-published">Published</span> <span class="rs-refs"><a href="https://doi.org/10.1016/j.surfin.2025.106870">Surf. Interfaces 2025</a> (co-first author); <a href="https://doi.org/10.1038/s41598-023-40162-0">Sci. Rep.&nbsp;2023</a> (co-author); <a href="https://doi.org/10.1109/TED.2023.3347503">IEEE Trans. Electron Devices 2024</a> (co-author); <a href="https://doi.org/10.1021/acsaelm.4c01430">ACS Appl. Electron. Mater. 2024</a> (co-author)</span></span></li>
+<li>Defect-mediated control of carrier type in <span class="rs-mat">2D semiconductors</span> for complementary devices. <span class="rs-meta"><span class="rs-status rs-status-in-preparation">In preparation</span></span></li>
 </ul>
 </section>
 <section id="defect-and-nanoscale-spectroscopy" class="level2 research-theme">
@@ -156,10 +178,10 @@ How do defects affect the electrical properties of solid-state materials and dev
 How can defect states and local structure be measured, from devices to the nanoscale?
 </p>
 <ul>
-<li><span class="rs-tech">Transient spectroscopy (PICTS/DLTS)</span> of defect states in <span class="rs-mat">2D semiconductors</span>. <span class="rs-status rs-status-ongoing">Ongoing</span></li>
-<li>Nanoscale mapping of defects and strain in <span class="rs-mat">2D materials</span> by <span class="rs-tech">tip-enhanced spectroscopy</span>. <span class="rs-status rs-status-ongoing">Ongoing</span></li>
-<li><span class="rs-tech">Electromagnetic simulation</span> of near-field enhancement in tip-enhanced spectroscopy. <span class="rs-status rs-status-published">Published</span> <span class="rs-refs"><a href="https://doi.org/10.1016/j.matdes.2026.116066">Mater. Des. 2026</a> (co-author)</span></li>
-<li>Modulation of excitonic properties in <span class="rs-mat">2D semiconductors</span> by coupling to <span class="rs-mat">plasmonic nanostructures</span>. <span class="rs-status rs-status-ongoing">Ongoing</span></li>
+<li><span class="rs-tech">Transient spectroscopy (PICTS/DLTS)</span> of defect states in <span class="rs-mat">2D semiconductors</span>. <span class="rs-meta"><span class="rs-status rs-status-ongoing">Ongoing</span></span></li>
+<li>Nanoscale mapping of defects and strain in <span class="rs-mat">2D materials</span> by <span class="rs-tech">tip-enhanced spectroscopy</span>. <span class="rs-meta"><span class="rs-status rs-status-ongoing">Ongoing</span></span></li>
+<li><span class="rs-tech">Electromagnetic simulation</span> of near-field enhancement in tip-enhanced spectroscopy. <span class="rs-meta"><span class="rs-status rs-status-published">Published</span> <span class="rs-refs"><a href="https://doi.org/10.1016/j.matdes.2026.116066">Mater. Des. 2026</a> (co-author)</span></span></li>
+<li>Modulation of excitonic properties in <span class="rs-mat">2D semiconductors</span> by coupling to <span class="rs-mat">plasmonic nanostructures</span>. <span class="rs-meta"><span class="rs-status rs-status-ongoing">Ongoing</span></span></li>
 </ul>
 </section>
 <section id="interpretable-ai-for-science" class="level2 research-theme">
@@ -168,10 +190,10 @@ How can defect states and local structure be measured, from devices to the nanos
 How can machine learning extract physically interpretable information from experimental data?
 </p>
 <ul>
-<li>Correlation of <span class="rs-tech">Raman</span> spectra with electrical properties using <span class="rs-method">interpretable machine learning</span>. <span class="rs-status rs-status-in-preparation">In preparation</span></li>
-<li><span class="rs-method">Deep-learning</span>-based noise reduction of experimental spectra with preservation of spectral parameters. <span class="rs-status rs-status-in-preparation">In preparation</span></li>
-<li>Effect of numerical precision on the reliability of <span class="rs-method">scientific machine learning</span>. <span class="rs-status rs-status-published">Published</span> <span class="rs-refs"><a href="assets/pubs/10.pdf">ICML 2026</a> (co-author)</span></li>
-<li>Review of the physical interpretability of machine-learning analysis in spectroscopy. <span class="rs-status rs-status-in-preparation">In preparation</span></li>
+<li>Correlation of <span class="rs-tech">Raman</span> spectra with electrical properties using <span class="rs-method">interpretable machine learning</span>. <span class="rs-meta"><span class="rs-status rs-status-in-preparation">In preparation</span></span></li>
+<li><span class="rs-method">Deep-learning</span>-based noise reduction of experimental spectra with preservation of spectral parameters. <span class="rs-meta"><span class="rs-status rs-status-in-preparation">In preparation</span></span></li>
+<li>Effect of numerical precision on the reliability of <span class="rs-method">scientific machine learning</span>. <span class="rs-meta"><span class="rs-status rs-status-published">Published</span> <span class="rs-refs"><a href="assets/pubs/10.pdf">ICML 2026</a> (co-author)</span></span></li>
+<li>Review of the physical interpretability of machine-learning analysis in spectroscopy. <span class="rs-meta"><span class="rs-status rs-status-in-preparation">In preparation</span></span></li>
 </ul>
 </section>
 </div>

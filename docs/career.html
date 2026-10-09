@@ -69,6 +69,23 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<noscript>
+<style>
+@media (max-width: 991.98px) {
+  #quarto-header .navbar > .navbar-container { flex-wrap: nowrap; }
+  #quarto-header .navbar-toggler, #quarto-header #quarto-search { display: none; }
+  #quarto-header #navbarCollapse { display: flex; flex: 1 1 auto; padding: 0; border: 0; }
+  #quarto-header .navbar-nav { flex-direction: row; gap: 0.5rem; margin-left: auto; overflow: visible; }
+}
+@media (max-width: 680px) {
+  #quarto-header .navbar > .navbar-container { padding-inline: 0.65rem; }
+  #quarto-header .navbar-brand { margin-right: 0.65rem; }
+  #quarto-header .navbar-brand, #quarto-header .navbar-title { font-size: 0.95rem; }
+  #quarto-header .navbar-nav { gap: 0.35rem; }
+  #quarto-header .navbar-nav .nav-link { font-size: 0.75rem; padding-inline: 0 !important; }
+}
+</style>
+</noscript>
 
 
 <link rel="stylesheet" href="styles.css">
@@ -78,14 +95,19 @@ ul.task-list li input[type="checkbox"] {
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand " data-bs-theme="dark">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">Dong-Joon Yi</span>
     </a>
   </div>
-          <ul class="navbar-nav navbar-nav-scroll me-auto">
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
     <a class="nav-link" href="./research.html"> 
 <span class="menu-text">Research</span></a>
@@ -103,9 +125,9 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">CV</span></a>
   </li>  
 </ul>
-          <div class="quarto-navbar-tools">
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
 </div>
-            <div id="quarto-search" class="" title="Search"></div>
       </div> <!-- /container-fluid -->
     </nav>
 </header>
