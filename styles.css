@@ -332,7 +332,7 @@ main a:hover {
 .rs-status-published { color: var(--light-green); border-color: rgba(181, 206, 168, 0.35); }
 .rs-status-in-preparation { color: var(--yellow); border-color: rgba(220, 220, 170, 0.35); }
 .rs-status-ongoing { color: var(--light-blue); border-color: rgba(156, 220, 254, 0.35); }
-.rs-refs, .rs-role { margin-left: 0.3rem; font-size: 12px; color: var(--text-2); }
+.rs-refs { margin-left: 0.3rem; font-size: 12px; color: var(--text-2); }
 .rs-refs a { color: var(--light-green); }
 
 /* ── Figures ── */

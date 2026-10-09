@@ -83,13 +83,14 @@ def make_cite_filter(papers, me):
         if m:
             by_id[int(m.group(1))] = paper
 
-    def cite(ids):
+    def cite(ids, roles=True):
         parts = []
         for i in ids:
             paper = by_id[i]
             href = f"https://doi.org/{paper['doi']}" if "doi" in paper else paper["pdf"]
             label = html.escape(f"{paper['short']} {paper['year']}", quote=False)
-            parts.append(f'<a href="{html.escape(href)}">{label}</a> ({author_role(paper, me)})')
+            role = f" ({author_role(paper, me)})" if roles else ""
+            parts.append(f'<a href="{html.escape(href)}">{label}</a>{role}')
         return Markup("; ".join(parts))
     return cite
 

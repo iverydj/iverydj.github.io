@@ -5,7 +5,7 @@
 # Inline <span> classes: rs-mat = material, rs-tech = technique, rs-method = method.
 # Item status: Published | In preparation | Ongoing. Unpublished work stays at topic level.
 # `refs`: stable pdf ids (assets/pubs/<n>.pdf) of supporting papers; my author role is computed.
-# `role`: optional, for unpublished work where I am not the first author (e.g. co-author).
+# `role`: optional, for unpublished work where I am not the first author; shown on the CV only.
 intro:
   heading: Experimental physicist with spectroscopy and explainable AI
   keywords: [Solid Materials, Defect, AI for Science, Spectroscopy]
