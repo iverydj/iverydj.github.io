@@ -124,6 +124,7 @@
 .cv-para { font-size: 9.8pt; color: var(--cv-text); text-align: justify; }
 .cv-research .rs-tech, .cv-research .rs-method { color: inherit; font-weight: 600; }
 .cv-research .rs-mat { color: inherit; }
+.cv-status { font-style: italic; color: var(--cv-light); font-size: 8.5pt; white-space: nowrap; }
 
 /* publications & patents */
 .cv-note { font-size: 9pt; color: var(--cv-gray); margin-bottom: 0.4rem !important; }

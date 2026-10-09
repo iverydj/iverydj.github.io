@@ -10,16 +10,6 @@ toc: false
 ::: {.home-section}
 ## Research Interests
 
-```{=html}
-<div class="research-keywords">
-  <span>Materials Science</span>
-  <span>Tip-Enhanced Nanospectroscopy</span>
-  <span>Raman / Photoluminescence Spectroscopy</span>
-  <span>AI for Materials Science &amp; Physics</span>
-  <span>Deep-Level Transient Spectroscopy</span>
-  <span>Explainable AI</span>
-  <span>Finite-Difference Time-Domain Simulation</span>
-</div>
-```
+{{< include data/_gen/index_interests.html >}}
 
 :::

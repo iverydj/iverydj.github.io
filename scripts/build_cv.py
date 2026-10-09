@@ -21,9 +21,11 @@ class AppConfig:
     TEMPLATE_DIR = ROOT / "scripts" / "templates"
     OUT_DIR = ROOT / "data" / "_gen"
     ME = "D.-J. Yi"
+    RESEARCH_STATUSES = {"Published", "In preparation", "Ongoing"}
     # template file -> generated fragment (included by the .qmd pages)
     OUTPUTS = {
         "index_hero.html.j2": "index_hero.html",
+        "index_interests.html.j2": "index_interests.html",
         "career_education.html.j2": "career_education.html",
         "career_grants.html.j2": "career_grants.html",
         "career_skills.html.j2": "career_skills.html",
@@ -53,6 +55,13 @@ def check_pdfs(cfg, papers):
         pdf = paper.get("pdf")
         if pdf is not None and not (cfg.ROOT / pdf).is_file():
             raise FileNotFoundError(cfg.ROOT / pdf)
+
+
+def check_research_statuses(cfg, research):
+    for theme in research["themes"]:
+        for item in theme["items"]:
+            if item["status"] not in cfg.RESEARCH_STATUSES:
+                raise ValueError(f"unknown research status {item['status']!r} in theme {theme['title']!r}")
 
 
 def make_authors_filter(me):
@@ -93,6 +102,7 @@ def main():
     cfg = AppConfig
     data = load_data(cfg)
     check_pdfs(cfg, data["papers"])
+    check_research_statuses(cfg, data["research"])
 
     env = Environment(
         loader=FileSystemLoader(str(cfg.TEMPLATE_DIR)),

@@ -18,6 +18,11 @@
   </p>
 </header>
 
+<section class="cv-section cv-research">
+<h2>{{ "Research Interests" | accent_first }}</h2>
+<p class="cv-para">{{ research.summary | safe }}</p>
+</section>
+
 <section class="cv-section">
 <h2>{{ "Education" | accent_first }}</h2>
 {% for e in education %}
@@ -60,6 +65,37 @@
 {% endfor %}
 </section>
 
+<section class="cv-section cv-research">
+<h2>{{ "Research" | accent_first }}</h2>
+{% for t in research.themes %}
+<h3>{{ loop.index }}. {{ t.title }}</h3>
+<ul class="cv-items">
+{% for item in t['items'] %}
+  <li>{{ item.text | safe }} <span class="cv-status">({{ item.status }})</span></li>
+{% endfor %}
+</ul>
+{% endfor %}
+</section>
+
+<section class="cv-section">
+<h2>{{ "Publications" | accent_first }}</h2>
+<p class="cv-note"><a href="{{ profile.scholar }}">Google Scholar</a> <span class="cv-sep">|</span> † First author <span class="cv-sep">|</span> * Corresponding author</p>
+<ul class="cv-pubs">
+{% for p in papers %}
+  <li>{{ p.authors | authors('<span class="cv-me">', '</span>') }}, “{{ p.title }},” <span class="cv-pub-venue">{{ p.venue }}</span>{% if p.detail is defined %}, {{ p.detail }}{% endif %} ({{ p.year }}){% if p.doi is defined %}, <a class="cv-doi" href="https://doi.org/{{ p.doi }}">DOI:{{ p.doi }}</a>{% endif %}</li>
+{% endfor %}
+</ul>
+</section>
+
+<section class="cv-section">
+<h2>{{ "Patents" | accent_first }}</h2>
+<ul class="cv-pubs">
+{% for t in patents %}
+  <li>{{ t.authors | authors('<span class="cv-me">', '</span>') }}. “{{ t.title }}.” <span class="cv-pub-venue">{{ t.venue }}</span>, {{ t.number }}.</li>
+{% endfor %}
+</ul>
+</section>
+
 <section class="cv-section">
 <h2>{{ "Scholarships & Awards" | accent_first }}</h2>
 <table class="cv-table cv-awards">
@@ -84,38 +120,6 @@
 {% endfor %}
 </tbody>
 </table>
-</section>
-
-<section class="cv-section cv-research">
-<h2>{{ "Research" | accent_first }}</h2>
-<p class="cv-para">{{ research.intro | safe }}</p>
-{% for s in research.sections %}
-<h3>{{ loop.index }}. {{ s.title }}</h3>
-<ul class="cv-items">
-{% for item in s['items'] %}
-  <li>{{ item | safe }}</li>
-{% endfor %}
-</ul>
-{% endfor %}
-</section>
-
-<section class="cv-section">
-<h2>{{ "Publications" | accent_first }}</h2>
-<p class="cv-note"><a href="{{ profile.scholar }}">Google Scholar</a> <span class="cv-sep">|</span> † First author <span class="cv-sep">|</span> * Corresponding author</p>
-<ul class="cv-pubs">
-{% for p in papers %}
-  <li>{{ p.authors | authors('<span class="cv-me">', '</span>') }}, “{{ p.title }},” <span class="cv-pub-venue">{{ p.venue }}</span>{% if p.detail is defined %}, {{ p.detail }}{% endif %} ({{ p.year }}){% if p.doi is defined %}, <a class="cv-doi" href="https://doi.org/{{ p.doi }}">DOI:{{ p.doi }}</a>{% endif %}</li>
-{% endfor %}
-</ul>
-</section>
-
-<section class="cv-section">
-<h2>{{ "Patents" | accent_first }}</h2>
-<ul class="cv-pubs">
-{% for t in patents %}
-  <li>{{ t.authors | authors('<span class="cv-me">', '</span>') }}. “{{ t.title }}.” <span class="cv-pub-venue">{{ t.venue }}</span>, {{ t.number }}.</li>
-{% endfor %}
-</ul>
 </section>
 
 <footer class="cv-footer">

@@ -1,0 +1,8 @@
+```{=html}
+<p class="research-summary">{{ research.summary | safe }}</p>
+<div class="research-keywords">
+{% for k in research.interests %}
+  <span>{{ k }}</span>
+{% endfor %}
+</div>
+```

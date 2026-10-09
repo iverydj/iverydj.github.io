@@ -1,8 +1,10 @@
 - category: Spectroscopy
-  items: Raman, photoluminescence, ellipsometry, DLTS, tip-enhanced nanospectroscopy
+  items: Raman, photoluminescence, tip-enhanced Raman spectroscopy (TERS), spectroscopic ellipsometry, XPS
+- category: Defect & Electrical
+  items: PICTS, DLTS, I–V and transient measurements of thin-film and 2D transistors
 - category: Machine Learning
-  items: Physics-based data analysis, deep learning for experimental data, explainable AI (XAI)
+  items: Deep learning for spectroscopic data (PyTorch), explainable AI (SHAP, Sobol sensitivity analysis), physics-preserving denoising
 - category: Simulation
-  items: FDTD simulations, inverse design with adjoint optimization
-- category: Other Techniques
-  items: Electrical characterization (e.g., I–V measurements), XPS, photolithography, sputtering
+  items: FDTD (Meep), including a self-developed CUDA-accelerated, multi-GPU fork of Meep
+- category: Fabrication
+  items: Photolithography, sputtering

@@ -306,9 +306,27 @@ main a:hover {
 }
 
 /* ── Research page colors ── */
-.research-content .rs-tech { color: var(--cyan); font-weight: 500; }
-.research-content .rs-mat { color: var(--orange); }
-.research-content .rs-method { color: var(--purple); font-weight: 500; }
+.research-content .rs-tech, .research-summary .rs-tech { color: var(--cyan); font-weight: 500; }
+.research-content .rs-mat, .research-summary .rs-mat { color: var(--orange); }
+.research-content .rs-method, .research-summary .rs-method { color: var(--purple); font-weight: 500; }
+
+.research-summary { font-size: 14px; line-height: 1.7; margin: 0 0 0.7rem; }
+.research-content .rs-question { color: var(--text-2); font-style: italic; font-size: 14px; margin: 0 0 0.5rem; }
+.rs-status {
+  display: inline-block;
+  margin-left: 0.35rem;
+  padding: 0 0.4rem;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  line-height: 1.6;
+  color: var(--text-2);
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  white-space: nowrap;
+}
+.rs-status-published { color: var(--light-green); border-color: rgba(181, 206, 168, 0.35); }
+.rs-status-in-preparation { color: var(--yellow); border-color: rgba(220, 220, 170, 0.35); }
+.rs-status-ongoing { color: var(--light-blue); border-color: rgba(156, 220, 254, 0.35); }
 
 /* ── Figures ── */
 .figure-frame {
