@@ -1,6 +1,8 @@
 ---
 pagetitle: "Curriculum Vitae"
+title-block-style: none
 toc: false
+anchor-sections: false
 format:
   html:
     css: [styles.css, cv.css]

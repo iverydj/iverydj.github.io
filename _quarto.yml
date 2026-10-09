@@ -11,6 +11,10 @@ project:
 website:
   title: "Dong-Joon Yi"
   navbar:
+    background: "#f7f6f2"
+    foreground: "#242e2b"
+    collapse: false
+    pinned: true
     left:
       - href: research.qmd
         text: Research
@@ -26,7 +30,10 @@ website:
 
 format:
   html:
-    theme: darkly
+    theme: default
+    mainfont: "Source Sans 3"
+    fontsize: 17px
+    smooth-scroll: false
     css: styles.css
     toc: false
     anchor-sections: true

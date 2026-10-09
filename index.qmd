@@ -1,5 +1,6 @@
 ---
 title: ""
+title-block-style: none
 toc: false
 ---
 

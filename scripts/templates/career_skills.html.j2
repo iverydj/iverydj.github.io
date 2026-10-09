@@ -1,12 +1,8 @@
 ```{=html}
 <table class="skills-tbl">
-<colgroup>
-<col style="width: 230px">
-<col>
-</colgroup>
 <tbody>
 {% for s in skills %}
-<tr><td><strong>{{ s.category }}</strong></td><td>{{ s['items'] }}</td></tr>
+<tr><th scope="row">{{ s.category }}</th><td>{{ s['items'] }}</td></tr>
 {% endfor %}
 </tbody>
 </table>

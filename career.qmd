@@ -1,6 +1,6 @@
 ---
 title: "Career"
-toc: true
+toc: false
 ---
 
 ::: {.section-block .career-edu}
@@ -9,13 +9,13 @@ toc: true
 {{< include data/_gen/career_education.html >}}
 :::
 
-::: {.section-block}
+::: {.section-block .career-fellowship}
 ## Research Fellowship
 
 {{< include data/_gen/career_grants.html >}}
 :::
 
-::: {.section-block}
+::: {.section-block .career-skills}
 ## Skills {.section-title}
 
 {{< include data/_gen/career_skills.html >}}

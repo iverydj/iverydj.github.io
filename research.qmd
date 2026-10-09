@@ -1,6 +1,6 @@
 ---
 title: "Research"
-toc: true
+toc: false
 ---
 
 ::: {.section-block .research-content}

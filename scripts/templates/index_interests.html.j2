@@ -2,14 +2,14 @@
 <p class="research-summary">{{ research.summary | safe }}</p>
 <div class="interest-groups">
 {% for t in research.themes %}
-  <div class="interest-group">
-    <span class="interest-label">{{ t.title }}</span>
+  <section class="interest-group">
+    <h3 class="interest-label">{{ t.title }}</h3>
     <div class="research-keywords">
 {% for k in t.keywords %}
       <span>{{ k }}</span>
 {% endfor %}
     </div>
-  </div>
+  </section>
 {% endfor %}
 </div>
 ```

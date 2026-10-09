@@ -6,8 +6,8 @@
 
 <article class="cv-sheet">
 
-<header class="cv-header">
-  <div class="cv-name" role="heading" aria-level="1"><span class="cv-first">{{ profile.name_first }}</span> <span class="cv-last">{{ profile.name_last }}</span></div>
+<header class="cv-header quarto-title-block">
+  <h1 class="cv-name"><span class="cv-first">{{ profile.name_first }}</span> <span class="cv-last">{{ profile.name_last }}</span></h1>
   <p class="cv-position">{{ profile.position }}, {{ profile.department }}, {{ profile.school }}</p>
   <p class="cv-affil">{{ profile.lab }} <span class="cv-sep">|</span> Advisor: {{ profile.advisor }}</p>
   <p class="cv-contact">
@@ -125,7 +125,7 @@
 <table class="cv-table cv-skills">
 <tbody>
 {% for s in skills %}
-<tr><td class="cv-skill-cat">{{ s.category }}</td><td>{{ s['items'] }}</td></tr>
+<tr><th scope="row" class="cv-skill-cat">{{ s.category }}</th><td>{{ s['items'] }}</td></tr>
 {% endfor %}
 </tbody>
 </table>

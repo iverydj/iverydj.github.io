@@ -1,16 +1,16 @@
 ```{=html}
 <p class="last-update">Last updated: {{ profile.updated }}</p>
-<p class="hero-name">{{ profile.name_first }} {{ profile.name_last }}</p>
+<header class="hero-identity quarto-title-block">
+<h1 class="hero-name">{{ profile.name_first }} {{ profile.name_last }}</h1>
 <p class="hero-position">{{ profile.position }}{% if education[0].expected is defined %} <span class="hero-expected">(expected {{ education[0].expected }})</span>{% endif %}</p>
 <p class="hero-dept">{{ profile.department }}, {{ profile.school }}</p>
+</header>
 
-<div class="hero-divider"></div>
-
+<div class="hero-affiliation">
 <p class="hero-lab">{{ profile.lab }}</p>
 <p class="hero-lab-dept">{{ profile.lab_department }}, Republic of Korea</p>
 <p class="hero-advisor">(Advisor: {{ profile.advisor }})</p>
-
-<div class="hero-divider"></div>
+</div>
 
 <dl class="hero-contact">
   <div class="contact-row">

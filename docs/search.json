@@ -39,7 +39,7 @@
     "href": "index.html",
     "title": "Dong-Joon Yi",
     "section": "",
-    "text": "Last updated: 09 October 2026\nDong-Joon Yi\nPh.D. student (expected Aug 2027)\nDepartment of Electronic Engineering, Hanyang University\n\n\n\nSemiconductor Nanophotonics Laboratory\nDepartment of Physics, Hanyang University, Republic of Korea\n(Advisor: Prof. Mun Seok Jeong)\n\n\n\n\n  \n    Email\n    iverydj@hanyang.ac.kr / iver.ydj@gmail.com\n  \n  \n    Google Scholar\n    View profile\n  \n  \n    GitHub\n    github.com/iverydj"
+    "text": "Last updated: 09 October 2026\n\n\nPh.D. student (expected Aug 2027)\nDepartment of Electronic Engineering, Hanyang University\n\n\n\nSemiconductor Nanophotonics Laboratory\nDepartment of Physics, Hanyang University, Republic of Korea\n(Advisor: Prof. Mun Seok Jeong)\n\n\n\n  \n    Email\n    iverydj@hanyang.ac.kr / iver.ydj@gmail.com\n  \n  \n    Google Scholar\n    View profile\n  \n  \n    GitHub\n    github.com/iverydj"
   },
   {
     "objectID": "index.html#research-interests",
@@ -53,7 +53,28 @@
     "href": "research.html",
     "title": "Research",
     "section": "",
-    "text": "I study defect physics in solid-state materials: how defects affect their electrical and optical properties. I measure defect states and local structure with transient spectroscopy (PICTS/DLTS), Raman spectroscopy, and tip-enhanced nanospectroscopy, and I develop and apply interpretable machine learning to extract physically meaningful information from experimental data.\n\n1. Defect Physics in Solid-State Materials\n\nHow do defects affect the electrical properties of solid-state materials and devices?\n\n\nQuantitative analysis of defect states in oxide semiconductors and their correlation with device characteristics and stability. Published Surf. Interfaces 2025 (co-first author); Sci. Rep. 2023 (co-author); IEEE Trans. Electron Devices 2024 (co-author); ACS Appl. Electron. Mater. 2024 (co-author)\nDefect-mediated control of carrier type in 2D semiconductors for complementary devices. In preparation\n\n\n\n2. Defect and Nanoscale Spectroscopy\n\nHow can defect states and local structure be measured, from devices to the nanoscale?\n\n\nTransient spectroscopy (PICTS/DLTS) of defect states in 2D semiconductors. Ongoing\nNanoscale mapping of defects and strain in 2D materials by tip-enhanced spectroscopy. Ongoing\nElectromagnetic simulation of near-field enhancement in tip-enhanced spectroscopy. Published Mater. Des. 2026 (co-author)\nModulation of excitonic properties in 2D semiconductors by coupling to plasmonic nanostructures. Ongoing\n\n\n\n3. Interpretable AI for Science\n\nHow can machine learning extract physically interpretable information from experimental data?\n\n\nCorrelation of Raman spectra with electrical properties using interpretable machine learning. In preparation\nDeep-learning-based noise reduction of experimental spectra with preservation of spectral parameters. In preparation\nEffect of numerical precision on the reliability of scientific machine learning. Published ICML 2026 (co-author)\nReview of the physical interpretability of machine-learning analysis in spectroscopy. In preparation"
+    "text": "I study defect physics in solid-state materials: how defects affect their electrical and optical properties. I measure defect states and local structure with transient spectroscopy (PICTS/DLTS), Raman spectroscopy, and tip-enhanced nanospectroscopy, and I develop and apply interpretable machine learning to extract physically meaningful information from experimental data.\n\n\n\n\nHow do defects affect the electrical properties of solid-state materials and devices?\n\n\nQuantitative analysis of defect states in oxide semiconductors and their correlation with device characteristics and stability. Published Surf. Interfaces 2025 (co-first author); Sci. Rep. 2023 (co-author); IEEE Trans. Electron Devices 2024 (co-author); ACS Appl. Electron. Mater. 2024 (co-author)\nDefect-mediated control of carrier type in 2D semiconductors for complementary devices. In preparation\n\n\n\n\n\nHow can defect states and local structure be measured, from devices to the nanoscale?\n\n\nTransient spectroscopy (PICTS/DLTS) of defect states in 2D semiconductors. Ongoing\nNanoscale mapping of defects and strain in 2D materials by tip-enhanced spectroscopy. Ongoing\nElectromagnetic simulation of near-field enhancement in tip-enhanced spectroscopy. Published Mater. Des. 2026 (co-author)\nModulation of excitonic properties in 2D semiconductors by coupling to plasmonic nanostructures. Ongoing\n\n\n\n\n\nHow can machine learning extract physically interpretable information from experimental data?\n\n\nCorrelation of Raman spectra with electrical properties using interpretable machine learning. In preparation\nDeep-learning-based noise reduction of experimental spectra with preservation of spectral parameters. In preparation\nEffect of numerical precision on the reliability of scientific machine learning. Published ICML 2026 (co-author)\nReview of the physical interpretability of machine-learning analysis in spectroscopy. In preparation"
+  },
+  {
+    "objectID": "research.html#defect-physics-in-solid-state-materials",
+    "href": "research.html#defect-physics-in-solid-state-materials",
+    "title": "Research",
+    "section": "",
+    "text": "How do defects affect the electrical properties of solid-state materials and devices?\n\n\nQuantitative analysis of defect states in oxide semiconductors and their correlation with device characteristics and stability. Published Surf. Interfaces 2025 (co-first author); Sci. Rep. 2023 (co-author); IEEE Trans. Electron Devices 2024 (co-author); ACS Appl. Electron. Mater. 2024 (co-author)\nDefect-mediated control of carrier type in 2D semiconductors for complementary devices. In preparation"
+  },
+  {
+    "objectID": "research.html#defect-and-nanoscale-spectroscopy",
+    "href": "research.html#defect-and-nanoscale-spectroscopy",
+    "title": "Research",
+    "section": "",
+    "text": "How can defect states and local structure be measured, from devices to the nanoscale?\n\n\nTransient spectroscopy (PICTS/DLTS) of defect states in 2D semiconductors. Ongoing\nNanoscale mapping of defects and strain in 2D materials by tip-enhanced spectroscopy. Ongoing\nElectromagnetic simulation of near-field enhancement in tip-enhanced spectroscopy. Published Mater. Des. 2026 (co-author)\nModulation of excitonic properties in 2D semiconductors by coupling to plasmonic nanostructures. Ongoing"
+  },
+  {
+    "objectID": "research.html#interpretable-ai-for-science",
+    "href": "research.html#interpretable-ai-for-science",
+    "title": "Research",
+    "section": "",
+    "text": "How can machine learning extract physically interpretable information from experimental data?\n\n\nCorrelation of Raman spectra with electrical properties using interpretable machine learning. In preparation\nDeep-learning-based noise reduction of experimental spectra with preservation of spectral parameters. In preparation\nEffect of numerical precision on the reliability of scientific machine learning. Published ICML 2026 (co-author)\nReview of the physical interpretability of machine-learning analysis in spectroscopy. In preparation"
   },
   {
     "objectID": "publications.html",
