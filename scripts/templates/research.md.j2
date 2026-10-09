@@ -1,4 +1,6 @@
-{{ research.summary | safe }}
+{% for s in research.intro.statements %}
+- {{ s | safe }}
+{% endfor %}
 
 {% for t in research.themes %}
 ### {{ loop.index }}. {{ t.title }}
@@ -6,7 +8,7 @@
 <p class="rs-question">{{ t.question }}</p>
 
 {% for item in t['items'] %}
-- {{ item.text | safe }} <span class="rs-status rs-status-{{ item.status | lower | replace(' ', '-') }}">{{ item.status }}</span>{% if item.refs is defined %} <span class="rs-refs">{{ item.refs | cite }}</span>{% endif +%}
+- {{ item.text | safe }} <span class="rs-status rs-status-{{ item.status | lower | replace(' ', '-') }}">{{ item.status }}</span>{% if item.role is defined %} <span class="rs-role">{{ item.role }}</span>{% endif %}{% if item.refs is defined %} <span class="rs-refs">{{ item.refs | cite }}</span>{% endif +%}
 {% endfor %}
 
 {% endfor %}

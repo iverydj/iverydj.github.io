@@ -1,12 +1,12 @@
 ```{=html}
-<h2 class="home-heading">{{ research.home.heading }}</h2>
+<h2 class="home-heading">{{ research.intro.heading }}</h2>
 <div class="research-keywords">
-{% for k in research.home.keywords %}
+{% for k in research.intro.keywords %}
   <span>{{ k }}</span>
 {% endfor %}
 </div>
 <ul class="home-statements">
-{% for s in research.home.statements %}
+{% for s in research.intro.statements %}
   <li>{{ s | safe }}</li>
 {% endfor %}
 </ul>
