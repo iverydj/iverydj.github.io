@@ -39,10 +39,6 @@
 <button type="button" class="rs-zoom" aria-label="Enlarge figure"><img src="assets/research/picts_principle.webp" alt="Schematic of PICTS on an IGZO thin-film transistor, with the light pulse and the resulting current transient." loading="lazy" style="width: 205px"></button>
 <figcaption>Principle of photo-induced current transient spectroscopy (PICTS). <span class="rs-fig-src"><a href="publications.html#pub-1">Sci. Rep. 2023</a></span></figcaption>
 </figure>
-<figure class="rs-fig">
-<button type="button" class="rs-zoom" aria-label="Enlarge figure"><img src="assets/research/ters_linescan.webp" alt="Raman line scans of monolayer WS2 measured by confocal Raman and by TERS, and the A1g intensity profiles." loading="lazy" style="width: 323px"></button>
-<figcaption>Confocal versus tip-enhanced Raman line scans of monolayer WS<sub>2</sub>. <span class="rs-fig-src"><a href="publications.html#pub-9">Mater. Des. 2026</a></span></figcaption>
-</figure>
 </div>
 
 
@@ -59,10 +55,6 @@
 <p class="rs-question">How can machine learning extract physically meaningful information from experimental data?</p>
 
 <div class="rs-figures">
-<figure class="rs-fig">
-<button type="button" class="rs-zoom" aria-label="Enlarge figure"><img src="assets/research/tip_ml_fdtd.webp" alt="Etching current profiles, machine-learning predicted tip shapes, SEM images of the fabricated tips, and FDTD near-field maps." loading="lazy" style="width: 296px"></button>
-<figcaption>Machine-learning-predicted nanoprobe geometry checked against SEM and FDTD. <span class="rs-fig-src"><a href="publications.html#pub-9">Mater. Des. 2026</a></span></figcaption>
-</figure>
 <figure class="rs-fig">
 <button type="button" class="rs-zoom" aria-label="Enlarge figure"><img src="assets/research/precision_fdtd.webp" alt="FP64 versus FP32 results for water geometry optimization and for FDTD transmittance spectra and second-harmonic response of a Kerr medium." loading="lazy" style="width: 469px"></button>
 <figcaption>Single (FP32) versus double (FP64) precision in DFT and nonlinear FDTD simulations. <span class="rs-fig-src"><a href="publications.html#pub-10">ICML 2026</a></span></figcaption>
