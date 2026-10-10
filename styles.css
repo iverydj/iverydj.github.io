@@ -155,12 +155,13 @@ body.nav-fixed { padding-top: 0 !important; }
 .research-theme > ul { grid-column: 2; grid-row: 1 / 5; margin: 0; padding: 0; list-style: none; }
 .research-theme:has(> .rs-figures) > ul { grid-row: 4; }
 /* Representative figures: small white plates above the theme's items; click to enlarge (JS only). */
-.rs-figures { grid-column: 2; grid-row: 1 / 4; display: grid; grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr)); gap: 1rem 1.25rem; align-items: start; margin: 0 0 1.6rem; }
+/* Two per row, so each figure is at most half the column; tall figures are capped in height. */
+.rs-figures { grid-column: 2; grid-row: 1 / 4; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.1rem 1.4rem; align-items: start; margin: 0 0 1.6rem; }
 .rs-fig { margin: 0; }
-.rs-zoom { display: block; width: 100%; padding: 0.6rem; border: 1px solid var(--rule); background: #fff; cursor: default; }
+.rs-zoom { display: block; width: fit-content; max-width: 100%; padding: 0; border: 0; background: none; line-height: 0; cursor: default; }
 .rs-js .rs-zoom { cursor: zoom-in; }
-.rs-js .rs-zoom:hover { border-color: var(--accent); }
-.rs-zoom img { display: block; width: 100%; height: 11rem; object-fit: contain; }
+.rs-js .rs-zoom:hover img { opacity: 0.88; }
+.rs-zoom img { display: block; width: auto; max-width: 100%; height: auto; max-height: 14rem; margin: 0; transition: opacity 140ms ease; }
 .rs-fig figcaption { margin-top: 0.45rem; font-size: 0.78rem; line-height: 1.45; color: var(--text-2); }
 .rs-fig-src { white-space: nowrap; }
 .rs-dialog { max-width: min(92vw, 1100px); border: 0; padding: 1.4rem 1.4rem 1rem; background: #fff; color: var(--text); }

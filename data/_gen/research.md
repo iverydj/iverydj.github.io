@@ -64,8 +64,8 @@
 <figcaption>Machine-learning-predicted nanoprobe geometry checked against SEM and FDTD. <span class="rs-fig-src"><a href="publications.html#pub-9">Mater. Des. 2026</a></span></figcaption>
 </figure>
 <figure class="rs-fig">
-<button type="button" class="rs-zoom" aria-label="Enlarge figure"><img src="assets/research/precision_geometry.webp" alt="Water molecule geometries optimized with Hartree-Fock and DFT in double (FP64) and single (FP32) precision." loading="lazy"></button>
-<figcaption>Water geometry optimized in FP64 versus FP32; single precision yields unphysical structures. <span class="rs-fig-src"><a href="publications.html#pub-10">ICML 2026</a></span></figcaption>
+<button type="button" class="rs-zoom" aria-label="Enlarge figure"><img src="assets/research/precision_fdtd.webp" alt="FP64 versus FP32 results for water geometry optimization and for FDTD transmittance spectra and second-harmonic response of a Kerr medium." loading="lazy"></button>
+<figcaption>Single (FP32) versus double (FP64) precision in DFT and nonlinear FDTD simulations. <span class="rs-fig-src"><a href="publications.html#pub-10">ICML 2026</a></span></figcaption>
 </figure>
 </div>
 

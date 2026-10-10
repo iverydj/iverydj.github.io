@@ -83,10 +83,10 @@ themes:
         ref: 9
         alt: Etching current profiles, machine-learning predicted tip shapes, SEM images of the fabricated tips, and FDTD near-field maps.
         caption: Machine-learning-predicted nanoprobe geometry checked against SEM and FDTD.
-      - file: assets/research/precision_geometry.webp
+      - file: assets/research/precision_fdtd.webp
         ref: 10
-        alt: Water molecule geometries optimized with Hartree-Fock and DFT in double (FP64) and single (FP32) precision.
-        caption: Water geometry optimized in FP64 versus FP32; single precision yields unphysical structures.
+        alt: FP64 versus FP32 results for water geometry optimization and for FDTD transmittance spectra and second-harmonic response of a Kerr medium.
+        caption: Single (FP32) versus double (FP64) precision in DFT and nonlinear FDTD simulations.
     items:
       - status: In preparation
         text: >-
