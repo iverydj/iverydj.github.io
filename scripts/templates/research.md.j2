@@ -15,7 +15,7 @@
 <div class="rs-figures">
 {% for f in t.figures %}
 <figure class="rs-fig">
-<button type="button" class="rs-zoom" aria-label="Enlarge figure"><img src="{{ f.file }}" alt="{{ f.alt }}" loading="lazy"></button>
+<button type="button" class="rs-zoom" aria-label="Enlarge figure"><img src="{{ f.file }}" alt="{{ f.alt }}" loading="lazy" style="width: {{ f.width }}px"></button>
 <figcaption>{{ f.caption | safe }} <span class="rs-fig-src">{{ [f.ref] | cite }}</span></figcaption>
 </figure>
 {% endfor %}

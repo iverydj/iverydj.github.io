@@ -5,7 +5,8 @@
 # Inline <span> classes: rs-mat = material, rs-tech = technique, rs-method = method.
 # Item status: Published | In preparation | Ongoing (kept as data; not displayed). Unpublished work stays at topic level.
 # `figures`: optional small representative figures (file under assets/research/, short caption, alt text,
-# and `ref` = paper id it is adapted from).
+# and `ref` = paper id it is adapted from). `width`: display width in px, chosen so that the text inside
+# each figure appears at a similar size (~4.3 px); capped at half the column by CSS.
 # `refs`: stable pdf ids (assets/pubs/<n>.pdf) of supporting papers, shown as "Venue Year" linking to the
 # paper's entry on the Publications page (and within the CV on the CV page).
 intro:
@@ -27,10 +28,12 @@ themes:
     question: How do defects and quasiparticles shape the electrical and optical properties of solid-state materials?
     figures:
       - file: assets/research/defect_band.webp
+        width: 344
         ref: 8
         alt: Band alignment of ITZO and IGZO, defect densities versus ITZO thickness, and band diagrams of trapping under bias stress.
         caption: Defect states and bias-stress threshold shifts in ITZO/IGZO thin-film transistors.
       - file: assets/research/picts_dos.webp
+        width: 131
         ref: 1
         alt: Defect density versus activation energy in a-IGZO at gate biases of 0, -5 and -10 V and after removing the bias.
         caption: Defect density versus activation energy in a-IGZO before and after negative gate bias.
@@ -54,10 +57,12 @@ themes:
     question: How can defect states and local structure be measured, from devices to the nanoscale?
     figures:
       - file: assets/research/picts_principle.webp
+        width: 205
         ref: 1
         alt: Schematic of PICTS on an IGZO thin-film transistor, with the light pulse and the resulting current transient.
         caption: Principle of photo-induced current transient spectroscopy (PICTS).
       - file: assets/research/ters_linescan.webp
+        width: 323
         ref: 9
         alt: Raman line scans of monolayer WS2 measured by confocal Raman and by TERS, and the A1g intensity profiles.
         caption: Confocal versus tip-enhanced Raman line scans of monolayer WS<sub>2</sub>.
@@ -80,10 +85,12 @@ themes:
     question: How can machine learning extract physically meaningful information from experimental data?
     figures:
       - file: assets/research/tip_ml_fdtd.webp
+        width: 296
         ref: 9
         alt: Etching current profiles, machine-learning predicted tip shapes, SEM images of the fabricated tips, and FDTD near-field maps.
         caption: Machine-learning-predicted nanoprobe geometry checked against SEM and FDTD.
       - file: assets/research/precision_fdtd.webp
+        width: 469
         ref: 10
         alt: FP64 versus FP32 results for water geometry optimization and for FDTD transmittance spectra and second-harmonic response of a Kerr medium.
         caption: Single (FP32) versus double (FP64) precision in DFT and nonlinear FDTD simulations.
