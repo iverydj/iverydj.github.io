@@ -10,7 +10,7 @@
 # `refs`: stable pdf ids (assets/pubs/<n>.pdf) of supporting papers, shown as "Venue Year" linking to the
 # paper's entry on the Publications page (and within the CV on the CV page).
 intro:
-  heading: Experimental physicist with spectroscopy and explainable AI
+  heading: Experimental physics with spectroscopy and explainable AI
   keywords: [Solid Materials, Defect, Spectroscopy, AI for Science]
   statements:
     - >-
