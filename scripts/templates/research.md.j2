@@ -11,6 +11,12 @@
 
 <p class="rs-question">{{ t.question }}</p>
 
+<div class="rs-narrative">
+{% for para in t.narrative %}
+<p class="rs-p">{{ para | prose }}</p>
+{% endfor %}
+</div>
+
 {% if t.figures is defined %}
 <div class="rs-figures">
 {% for f in t.figures %}
@@ -22,12 +28,6 @@
 </div>
 
 {% endif %}
-
-<div class="rs-narrative">
-{% for para in t.narrative %}
-<p class="rs-p">{{ para | prose }}</p>
-{% endfor %}
-</div>
 
 :::
 

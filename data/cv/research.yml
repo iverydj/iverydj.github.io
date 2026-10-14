@@ -8,7 +8,7 @@
 # Item status: Published | In preparation | Ongoing (kept as data; not displayed). Unpublished work stays at topic level.
 # `figures`: optional small representative figures (file under assets/research/, short caption, alt text,
 # and `ref` = paper id it is adapted from). `width`: display width in px, chosen so that the text inside
-# each figure appears at a similar size (~4.3 px); capped at half the column by CSS.
+# each figure appears at a similar size (~4.3 px); capped at half the content width by CSS.
 # `refs`: stable pdf ids (assets/pubs/<n>.pdf) of supporting papers, shown as "Venue Year" linking to the
 # paper's entry on the Publications page (and within the CV on the CV page).
 intro:
