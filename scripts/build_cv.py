@@ -41,6 +41,7 @@ def load_data(cfg):
     data["papers"] = sort_papers(pubs["papers"], cfg.ME)
     for paper in data["papers"]:
         paper["id"] = paper_id(paper)
+    number_figures(data["research"])
     data["manuscripts"] = pubs["manuscripts"]
     data["patents"] = pubs["patents"]
     return data
@@ -72,13 +73,45 @@ def check_research_statuses(cfg, research):
                 raise ValueError(f"unknown research status {item['status']!r} in theme {theme['title']!r}")
 
 
+def number_figures(research):
+    """Research-page figures get page-wide numbers (Fig. 1, 2, ...) and anchor ids, in reading order."""
+    n = 0
+    for theme in research["themes"]:
+        for fig in theme.get("figures", []):
+            n += 1
+            fig["num"] = n
+            fig["id"] = "fig-" + Path(fig["file"]).stem
+
+
 def check_research_md(rendered, research):
-    """Each research item must be its own Markdown bullet: Jinja's trim_blocks can silently
-    glue bullets together when a template line ends with a block tag."""
-    expected = sum(len(t["items"]) for t in research["themes"])
-    found = sum(1 for line in rendered.splitlines() if line.startswith("- "))
+    """Every narrative paragraph must be rendered, with no unresolved {fig:}/{cite:} markers."""
+    expected = sum(len(t["narrative"]) for t in research["themes"])
+    found = rendered.count('<p class="rs-p">')
     if found != expected:
-        raise ValueError(f"research.md has {found} bullet lines, expected {expected} (glued list items?)")
+        raise ValueError(f"research.md has {found} narrative paragraphs, expected {expected}")
+    if "{fig:" in rendered or "{cite:" in rendered:
+        raise ValueError("research.md still contains unresolved {fig:}/{cite:} markers")
+
+
+def make_prose_filter(research, cite):
+    """Narrative text: a run of {fig:<stem>} / {cite:<ids>} markers becomes one parenthetical,
+    e.g. '(Fig. 1; Sci. Rep. 2023)', with figure numbers linking to the figure on the page."""
+    figs = {Path(f["file"]).stem: f for t in research["themes"] for f in t.get("figures", [])}
+    run = re.compile(r"(?:\{(?:fig|cite):[^}]+\}\s*)*\{(?:fig|cite):[^}]+\}")
+
+    def render_run(m):
+        parts = []
+        for kind, arg in re.findall(r"\{(fig|cite):([^}]+)\}", m.group(0)):
+            if kind == "fig":
+                f = figs[arg]
+                parts.append(f'<a class="rs-figref" href="#{f["id"]}">Fig. {f["num"]}</a>')
+            else:
+                parts.append(str(cite([int(i) for i in arg.split(",")])))
+        return "(" + "; ".join(parts) + ")"
+
+    def prose(text):
+        return Markup(run.sub(render_run, text))
+    return prose
 
 
 def make_cite_filter(papers):
@@ -146,6 +179,7 @@ def main():
     )
     env.filters["authors"] = make_authors_filter(cfg.ME)
     env.filters["cite"] = make_cite_filter(data["papers"])
+    env.filters["prose"] = make_prose_filter(data["research"], env.filters["cite"])
     env.filters["accent_first"] = accent_first
     env.filters["edu_lines"] = edu_lines
 

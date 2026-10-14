@@ -1,7 +1,9 @@
 # Research overview. Revised 2026-10-09: defect physics in solid-state materials is the subject;
 # defect/nanoscale spectroscopy and interpretable AI are the tools (one theme each).
 # `intro` feeds the Home page (heading, keywords, statements) and the opening of the Research and
-# CV pages (statements); `themes` feed the Research and CV pages.
+# CV pages (statements). Each theme's `narrative` (connected paragraphs) is the Research page text;
+# its `items` are the concise bullets used on the CV. In narrative paragraphs, {fig:<file stem>} becomes a
+# linked "Fig. N" and {cite:<id>,<id>} a linked "(Venue Year; ...)" pointing at the Publications page.
 # Inline <span> classes: rs-mat = material, rs-tech = technique, rs-method = method.
 # Item status: Published | In preparation | Ongoing (kept as data; not displayed). Unpublished work stays at topic level.
 # `figures`: optional small representative figures (file under assets/research/, short caption, alt text,
@@ -26,17 +28,33 @@ intro:
 themes:
   - title: Defect Physics in Solid-State Materials
     question: How do defects and quasiparticles shape the electrical and optical properties of solid-state materials?
+    narrative:
+      - >-
+          Defects set the limits of many semiconductor devices: they trap carriers, pin the Fermi level, and shift
+          device characteristics under electrical stress. This line of work began with <span
+          class="rs-mat">amorphous oxide semiconductors</span>, where defect states were resolved over a wide
+          energy range below the conduction band {fig:picts_dos} {cite:1}. In ITZO/IGZO bilayer thin-film
+          transistors, defect states above and below the Fermi level track the threshold-voltage shifts under
+          positive and negative bias stress, which explains how the bilayer combines high mobility with stability
+          {fig:defect_band} {cite:8}. Related studies examined double-gate operation and hydrogen-related defects
+          under bias-temperature stress {cite:2,3}.
+      - >-
+          I am now carrying these questions into <span class="rs-mat">two-dimensional semiconductors</span>, where
+          defects can change the carrier type of an atomically thin channel. Ongoing work uses defect engineering
+          to obtain n- and p-type behavior for complementary devices, and examines how excitons, the
+          quasiparticles that dominate the optical response of 2D semiconductors, are modulated by coupling to
+          <span class="rs-mat">plasmonic nanostructures</span>.
     figures:
-      - file: assets/research/defect_band.webp
-        width: 344
-        ref: 8
-        alt: Band alignment of ITZO and IGZO, defect densities versus ITZO thickness, and band diagrams of trapping under bias stress.
-        caption: Defect states and bias-stress threshold shifts in ITZO/IGZO thin-film transistors.
       - file: assets/research/picts_dos.webp
         width: 131
         ref: 1
         alt: Defect density versus activation energy in a-IGZO at gate biases of 0, -5 and -10 V and after removing the bias.
         caption: Defect density versus activation energy in a-IGZO before and after negative gate bias.
+      - file: assets/research/defect_band.webp
+        width: 344
+        ref: 8
+        alt: Band alignment of ITZO and IGZO, defect densities versus ITZO thickness, and band diagrams of trapping under bias stress.
+        caption: Defect states and bias-stress threshold shifts in ITZO/IGZO thin-film transistors.
     items:
       - status: Published
         refs: [8, 1, 2, 3]
@@ -55,6 +73,18 @@ themes:
 
   - title: Defect and Nanoscale Spectroscopy
     question: How can defect states and local structure be measured, from devices to the nanoscale?
+    narrative:
+      - >-
+          Answering these questions requires measuring defects directly. <span class="rs-tech">Photo-induced
+          current transient spectroscopy (PICTS)</span> does this electrically: a light pulse fills trap states,
+          and the current transient that follows as carriers are released yields defect energies and densities
+          {fig:picts_principle} {cite:1}. Together with <span class="rs-tech">deep-level transient spectroscopy
+          (DLTS)</span>, I am extending this approach to 2D semiconductors.
+      - >-
+          Transient methods average over a whole device, so I complement them with <span
+          class="rs-tech">tip-enhanced Raman spectroscopy (TERS)</span>, which maps defects and strain below the
+          optical diffraction limit. Interpreting such nanoscale signals quantitatively depends on the near field
+          at the tip apex, which I model with finite-difference time-domain (FDTD) simulations {cite:9}.
     figures:
       - file: assets/research/picts_principle.webp
         width: 205
@@ -78,6 +108,19 @@ themes:
 
   - title: Interpretable AI for Science
     question: How can machine learning extract physically meaningful information from experimental data?
+    narrative:
+      - >-
+          Spectra and transients often contain more physical information than conventional peak fitting extracts.
+          I use <span class="rs-method">machine learning</span> to recover it, with the requirement that the
+          result remain physically interpretable: relating Raman spectral features to electrical properties, and
+          reducing noise in experimental spectra while preserving peak positions and widths. Machine learning also
+          meets devices directly, in simulations of analog in-memory learning based on the measured synaptic
+          characteristics of ferroelectric InSe devices.
+      - >-
+          Reliability is a central concern. Even numerical precision can change a scientific conclusion: in DFT
+          and nonlinear FDTD simulations, single precision produces unphysical geometries and misses weak harmonic
+          signals that double precision resolves {fig:precision_fdtd} {cite:10}. An invited review in preparation
+          examines when a machine-learning explanation of a spectrum can count as physical evidence.
     figures:
       - file: assets/research/precision_fdtd.webp
         width: 469

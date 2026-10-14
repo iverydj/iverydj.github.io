@@ -14,18 +14,20 @@
 {% if t.figures is defined %}
 <div class="rs-figures">
 {% for f in t.figures %}
-<figure class="rs-fig">
+<figure class="rs-fig" id="{{ f.id }}">
 <button type="button" class="rs-zoom" aria-label="Enlarge figure"><img src="{{ f.file }}" alt="{{ f.alt }}" loading="lazy" style="width: {{ f.width }}px"></button>
-<figcaption>{{ f.caption | safe }} <span class="rs-fig-src">{{ [f.ref] | cite }}</span></figcaption>
+<figcaption><span class="rs-fig-num">Fig. {{ f.num }}.</span> {{ f.caption | safe }} <span class="rs-fig-src">{{ [f.ref] | cite }}</span></figcaption>
 </figure>
 {% endfor %}
 </div>
 
 {% endif %}
 
-{% for item in t['items'] %}
-- {{ item.text | safe }}{% if item.refs is defined %} <span class="rs-meta"><span class="rs-refs">{{ item.refs | cite }}</span></span>{% endif +%}
+<div class="rs-narrative">
+{% for para in t.narrative %}
+<p class="rs-p">{{ para | prose }}</p>
 {% endfor %}
+</div>
 
 :::
 
