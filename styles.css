@@ -117,7 +117,6 @@ body.nav-fixed { padding-top: 0 !important; }
 .contact-row dd { margin: 0; overflow-wrap: anywhere; }
 .home-section { border-top: 1px solid var(--rule); padding-top: 1.5rem; }
 .home-section > .home-heading {
-  max-width: 36ch;
   font: 500 clamp(1.5rem, 2.8vw, 2rem)/1.3 var(--font-serif);
   letter-spacing: -0.025em;
   margin: 0 0 1rem;
@@ -131,7 +130,7 @@ body.nav-fixed { padding-top: 0 !important; }
   font-weight: 500;
   line-height: 1.5;
 }
-.home-statements, .research-intro { max-width: 88ch; margin: 1.3rem 0 1rem; padding-left: 1.05rem; font-size: 1rem; line-height: 1.65; }
+.home-statements, .research-intro { margin: 1.3rem 0 1rem; padding-left: 1.05rem; font-size: 1rem; line-height: 1.65; }
 .home-statements > li, .research-intro > li { padding-left: 0.25rem; margin-bottom: 0.5rem; }
 .home-statements > li:last-child, .research-intro > li:last-child { margin-bottom: 0; }
 .home-statements > li::marker, .research-intro > li::marker { color: var(--text-2); font-size: 0.75em; }
@@ -140,7 +139,7 @@ body.nav-fixed { padding-top: 0 !important; }
 .home-more a { display: inline-block; padding-block: 0.15rem; text-underline-offset: 0.24em; }
 
 /* Research: questions and subject headings beside the supporting work. */
-.research-content > .research-intro { max-width: none; margin-top: 0; margin-bottom: 2.5rem; }
+.research-content > .research-intro { margin-top: 0; margin-bottom: 2.5rem; }
 .research-theme {
   border-top: 1px solid var(--rule);
   padding-top: 1.6rem;
